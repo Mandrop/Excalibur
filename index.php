@@ -46,7 +46,9 @@
 
     <script>
       var $first = $('.first');
-      var imageArr = ["Images/Layer1.png","Images/Layer2.png","Images/Layer3.png","Images/Layer4.png",,"Images/Layer5.png",,"Images/Layer6.png",,"Images/Layer7.png"];
+      //var imageArr = ["Images/Layer1.png","Images/Layer2.png","Images/Layer3.png","Images/Layer4.png",,"Images/Layer5.png",,"Images/Layer6.png",,"Images/Layer7.png"];
+
+      var imageArr = ["Images/1,1.png","Images/1,2.png","Images/1,3.png","Images/1,2.png"];
 
       $first.waypoint(function (direction) {
         if (direction == 'down') {
@@ -68,7 +70,7 @@
             
             //console.log("scrolled");
             windowScrollCount   = $(this).scrollTop();
-            animationFrame      = (windowScrollCount / 20);
+            animationFrame      = (windowScrollCount / 130);
 
             animationFrame = Math.floor(animationFrame % imageArr.length);
             //console.log(animationFrame + " : " + windowScrollCount);
