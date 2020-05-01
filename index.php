@@ -18,7 +18,7 @@
   <body>
     <h1>Hello, world!</h1>
     <div class="background" id="background">
-    </img><img id="sprite" src="Images/Layer1.png" alt="walk01" class="walk"/>
+    </img><img id="sprite" src="Images/2,1.png" alt="walk01" class="walk"/>
     <div id="scrollDiv"></div>
     </div>
 
@@ -48,16 +48,16 @@
       var $first = $('.first');
       //var imageArr = ["Images/Layer1.png","Images/Layer2.png","Images/Layer3.png","Images/Layer4.png",,"Images/Layer5.png",,"Images/Layer6.png",,"Images/Layer7.png"];
 
-      var imageArr = ["Images/1,1.png","Images/1,2.png","Images/1,3.png","Images/1,2.png"];
+      var imageArr = ["Images/2,1.png","Images/2,2.png","Images/2,3.png","Images/2,2.png"];
 
       $first.waypoint(function (direction) {
         if (direction == 'down') {
           console.log('waypoint down!')
-          document.getElementById("sprite").src = "Images/shrek.png";
-          imageArr = ["Images/shrek.png","Images/shrek.png","Images/shrek.png","Images/shrek.png",,"Images/shrek.png",,"Images/shrek.png",,"Images/shrek.png"];
+          //document.getElementById("sprite").src = "Images/shrek.png";
+          imageArr = ["Images/1,1.png","Images/1,2.png","Images/1,3.png","Images/1,2.png"];
         }else {
           console.log('waypoint up!')
-          imageArr = ["Images/Layer1.png","Images/Layer2.png","Images/Layer3.png","Images/Layer4.png",,"Images/Layer5.png",,"Images/Layer6.png",,"Images/Layer7.png"];
+          imageArr = ["Images/2,1.png","Images/2,2.png","Images/2,3.png","Images/2,2.png"];
         }
       }, { offset: '50%'});
       
