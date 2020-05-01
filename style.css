@@ -13,3 +13,30 @@ img {
 #scrollDiv {
     height:5000px;
 }
+
+#sprite{
+    z-index: 1;
+}
+
+.first {
+    /*position: absolute;*/
+    background:green;
+    /*height: 5px;*/
+    width:100%;
+
+}
+.second {
+    background:red;
+    height: 2000px;
+    width:100%;
+}
+.stald{
+    position: absolute;
+    background: orange;
+    height: 300px;
+    width: 50%;
+    left: 25%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
