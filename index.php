@@ -45,6 +45,11 @@
     
 
     <script>
+      
+
+
+
+
       var $first = $('.first');
       //var imageArr = ["Images/Layer1.png","Images/Layer2.png","Images/Layer3.png","Images/Layer4.png",,"Images/Layer5.png",,"Images/Layer6.png",,"Images/Layer7.png"];
 
