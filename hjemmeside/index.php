@@ -16,8 +16,16 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+  <div class="header">
+  <h1>Header</h1>
+  </div>
+
     <div class="background" id="background">
+
+    <!-- INFO BOKS -->
+      <div class="info-waypoint"></div>
+      <div class="info">Info</div>
+    <!-- INFO BOKS SLUT -->
     </img><img id="sprite" src="Images/2,1.png" alt="walk01" class="walk"/>
     <div id="scrollDiv"></div>
     </div>
@@ -28,7 +36,34 @@
       <div class="first" id="basic-waypoint"></div>
     
     </div>
+
+
 <div class="second" id="second"></div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Test</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <!-- Optional JavaScript -->
@@ -65,6 +100,24 @@
           imageArr = ["Images/2,1.png","Images/2,2.png","Images/2,3.png","Images/2,2.png"];
         }
       }, { offset: '50%'});
+
+
+      var $infoWaypoint = $('.info-waypoint');
+      var $info = $('.info');
+
+      $infoWaypoint.waypoint(function (direction) {
+        if (direction == 'down') {
+          console.log('fixed!')
+          $info.css({'position': 'fixed', 'top': '10%'});
+          //document.getElementById("sprite").src = "Images/shrek.png";
+          
+        }else {
+          console.log('not fixed')
+          $info.css({'position': 'static', 'top': '0px'}); 
+          
+        }
+      }, { offset: '10%'});
+      
       
 
 
