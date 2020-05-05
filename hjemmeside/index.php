@@ -24,7 +24,32 @@
 
     <!-- INFO BOKS -->
       <div class="info-waypoint"></div>
-      <div class="info">Info</div>
+      <div class="info">
+      <img class="info-img" src="images/info.png" alt="">
+      <button type="button" class="btn btn-primary info-btn" data-toggle="modal" data-target="#infoModal"></button>
+      </div>
+
+      <!-- INFO BOKS MODAL -->
+      <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>INFO test</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+      
     <!-- INFO BOKS SLUT -->
     </img><img id="sprite" src="Images/2,1.png" alt="walk01" class="walk"/>
     <div id="scrollDiv"></div>
@@ -108,7 +133,7 @@
       $infoWaypoint.waypoint(function (direction) {
         if (direction == 'down') {
           console.log('fixed!')
-          $info.css({'position': 'fixed', 'top': '10%'});
+          $info.css({'position': 'fixed', 'top': '2%'});
           //document.getElementById("sprite").src = "Images/shrek.png";
           
         }else {
@@ -116,7 +141,7 @@
           $info.css({'position': 'static', 'top': '0px'}); 
           
         }
-      }, { offset: '10%'});
+      }, { offset: '2%'});
       
       
 
