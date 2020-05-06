@@ -121,10 +121,6 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
     
     </div>
 
-    <div id="hest">
-      <img src="images" alt="">
-    </div>
-
 
 <div class="second" id="second"></div>
 <!-- Button trigger modal -->
@@ -182,7 +178,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
         if (direction == 'down') {
           console.log('waypoint down!')
           //document.getElementById("sprite").src = "Images/shrek.png";
-          imageArr = ["Images/HP-hest1.png","Images/HP-hest2.png","Images/HP-hest3.png","Images/1,2.png"];
+          imageArr = ["Images/1,1.png","Images/1,2.png","Images/1,3.png","Images/1,2.png"];
         }else {
           console.log('waypoint up!')
           imageArr = ["Images/2,1.png","Images/2,2.png","Images/2,3.png","Images/2,2.png"];
@@ -222,30 +218,6 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
             //console.log(animationFrame + " : " + windowScrollCount);
             $('.walk').attr("src", imageArr[animationFrame]);
         });
-
-        //Hest
-
-        //Waypoint
-        var $hest = $('#hest')
-
-        $hest.waypoint(function () {
-          //Gå
-          var window_width = $(window).width() - $('#hest').width();
-          
-          var document_height = $(document).height() - $(window).height();
-                    
-          $(function hest() {
-              $(window).scroll(function () {
-                  var scroll_position = $(window).scrollTop();
-                  var object_position_left = window_width * ((scroll_position - 5100) / document_height) * 7;
-                  $('#hest').css({
-                      'left': object_position_left
-                  });
-              });
-          });
-        }, {offset: '50%'})
-
-
     </script>
   </body>
 </html>
