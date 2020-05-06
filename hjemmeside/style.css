@@ -1,3 +1,37 @@
+/* FONTS STYLING */
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/OpenSans-Bold.ttf);
+ }
+ @font-face {
+    font-family: medieval;
+    src: url(fonts/Enchanted-Land.otf);
+ }
+ *{
+     /*font-family: myFirstFont;*/
+ }
+ h1 {
+     font-size: 50px;
+    font-family: medieval;
+ }
+h5{
+    font-family: medieval;
+    font-size: 50px;
+}
+
+
+
+
+
+ p{
+     font-size: 14px;
+     font-weight: 400;
+ }
+
+
+
+
+
 .header{
     background-color: lightcoral;
     text-align: center;
@@ -109,6 +143,12 @@
 
 /* MODEL STYLING */
 .modal-content{
+    background-image: url(images/pergamentpapir.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    /*background-size: cover;*/
+    background-size: 195% 120%;
     
 }
 
@@ -118,4 +158,12 @@
 
 .modal-footer{
     border-top: 0;
+}
+.modal-body{
+    padding: 0 1rem 1rem 1rem;
+}
+.modal-title{
+    text-align: center;
+    font-size: 4em;
+    font-weight: 800;
 }
