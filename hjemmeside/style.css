@@ -109,6 +109,12 @@
 
 /* MODEL STYLING */
 .modal-content{
+    background-image: url(images/pergamentpapir.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    /*background-size: cover;*/
+    background-size: 195% 120%;
     
 }
 
