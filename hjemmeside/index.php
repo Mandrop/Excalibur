@@ -29,22 +29,57 @@
       <button type="button" class="btn btn-primary info-btn" data-toggle="modal" data-target="#infoModal"></button>
       </div>
 
-      <!-- INFO BOKS MODAL -->
-      <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+<!-- Modal -->
+<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalScrollableTitle">Information</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <p>INFO test</p>
-      </div>
+  <h5>Forældreinfo</h5>
+  <p>Når dit barn deltager til Excalibur Rollespil er det ikke meget anderledes end hvis du sender dit barn til fodbold eller spejder. Alle børn spiller som udgangspunkt på et hold med en voksen holdleder, som sørger for at dit barn får en spændende og tryg dag i skoven.<br>
+Rollespil arrangeres af Excalibur, som er en forening drevet af frivillige og entusiastiske rollespillere. Excalibur er medlem af DUF igennem Bifrost, som er landsforeningen for kreativ udvikling af børn og unge.
+<br>
+Vi arrangerer Rollespil to gange om måneden i Undallslund.</p>
+
+<h6>Undallslund Plantage Aldersgrænse:</h6>
+<p>Som udgangspunkt er spillere i alle aldre velkomne. Vores rollespil sigter dog imod børn og unge i alderen 8-13 år.</p>
+<h6>Forældre må gerne spille med:</h6>
+<p>Vi ser meget gerne at forældre deltager til Rollespil sammen med deres børn. Det er en rigtig sjov måde at være sammen med sit barn på og de elsker at se mor eller far blive sminket som ork.</p>
+<h6>Facebookgruppe:</h6>
+<p>Efterhånden har vi mange forældre, der har været med i nogle år og som ofte giver en hånd med det praktiske og som sørger for kaffe og kakao til gamle sjæle i skoven.
+Entusiastiske forældre mødes på <a href="#" class="tooltip-test" title="Tooltip">facebookgruppen</a>:
+
+Excalibur afviklere, forældre og kreative hjælpere</p>
+<h6>Ingen mødepligt:</h6>
+<p>Når man deltager til Rollespil er man ikke forpligtet til at møde op til samtlige spildage. Alle er velkomne – også bare for en enkelt gang.
+</p>
+<h6>Vind og vejr:</h6>
+<p>Man kan spille rollespil i al slags vejr og vi lader ikke en smule sne eller regn stoppe os. Hvis det regner meget kan vi dog godt finde på et slutte tidligere end normalt. I så fald vil vi hvis det er muligt annoncere det ved check-in inden spilstart.
+</p>
+<h6>Hvis noget går galt, så fortæl os det!</h6>
+<p>Vi laver rollespil med hundredevis af børn, og nogle gange går noget galt. Der er børn, der bliver uvenner, børn der bliver kede af det eller børn som har en uheldig oplevelse. Vi fanger langt det meste i skoven, men der sker stadig nogle gange ting vi ikke hører om derude. Så hvis du får et barn hjem, som har haft en uheldig oplevelse, så fortæl os det! Ellers finder vi aldrig ud af det, og selvom der er nogle ting vi ikke kan gøre noget ved, så er der også ting vi KAN gøre noget ved.
+<br>
+Vores mål er at give børnene en god oplevelse og feedback fra forældre er derfor uvurderligt. Tøv derfor ikke med at kontakte os, også hvis du “bare” har spørgsmål.
+<br>
+Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Kontakt.
+</p>
+<h6>Husk telefonnummer:</h6>
+<p>Det er meget vigtigt at dit barn har et telefonnummer på sig, så vi kan få fat på forældre eller værge, hvis der skulle opstå en situation, hvor dette er nødvendigt.</p>
+  <hr>
+  <h5>Sidste Nyt</h5>
+  <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+  <hr>
+  <h5>Arrangementer</h5>
+  <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+</div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
       </div>
     </div>
   </div>
@@ -138,7 +173,7 @@
           
         }else {
           console.log('not fixed')
-          $info.css({'position': 'static', 'top': '0px'}); 
+          $info.css({'position': 'relative', 'top': '0px'}); 
           
         }
       }, { offset: '2%'});
