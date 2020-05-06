@@ -125,3 +125,12 @@
 .modal-footer{
     border-top: 0;
 }
+
+#hest{
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    position: absolute;
+    z-index: 999;
+    top: 6100px;
+}

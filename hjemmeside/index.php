@@ -97,6 +97,10 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
     
     </div>
 
+    <div id="hest">
+      <img src="images" alt="">
+    </div>
+
 
 <div class="second" id="second"></div>
 <!-- Button trigger modal -->
@@ -194,6 +198,30 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
             //console.log(animationFrame + " : " + windowScrollCount);
             $('.walk').attr("src", imageArr[animationFrame]);
         });
+
+        //Hest
+
+        //Waypoint
+        var $hest = $('#hest')
+
+        $hest.waypoint(function () {
+          //Gå
+          var window_width = $(window).width() - $('#hest').width();
+          
+          var document_height = $(document).height() - $(window).height();
+                    
+          $(function hest() {
+              $(window).scroll(function () {
+                  var scroll_position = $(window).scrollTop();
+                  var object_position_left = window_width * ((scroll_position - 5100) / document_height) * 7;
+                  $('#hest').css({
+                      'left': object_position_left
+                  });
+              });
+          });
+        }, {offset: '50%'})
+
+
     </script>
   </body>
 </html>
