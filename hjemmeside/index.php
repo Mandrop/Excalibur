@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
     
 
-    <title>Hello, world!</title>
+    <title>Excalibur</title>
   </head>
   <body>
   <div class="header">
@@ -34,13 +34,15 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Information</h5>
+        
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-  <h5>Forældreinfo</h5>
+        <h5 class="text-center modal-title">Information</h5>
+ 
+  <h5 class="text-center">Forældreinfo</h5>
   <p>Når dit barn deltager til Excalibur Rollespil er det ikke meget anderledes end hvis du sender dit barn til fodbold eller spejder. Alle børn spiller som udgangspunkt på et hold med en voksen holdleder, som sørger for at dit barn får en spændende og tryg dag i skoven.<br>
 Rollespil arrangeres af Excalibur, som er en forening drevet af frivillige og entusiastiske rollespillere. Excalibur er medlem af DUF igennem Bifrost, som er landsforeningen for kreativ udvikling af børn og unge.
 <br>
@@ -71,11 +73,33 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 <h6>Husk telefonnummer:</h6>
 <p>Det er meget vigtigt at dit barn har et telefonnummer på sig, så vi kan få fat på forældre eller værge, hvis der skulle opstå en situation, hvor dette er nødvendigt.</p>
   <hr>
-  <h5>Sidste Nyt</h5>
-  <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+  <h5 class="text-center">Arrangementer i Undallslund</h5>
+  <p>Vi spiller i forårssæsonen og efterårssæsonen. Forårssæsonen går typisk fra starten af marts til sommerferien, og efterårssæsonen går fra sommerferien slutter til det bliver for koldt en gang i november. Vi spiller søndage i lige uger – datoer finder du herunder.</p>
+  <p>2020:<br>søndag d. 10. Maj<br>søndag d. 24. Maj<br>søndag d. 7. Juni<br>søndag d. 21. Juni<br>søndag d. 5. Juli<br>søndag d. 19. Juli Aflyser vi.<br>søndag d. 2. August<br>lørdag d. 16. August (fælles afslutning)
+</p>
+<h6>Tid og sted</h6>
+<p>Spillere chekkes ind fra 11.00 til 11:30. Spillet begynder kl. 12:00, når alle er blevet sminket og klar. Mellem 11.00 og 12.00 er der selvfølgelig mulighed for at lege og slås med nogen af de voksne så man ikke skal kede sig. Vi spiser frokost kl. 13:30, så man skal huske madpakke. Spillet slutter kl. 15:30 hvor børnene skal afhentes igen.
+</p>
+<p>Hvis det regner meget kan vi godt finde på et slutte tidligere. I så fald vil vi annoncere det ved check-in inden spilstart.
+</p>
+<p>Vi mødes ved Skyttehuset (P-Pladsen ved Kirkebækvej) kl 11:00. Her går vi fra når vi er færdige med Check-in, så kom til tiden.
+</p>
+<h6>Pris</h6>
+<p>Det koster 100 kr. at deltage til Rollespil i Undallslund og så bliver du også medlem af foreningen Excalibur.</p>
+<h6>Sæsonkort</h6>
+<p>Man kan til Rollespil i Undallslund købe sæsonkort. Prisen på dette er altid 100 kr. + 50 kr. per resterende spilgang i sæsonen. Hvis man ikke allerede er medlem ved køb af sæsonkortet, så bliver man det. En sæson består typisk af 6-7 spilgange, og derfor kan man spare en del penge, ved at købe sit sæsonkort, i starten af sæsonen.</p>
+<h6>Lån af sværd og kostume</h6>
+<p>Vi har både kostumer og våben du kan låne ganske gratis.
+</p>
+<h6>Madpakke</h6>
+<p>Man skal selv sørge for madpakke, for ca. kl. 13:30 spiser vi frokost. Husk også at tage noget at drikke med, da man nemt kan blive tørstig af at rende rundt og slås!
+</p>
+<h6>Spørgsmål</h6>
+<p>Hvis du har spørgsmål er du altid velkommen til at e-maile eller ringe til os. Du kan finde vores kontaktinformation under Kontakt.</p>
   <hr>
-  <h5>Arrangementer</h5>
+  <h5 class="text-center">Sidste Nyt</h5>
   <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+  
 </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
