@@ -156,6 +156,14 @@ h5{
 .modal-footer{
     border-top: 0;
 }
+.modal-body{
+    padding: 0 1rem 1rem 1rem;
+}
+.modal-title{
+    text-align: center;
+    font-size: 4em;
+    font-weight: 800;
+}
 
 #hest{
     width: 200px;
@@ -189,4 +197,60 @@ h5{
 
 #stor1{
     background: ;
+/* FOOTER */
+footer{
+    background-image: url(images/parchmentstor.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    /*background-size: cover;*/
+    /*background-size: cover;*/
+    z-index: 1200;
+
+}
+
+footer h5{
+    font-size: 4em!important;
+}
+footer .card-body{
+    text-align: center;
+}
+
+footer .card{
+    border: none;
+    background-color: transparent;
+    
+}
+
+footer .form-control{
+    margin: 0 auto 20px auto;
+    width: 70%;   
+}
+footer .btn{
+    background-color: black;
+    border-color: black;
+    margin-top: 10px;
+    padding: 10px 25px 10px 25px;
+    color: white;
+}
+footer .btn:hover{
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+
+.copyright{
+    /*background: rgba(0, 0, 0, 0.1);*/
+    padding: 20px 0 20px 0;
+    font-weight: 100;
+}
+
+
+footer .card-title{
+    margin-bottom: 0;
+}
+
+footer .card-body h6{
+    font-size: 1.3em;
 }
