@@ -174,7 +174,7 @@ h5{
     top: 6100px;
 }
 
-#hus1{
+.hus1{
     background: grey;
     height: 200px;
     width: 200px;
@@ -191,12 +191,18 @@ h5{
     top: 0;
 }
 
-#lill1{
+.lille{
+    background-image: url(Images/Lille_perchmant.png);
+}
+
+/* #lill1{
     background: ;
 }
 
 #stor1{
     background: ;
+} */
+
 /* FOOTER */
 footer{
     background-image: url(images/parchmentstor.jpg);
