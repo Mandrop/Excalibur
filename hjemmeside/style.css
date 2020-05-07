@@ -167,3 +167,54 @@ h5{
     font-size: 4em;
     font-weight: 800;
 }
+
+/* FOOTER */
+footer{
+    background-image: url(images/pergamentpapir.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-size: cover;*/
+    /*background-size: cover;*/
+    
+    color: white;
+}
+footer .card-body{
+    background-color: #1D71B8;
+    text-align: center;
+}
+
+footer .card{
+    background-color: #1D71B8;
+    border: none;
+}
+
+footer .form-control{
+    margin: 0 auto 20px auto;
+    width: 70%;   
+}
+footer .btn{
+    background-color: #1db864;
+    border-color: #1db864;
+    margin-top: 10px;
+    padding: 10px 25px 10px 25px;
+}
+footer .btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.copyright{
+    background-color: #16568c;
+    padding: 20px 0 20px 0;
+    font-weight: 100;
+}
+
+
+footer .card-title{
+    margin-bottom: 0;
+}
+
+footer .card-body h6{
+    font-size: 1.3em;
+}
