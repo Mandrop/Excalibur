@@ -132,7 +132,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
         <div class="card-deck pt-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">TELEFON</h5>
+              <h5 class="card-title">Telefon</h5>
               <p class="card-text">Sigurd - 12 34 56 78</p>
               <p class="card-text">Jonas - 15 34 56 68</p>
               <p class="card-text">Michael - 32 44 66 38</p>
@@ -141,7 +141,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">EMAIL</h5>
+              <h5 class="card-title">Email</h5>
               <p class="card-text">indmelding@excalibur.dk</p>
               <p class="card-text">praktisk@excalibur.dk</p>
             </div>
@@ -157,8 +157,10 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 
 
         </div>
+        <br>
         
-        <h5 class="text-center">Spillesteder</h5>
+        <h5 class="text-center card-title">Spillesteder</h5>
+        <br>
 
         <!-- SPILLESTEDER -->
         <div class="row row-cols-1 row-cols-md-2">
@@ -211,7 +213,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
         <!-- KONTAKTFORMULAR -->
         
       <form class="text-center mt-5 pb-4 contact-form mb-5" action="index.php">
-        <h2 class="pb-4">Send Os En Besked</h2>
+        <h5 class="pb-4">Send Os En Besked</h5>
 
         <div class="form-group">
           <input type="text" class="form-control" id="inputAddress" placeholder="Navn" required>

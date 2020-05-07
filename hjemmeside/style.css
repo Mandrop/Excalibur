@@ -167,23 +167,28 @@ h5{
 
 /* FOOTER */
 footer{
-    background-image: url(images/pergamentpapir.png);
-    background-position: center;
+    background-image: url(images/parchmentstor.jpg);
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    color: black;
     /*background-size: cover;*/
     /*background-size: cover;*/
-    
-    color: white;
+    z-index: 1200;
+
+}
+
+footer h5{
+    font-size: 4em!important;
 }
 footer .card-body{
-    background-color: #1D71B8;
     text-align: center;
 }
 
 footer .card{
-    background-color: #1D71B8;
     border: none;
+    background-color: transparent;
+    
 }
 
 footer .form-control{
@@ -191,18 +196,20 @@ footer .form-control{
     width: 70%;   
 }
 footer .btn{
-    background-color: #1db864;
-    border-color: #1db864;
+    background-color: black;
+    border-color: black;
     margin-top: 10px;
     padding: 10px 25px 10px 25px;
+    color: white;
 }
 footer .btn:hover{
     background-color: white;
+    border-color: white;
     color: black;
 }
 
 .copyright{
-    background-color: #16568c;
+    /*background: rgba(0, 0, 0, 0.1);*/
     padding: 20px 0 20px 0;
     font-weight: 100;
 }
