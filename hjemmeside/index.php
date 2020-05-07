@@ -16,8 +16,19 @@
     <title>Excalibur</title>
   </head>
   <body>
+    <!-- HEADER -->
   <div class="header">
-  <h1>Header</h1>
+    <!-- HEADER INFO -->
+    <div id="header-info-container">
+      <!--<span id="header-info-text">INFO</span>-->
+      <div id="header-info-text">INFO</div>
+    </div>
+    <!-- HEADER LOGO AND TEXT -->
+    <div class="logo-text-container">
+      <img id="header-logo" src="images/logo_white.svg" alt="Logo">
+      <h1 id="header-logo-text">Excalibur</h1>
+    </div>
+    <img src="images/wizard.png" alt="">
   </div>
 
     <div class="background" id="background">
