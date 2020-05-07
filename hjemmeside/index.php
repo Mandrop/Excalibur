@@ -122,8 +122,20 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
     </div>
 
     <div id="hest">
-      <img src="images" alt="">
+      <img src="images/hest1.1.png" class="hest" alt="">
     </div>
+
+    <div id="hus1">
+      <div id="arrangementer">
+        <div id="lille1">
+
+        </div>
+        <div id="stor1">
+
+        </div>
+      </div>
+    </div>
+
 
 
 <div class="second" id="second"></div>
@@ -233,6 +245,8 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
           var window_width = $(window).width() - $('#hest').width();
           
           var document_height = $(document).height() - $(window).height();
+
+          $hest.css("display", "block")
                     
           $(function hest() {
               $(window).scroll(function () {
@@ -244,6 +258,26 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
               });
           });
         }, {offset: '50%'})
+
+        imageArrHest = ["Images/hest1.1.png","Images/hest1.2.png","Images/hest1.3.png"];
+
+        var image = 1;
+        //console.log("document.getElementById('sprite').innerHTML = testDiv.offsetTop");
+        $(window).scroll(function() {
+            
+            //console.log("scrolled");
+            windowScrollCount   = $(this).scrollTop();
+            animationFrame      = (windowScrollCount / 50);
+
+            animationFrame = Math.floor(animationFrame % imageArr.length);
+            //console.log(animationFrame + " : " + windowScrollCount);
+            $('.hest').attr("src", imageArrHest[animationFrame]);
+        });
+
+        $('#hus1').click(function() {
+          $('#arrangementer').css('display', 'block')
+          $('#lille1').css('display', 'block')
+        })
 
 
     </script>
