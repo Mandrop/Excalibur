@@ -27,13 +27,55 @@ h5{
 
 
 
-
-
+/* HEADER STYLING */
 .header{
-    background-color: lightcoral;
+    /*background-color: black;*/
+    background-image: url(images/header_baggrund.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
     text-align: center;
-    height: 1000px;
+    
+    padding-top: 17px;
 }
+#header-info-container{
+    position: relative;
+    width: 0;
+    height: 0;
+}
+#header-info-text{
+    position: absolute;
+    left: 25px;
+    top: 0;
+    font-family: medieval;
+    font-size: 2.5em;
+}
+#header-logo{
+    width: 25%;
+}
+#header-logo-text{
+    font-size: 10em;
+}
+@media screen and (max-width: 1000px) {
+    #header-logo-text{
+        font-size: 8em;
+    }
+    #header-info-text{
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 800px) {
+    #header-logo-text{
+        font-size: 6em;
+    }
+    #header-info-text{
+        font-size: 1.5em;
+    }
+}
+
+
+
 
 .fixedElement {
     background-color: #c0c0c0;
@@ -174,7 +216,7 @@ h5{
     top: 6100px;
 }
 
-#hus1{
+.hus1{
     background: grey;
     height: 200px;
     width: 200px;
@@ -191,12 +233,18 @@ h5{
     top: 0;
 }
 
-#lill1{
+.lille{
+    background-image: url(Images/Lille_perchmant.png);
+}
+
+/* #lill1{
     background: ;
 }
 
 #stor1{
     background: ;
+} */
+
 /* FOOTER */
 footer{
     background-image: url(images/parchmentstor.jpg);
