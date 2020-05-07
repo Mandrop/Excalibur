@@ -29,7 +29,11 @@ h5{
 
 /* HEADER STYLING */
 .header{
-    background-color: black;
+    /*background-color: black;*/
+    background-image: url(images/header_baggrund.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     text-align: center;
     
