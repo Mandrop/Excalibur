@@ -136,16 +136,52 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
       <img src="images/hest1.1.png" class="hest" alt="">
     </div>
 
-    <div id="hus1">
-      <div id="arrangementer">
-        <div id="lille1">
+    <div class="hus1" style="height:400px; width:400px; z-index: 999; background: grey;" data-toggle="modal" data-target="#exampleModalCenter"></div>
 
-        </div>
-        <div id="stor1">
-
+<!--     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" style="background-image: url(images/frame.jpg); background-size: 100% 100%; height: 100%; width: 100%; ">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
+    </div> -->
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="background-image: url(images/frame.jpg); background-size: 100% 100%; height: 100%; width: 100%; ">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr;">
+        <div class="lille lille1"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+        <div class="lille lille2"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+        <div class="lille lille3"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+        <div class="lille lille4"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+        <div class="lille lille5"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+        <div class="lille lille6"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+        <div class="lille lille7"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+        <div class="lille lille8"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+        <div class="lille lille9"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+        <div class="lille lille10" style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+      </div>
+      <div class="modal-footer">
+      </div>
     </div>
+  </div>
+</div>
 
 
 
@@ -379,7 +415,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
             $('.hest').attr("src", imageArrHest[animationFrame]);
         });
 
-        $('#hus1').click(function() {
+        $('.hus1').click(function() {
           $('#arrangementer').css('display', 'block')
           $('#lille1').css('display', 'block')
         })
