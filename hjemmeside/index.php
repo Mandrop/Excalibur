@@ -16,8 +16,19 @@
     <title>Excalibur</title>
   </head>
   <body>
+    <!-- HEADER -->
   <div class="header">
-  <h1>Header</h1>
+    <!-- HEADER INFO -->
+    <div id="header-info-container">
+      <!--<span id="header-info-text">INFO</span>-->
+      <div id="header-info-text">INFO</div>
+    </div>
+    <!-- HEADER LOGO AND TEXT -->
+    <div class="logo-text-container">
+      <img id="header-logo" src="images/logo_white.svg" alt="Logo">
+      <h1 id="header-logo-text">Excalibur</h1>
+    </div>
+    <img src="images/wizard.png" alt="">
   </div>
 
     <div class="background" id="background">
@@ -120,6 +131,22 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
       <div class="first" id="basic-waypoint"></div>
     
     </div>
+
+    <div id="hest">
+      <img src="images/hest1.1.png" class="hest" alt="">
+    </div>
+
+    <div id="hus1">
+      <div id="arrangementer">
+        <div id="lille1">
+
+        </div>
+        <div id="stor1">
+
+        </div>
+      </div>
+    </div>
+
 
 
 <div class="second" id="second"></div>
@@ -312,6 +339,52 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
             //console.log(animationFrame + " : " + windowScrollCount);
             $('.walk').attr("src", imageArr[animationFrame]);
         });
+
+        //Hest
+
+        //Waypoint
+        var $hest = $('#hest')
+
+        $hest.waypoint(function () {
+          //Gå
+          var window_width = $(window).width() - $('#hest').width();
+          
+          var document_height = $(document).height() - $(window).height();
+
+          $hest.css("display", "block")
+                    
+          $(function hest() {
+              $(window).scroll(function () {
+                  var scroll_position = $(window).scrollTop();
+                  var object_position_left = window_width * ((scroll_position - 5100) / document_height) * 7;
+                  $('#hest').css({
+                      'left': object_position_left
+                  });
+              });
+          });
+        }, {offset: '50%'})
+
+        imageArrHest = ["Images/hest1.1.png","Images/hest1.2.png","Images/hest1.3.png"];
+
+        var image = 1;
+        //console.log("document.getElementById('sprite').innerHTML = testDiv.offsetTop");
+        $(window).scroll(function() {
+            
+            //console.log("scrolled");
+            windowScrollCount   = $(this).scrollTop();
+            animationFrame      = (windowScrollCount / 50);
+
+            animationFrame = Math.floor(animationFrame % imageArr.length);
+            //console.log(animationFrame + " : " + windowScrollCount);
+            $('.hest').attr("src", imageArrHest[animationFrame]);
+        });
+
+        $('#hus1').click(function() {
+          $('#arrangementer').css('display', 'block')
+          $('#lille1').css('display', 'block')
+        })
+
+
     </script>
   </body>
 </html>
