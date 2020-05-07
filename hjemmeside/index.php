@@ -11,6 +11,36 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+    
+    /* WOOD FRAME STYLE */
+.wood-frame img{
+  width:100%;
+}
+
+.wood-frame-content{
+  background: url("images/Lille_perchmant.png") repeat-y center;
+  background-size: 100%;
+  padding: 0 4rem 1px 4rem;
+}
+/* WOOD FRAME STYLE END */
+
+
+
+/* PERKAMENT FRAME */
+.perkament-frame img{
+  width:100%;
+}
+
+.perkament-frame-content{
+  background:transparent url("images/perkament/perkament-center.png") repeat-y center;
+  background-size: 100%;
+  padding: 0 10% 1px 15%;
+}
+/* PERKAMENT FRAME END */
+    
+    </style>
     
 
     <title>Excalibur</title>
@@ -136,52 +166,80 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
       <img src="images/hest1.1.png" class="hest" alt="">
     </div>
 
-    <div class="hus1" style="height:400px; width:400px; z-index: 999; background: grey;" data-toggle="modal" data-target="#exampleModalCenter"></div>
+    <div class="hus1" style="height:400px; width:400px; z-index: 999; background: grey;" data-toggle="modal" data-target="#exampleModal"></div>
 
-<!--     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content" style="background-image: url(images/frame.jpg); background-size: 100% 100%; height: 100%; width: 100%; ">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="height: 866px; width: 1000px;">
+      <div class="modal-dialog" role="document" style="height: 866px; width: 1000px; max-width: 1000px; margin: 0;">
+        <div class="modal-content" style="background-size: 100% 100%; height: height: 866px; width: 1000px;"">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            ...
+          <div class="modal-body" style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 20px;">
+<!--             <div class="lille lille1"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille2"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille3"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille4"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille5"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille6"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille7"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille8"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille9"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille10" style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div> -->
+            <div class="wood-frame">
+
+            <img src="images/wood-frame/wood-frame-top.jpg" alt="Wood frame top">
+
+            <div class="wood-frame-content">
+                <article>
+            <!-- CONTENT HERE -->
+
+              <h1>Dette er en test</h1>
+              <p>Dette er en test</p>
+
+                      <h1>Dette er en test</h1>
+              <p>Dette er en test</p>
+
+            <!-- CONTENT HERE -->
+                </article>
+            </div>
+
+            <img src="images/wood-frame/wood-frame-bottom.jpg" alt="Wood frame bottom">
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content" style="background-image: url(images/frame.jpg); background-size: 100% 100%; height: 100%; width: 100%; ">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr;">
-        <div class="lille lille1"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-        <div class="lille lille2"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-        <div class="lille lille3"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-        <div class="lille lille4"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-        <div class="lille lille5"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-        <div class="lille lille6"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-        <div class="lille lille7"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-        <div class="lille lille8"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-        <div class="lille lille9"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-        <div class="lille lille10" style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-      </div>
-      <div class="modal-footer">
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="height: 866px; width: 1641px;">
+      <div class="modal-dialog modal-dialog-centered" role="document" style="height: 866px; width: 1641px;">
+        <div class="modal-content" style="background-image: url(images/frame.jpg); background-size: 100% 100%; height: height: 866px; width: 1641px;">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; grid-gap: 20px;">
+            <div class="lille lille1"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille2"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille3"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille4"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille5"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille6"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille7"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille8"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille9"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille10" style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
 
 
