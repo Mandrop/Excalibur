@@ -203,6 +203,38 @@ h5{
     font-weight: 800;
 }
 
+#hest{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    display: none;
+    z-index: 999;
+    top: 6100px;
+}
+
+#hus1{
+    background: grey;
+    height: 200px;
+    width: 200px;
+    /* position: relative; */
+    z-index: 999;
+    margin-top: 10000px;
+}
+
+#arrangementer{
+    background: grey;
+    height: 700px;
+    width: 1200px;
+    position: fixed;
+    top: 0;
+}
+
+#lill1{
+    background: ;
+}
+
+#stor1{
+    background: ;
 /* FOOTER */
 footer{
     background-image: url(images/parchmentstor.jpg);
