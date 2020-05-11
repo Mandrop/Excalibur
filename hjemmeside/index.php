@@ -211,6 +211,18 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
     <article>
 <!-- CONTENT HERE -->
 
+<div class="d-flex justify-content-center">
+
+<div>
+<!-- CONTENT HERE -->
+
+   <img src="images/titler/attangementer.png" alt="Arrangementer" style="margin-bottom: 30px;">
+
+<!-- CONTENT HERE -->
+</div>
+
+</div>
+
 
     <div class="row d-flex">
 
