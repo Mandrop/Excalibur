@@ -11,13 +11,54 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+    
+    /* WOOD FRAME STYLE */
+.wood-frame img{
+  width:100%;
+}
+
+.wood-frame-content{
+  background: url("images/Lille_perchmant.png") repeat-y center;
+  background-size: 100%;
+  padding: 0 4rem 1px 4rem;
+}
+/* WOOD FRAME STYLE END */
+
+
+
+/* PERKAMENT FRAME */
+.perkament-frame img{
+  width:100%;
+}
+
+.perkament-frame-content{
+  background:transparent url("images/perkament/perkament-center.png") repeat-y center;
+  background-size: 100%;
+  padding: 0 10% 1px 15%;
+}
+/* PERKAMENT FRAME END */
+    
+    </style>
     
 
     <title>Excalibur</title>
   </head>
   <body>
+    <!-- HEADER -->
   <div class="header">
-  <h1>Header</h1>
+    <!-- HEADER INFO -->
+    <div id="header-info-container">
+      <!--<span id="header-info-text">INFO</span>-->
+      <div id="header-info-text">INFO</div>
+    </div>
+    <!-- HEADER LOGO AND TEXT -->
+    <div class="logo-text-container">
+      <img id="header-logo" src="images/logo_white.svg" alt="Logo">
+      <h1 id="header-logo-text">Excalibur</h1>
+    </div>
+    <img src="images/wizard.png" alt="">
   </div>
 
     <div class="background" id="background">
@@ -121,6 +162,86 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
     
     </div>
 
+    <div id="hest">
+      <img src="images/hest1.1.png" class="hest" alt="">
+    </div>
+
+    <div class="hus1" style="height:400px; width:400px; z-index: 999; background: grey;" data-toggle="modal" data-target="#exampleModal"></div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="height: 866px; width: 1000px;">
+      <div class="modal-dialog" role="document" style="height: 866px; width: 1000px; max-width: 1000px; margin: 0;">
+        <div class="modal-content" style="background-size: 100% 100%; height: height: 866px; width: 1000px;"">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 20px;">
+<!--             <div class="lille lille1"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille2"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille3"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille4"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille5"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille6"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille7"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille8"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille9"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille10" style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div> -->
+            <div class="wood-frame">
+
+            <img src="images/wood-frame/wood-frame-top.jpg" alt="Wood frame top">
+
+            <div class="wood-frame-content">
+                <article>
+            <!-- CONTENT HERE -->
+
+              <h1>Dette er en test</h1>
+              <p>Dette er en test</p>
+
+                      <h1>Dette er en test</h1>
+              <p>Dette er en test</p>
+
+            <!-- CONTENT HERE -->
+                </article>
+            </div>
+
+            <img src="images/wood-frame/wood-frame-bottom.jpg" alt="Wood frame bottom">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="height: 866px; width: 1641px;">
+      <div class="modal-dialog modal-dialog-centered" role="document" style="height: 866px; width: 1641px;">
+        <div class="modal-content" style="background-image: url(images/frame.jpg); background-size: 100% 100%; height: height: 866px; width: 1641px;">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; grid-gap: 20px;">
+            <div class="lille lille1"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille2"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille3"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille4"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille5"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille6"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille7"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille8"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille9"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille10" style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
 <div class="second" id="second"></div>
 <!-- Button trigger modal -->
@@ -132,7 +253,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
         <div class="card-deck pt-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">TELEFON</h5>
+              <h5 class="card-title">Telefon</h5>
               <p class="card-text">Sigurd - 12 34 56 78</p>
               <p class="card-text">Jonas - 15 34 56 68</p>
               <p class="card-text">Michael - 32 44 66 38</p>
@@ -141,7 +262,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">EMAIL</h5>
+              <h5 class="card-title">Email</h5>
               <p class="card-text">indmelding@excalibur.dk</p>
               <p class="card-text">praktisk@excalibur.dk</p>
             </div>
@@ -157,8 +278,10 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 
 
         </div>
+        <br>
         
-        <h5 class="text-center">Spillesteder</h5>
+        <h5 class="text-center card-title">Spillesteder</h5>
+        <br>
 
         <!-- SPILLESTEDER -->
         <div class="row row-cols-1 row-cols-md-2">
@@ -211,7 +334,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
         <!-- KONTAKTFORMULAR -->
         
       <form class="text-center mt-5 pb-4 contact-form mb-5" action="index.php">
-        <h2 class="pb-4">Send Os En Besked</h2>
+        <h5 class="pb-4">Send Os En Besked</h5>
 
         <div class="form-group">
           <input type="text" class="form-control" id="inputAddress" placeholder="Navn" required>
@@ -310,6 +433,52 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
             //console.log(animationFrame + " : " + windowScrollCount);
             $('.walk').attr("src", imageArr[animationFrame]);
         });
+
+        //Hest
+
+        //Waypoint
+        var $hest = $('#hest')
+
+        $hest.waypoint(function () {
+          //Gå
+          var window_width = $(window).width() - $('#hest').width();
+          
+          var document_height = $(document).height() - $(window).height();
+
+          $hest.css("display", "block")
+                    
+          $(function hest() {
+              $(window).scroll(function () {
+                  var scroll_position = $(window).scrollTop();
+                  var object_position_left = window_width * ((scroll_position - 5100) / document_height) * 7;
+                  $('#hest').css({
+                      'left': object_position_left
+                  });
+              });
+          });
+        }, {offset: '50%'})
+
+        imageArrHest = ["Images/hest1.1.png","Images/hest1.2.png","Images/hest1.3.png"];
+
+        var image = 1;
+        //console.log("document.getElementById('sprite').innerHTML = testDiv.offsetTop");
+        $(window).scroll(function() {
+            
+            //console.log("scrolled");
+            windowScrollCount   = $(this).scrollTop();
+            animationFrame      = (windowScrollCount / 50);
+
+            animationFrame = Math.floor(animationFrame % imageArr.length);
+            //console.log(animationFrame + " : " + windowScrollCount);
+            $('.hest').attr("src", imageArrHest[animationFrame]);
+        });
+
+        $('.hus1').click(function() {
+          $('#arrangementer').css('display', 'block')
+          $('#lille1').css('display', 'block')
+        })
+
+
     </script>
   </body>
 </html>

@@ -27,13 +27,55 @@ h5{
 
 
 
-
-
+/* HEADER STYLING */
 .header{
-    background-color: lightcoral;
+    /*background-color: black;*/
+    background-image: url(images/header_baggrund.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
     text-align: center;
-    height: 1000px;
+    
+    padding-top: 17px;
 }
+#header-info-container{
+    position: relative;
+    width: 0;
+    height: 0;
+}
+#header-info-text{
+    position: absolute;
+    left: 25px;
+    top: 0;
+    font-family: medieval;
+    font-size: 2.5em;
+}
+#header-logo{
+    width: 25%;
+}
+#header-logo-text{
+    font-size: 10em;
+}
+@media screen and (max-width: 1000px) {
+    #header-logo-text{
+        font-size: 8em;
+    }
+    #header-info-text{
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 800px) {
+    #header-logo-text{
+        font-size: 6em;
+    }
+    #header-info-text{
+        font-size: 1.5em;
+    }
+}
+
+
+
 
 .fixedElement {
     background-color: #c0c0c0;
@@ -155,6 +197,7 @@ h5{
 
 .modal-footer{
     border-top: 0;
+    
 }
 .modal-body{
     padding: 0 1rem 1rem 1rem;
@@ -165,25 +208,68 @@ h5{
     font-weight: 800;
 }
 
+#hest{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    display: none;
+    z-index: 999;
+    top: 6100px;
+}
+
+.hus1{
+    background: grey;
+    height: 200px;
+    width: 200px;
+    /* position: relative; */
+    z-index: 999;
+    margin-top: 10000px;
+}
+
+#arrangementer{
+    background: grey;
+    height: 700px;
+    width: 1200px;
+    position: fixed;
+    top: 0;
+}
+
+.lille{
+    background-image: url(Images/Lille_perchmant.png);
+}
+
+/* #lill1{
+    background: ;
+}
+
+#stor1{
+    background: ;
+} */
+
 /* FOOTER */
 footer{
-    background-image: url(images/pergamentpapir.png);
-    background-position: center;
+    background-image: url(images/parchmentstor.jpg);
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    color: black;
     /*background-size: cover;*/
     /*background-size: cover;*/
-    
-    color: white;
+    z-index: 1200;
+
+}
+
+footer h5{
+    font-size: 4em!important;
 }
 footer .card-body{
-    background-color: #1D71B8;
     text-align: center;
 }
 
 footer .card{
-    background-color: #1D71B8;
     border: none;
+    background-color: transparent;
+    
 }
 
 footer .form-control{
@@ -191,18 +277,20 @@ footer .form-control{
     width: 70%;   
 }
 footer .btn{
-    background-color: #1db864;
-    border-color: #1db864;
+    background-color: black;
+    border-color: black;
     margin-top: 10px;
     padding: 10px 25px 10px 25px;
+    color: white;
 }
 footer .btn:hover{
     background-color: white;
+    border-color: white;
     color: black;
 }
 
 .copyright{
-    background-color: #16568c;
+    /*background: rgba(0, 0, 0, 0.1);*/
     padding: 20px 0 20px 0;
     font-weight: 100;
 }
