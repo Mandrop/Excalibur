@@ -20,7 +20,7 @@
 }
 
 .wood-frame-content{
-  background: url("images/Lille_perchmant.png") repeat-y center;
+  background: url("images/wood-frame/wood-frame-middle.png") repeat-y center;
   background-size: 100%;
   padding: 0 4rem 1px 4rem;
 }
@@ -34,11 +34,15 @@
 }
 
 .perkament-frame-content{
-  background:transparent url("images/perkament/perkament-center.png") repeat-y center;
+  background:transparent url("images/perkament_rigtig/Lille_perchmant_middle.png") no-repeat center;
   background-size: 100%;
   padding: 0 10% 1px 15%;
 }
 /* PERKAMENT FRAME END */
+
+.modal-content{
+  background: none;
+}
     
     </style>
     
@@ -170,6 +174,10 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="height: 866px; width: 1000px;">
       <div class="modal-dialog" role="document" style="height: 866px; width: 1000px; max-width: 1000px; margin: 0;">
+      <!-- <div class="wood-frame">
+
+        <img src="images/wood-frame/wood-frame-top.png" alt="Wood frame top">
+
         <div class="modal-content" style="background-size: 100% 100%; height: height: 866px; width: 1000px;"">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -177,7 +185,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
             </button>
           </div>
           <div class="modal-body" style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 20px;">
-<!--             <div class="lille lille1"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
+            <div class="lille lille1"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
             <div class="lille lille2"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
             <div class="lille lille3"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
             <div class="lille lille4"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
@@ -186,32 +194,93 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
             <div class="lille lille7"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
             <div class="lille lille8"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
             <div class="lille lille9"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille10" style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div> -->
-            <div class="wood-frame">
-
-            <img src="images/wood-frame/wood-frame-top.jpg" alt="Wood frame top">
-
-            <div class="wood-frame-content">
-                <article>
-            <!-- CONTENT HERE -->
-
-              <h1>Dette er en test</h1>
-              <p>Dette er en test</p>
-
-                      <h1>Dette er en test</h1>
-              <p>Dette er en test</p>
-
-            <!-- CONTENT HERE -->
-                </article>
-            </div>
-
-            <img src="images/wood-frame/wood-frame-bottom.jpg" alt="Wood frame bottom">
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <div class="lille lille10" style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
           </div>
         </div>
+      </div>
+      <img src="images/wood-frame/wood-frame-bottom.png" alt="Wood frame bottom"> -->
+
+      <!-- WOOD FRAME START -->
+<!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+ 
+  <div class="wood-frame">
+
+<img src="images/wood-frame/wood-frame-top.png" alt="Wood frame top">
+
+<div class="wood-frame-content">
+    <article>
+<!-- CONTENT HERE -->
+
+
+    <div class="row d-flex">
+
+
+        <div class="w-25">
+            <!-- PERKAMENT FRAME START -->
+            <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+            
+              <div class="perkament-frame">
+
+                  <img src="images/perkament_rigtig/Lille_perchmant_top.png" alt="perkament frame top">
+
+                  <div class="perkament-frame-content">
+                      <article>
+                  <!-- CONTENT HERE -->
+
+                    <h1>Test</h1>
+                    <p>Dette er en test</p>
+
+                    <h1>Test</h1>
+                    <p>Dette er en test</p>
+
+                  <!-- CONTENT HERE -->
+                      </article>
+                  </div>
+
+                  <img src="images/perkament_rigtig/Lille_perchmant_bottom.png" alt="Perkament frame bottom">
+              </div>
+
+            <!-- PERKAMENT FRAME END -->
+         </div>
+
+
+        <div class="w-25">
+            <!-- PERKAMENT FRAME START -->
+            <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+            
+              <div class="perkament-frame">
+
+                  <img src="images/perkament_rigtig/Lille_perchmant_top.png" alt="perkament frame top">
+
+                  <div class="perkament-frame-content">
+                      <article>
+                  <!-- CONTENT HERE -->
+
+                    <h1>Test</h1>
+                    <p>Dette er en test</p>
+
+                    <h1>Test</h1>
+                    <p>Dette er en test</p>
+
+                  <!-- CONTENT HERE -->
+                      </article>
+                  </div>
+
+                  <img src="images/perkament_rigtig/Lille_perchmant_bottom.png" alt="Perkament frame bottom">
+              </div>
+
+            <!-- PERKAMENT FRAME END -->
+         </div>
+
+
+    </div>
+<!-- CONTENT HERE -->
+    </article>
+</div>
+
+<img src="images/wood-frame/wood-frame-bottom.png" alt="Wood frame bottom">
+</div>
+
       </div>
     </div>
 
