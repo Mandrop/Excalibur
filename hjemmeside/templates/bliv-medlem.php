@@ -1,4 +1,4 @@
-<!-- MEDLEM SIDE -->
+<!-- BLIV MEDLEM SIDE -->
 
 <!doctype html>
 <html lang="en" id="html">
@@ -80,22 +80,21 @@
       <!-- CONTENT HERE -->
 
 
-<!-- PERKAMENT TITLE START -->
-<!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+<!-- TITLE START -->
  
   <div class="d-flex justify-content-center">
 
           <div>
       <!-- CONTENT HERE -->
 
-             <img src="../images/titler/medlem-login.png" alt="Medlem login">
+             <img src="../images/titler/bliv-medlem.png" alt="Medlem login">
 
       <!-- CONTENT HERE -->
           </div>
 
   </div>
 
-<!-- PERKAMENT TITLE END -->
+<!-- TITLE END -->
 
 
 
@@ -115,10 +114,10 @@
                             <article>
                         <!-- CONTENT HERE -->
 
-<div class="medlem-login d-flex justify-content-center">
+<div class="bliv-medlem d-flex justify-content-center">
 
 
-        <!-- KONTAKTFORMULAR -->
+        <!-- FORMULAR -->
         
       <form class="text-center mt-5 pb-4 contact-form mb-5 w-50" action="index.php">
         
@@ -128,18 +127,34 @@
         </div>
 
         <div class="form-group">
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+        </div>
+
+        <div class="form-group">
           <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+        </div>
+
+        <div class="form-group">
+          <input type="password" class="form-control" id="inputRetypePassword" placeholder="Gentag password" required>
+        </div>
+
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            Jeg har tilladelse fra mine forældre/værge til at indmelde mig
+          </label>
         </div>
 
 
         <div class="text-center">
-          <button type="submit" class="btn btn-light">Login</button>
+          <button type="submit" class="btn btn-light">Bliv medlem</button>
         </div>
       </form>
 
 </div>
 
-
+        <!-- FORMULAR -->
                         <!-- CONTENT HERE -->
                             </article>
                         </div>

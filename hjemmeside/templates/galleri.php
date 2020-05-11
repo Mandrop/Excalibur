@@ -1,4 +1,4 @@
-<!-- MEDLEM SIDE -->
+<!-- GALLERI SIDE -->
 
 <!doctype html>
 <html lang="en" id="html">
@@ -45,11 +45,20 @@
 
 
 
-/* KONTAKT SIDE */
+/* GALLERI SIDE */
 
+.galleri{
+    background:transparent url("../images/bog.png") no-repeat center;
+    background-size:contain;
+    height: 50vw;
+}
 
+.galleri .card{
+  background-color: transparent;
+  border:none;
+}
 
-/* KONTAKT SIDE END */
+/* GALLERI SIDE END */
 
 
 
@@ -76,82 +85,67 @@
       <img src="../images/wood-frame/wood-frame-top.png" alt="Wood frame top">
 
       <div class="wood-frame-content">
-          <article>
+          <article class="galleri d-flex justify-content-center">
       <!-- CONTENT HERE -->
 
 
-<!-- PERKAMENT TITLE START -->
-<!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
- 
-  <div class="d-flex justify-content-center">
+<!-- BOOTSTRAP MODAL -->
 
-          <div>
-      <!-- CONTENT HERE -->
-
-             <img src="../images/titler/medlem-login.png" alt="Medlem login">
-
-      <!-- CONTENT HERE -->
-          </div>
-
-  </div>
-
-<!-- PERKAMENT TITLE END -->
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button> -->
 
 
 
+            <!-- GALLERI SECTION START -->
+        <div class="row row-cols-1 row-cols-md-3 mx-0 my-5 d-flex justify-content-center">
+            <!-- IMG CARD -->
 
-          <div class="row">
+            <div class="col mb-6 " data-toggle="modal" data-target="#myModal">
+                <div class="card h-100 ">
+                <img src="../images/roleplay-news.jpg" class="card-img-top img-fit-to-galleri" alt="..." id="1" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                </div>
+            </div>
+            <!-- IMG CARD END -->
 
-
-              <div class="col">
-                  <!-- PERKAMENT FRAME START -->
-                  <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
-                  
-                    <div class="perkament-frame">
-
-                        <img src="../images/perkament/perkament-top.png" alt="perkament frame top">
-
-                        <div class="perkament-frame-content">
-                            <article>
-                        <!-- CONTENT HERE -->
-
-<div class="medlem-login d-flex justify-content-center">
-
-
-        <!-- KONTAKTFORMULAR -->
-        
-      <form class="text-center mt-5 pb-4 contact-form mb-5 w-50" action="index.php">
-        
-
-        <div class="form-group">
-          <input type="text" class="form-control" id="inputUser" placeholder="Bruger navn" required>
-        </div>
-
-        <div class="form-group">
-          <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
-        </div>
-
-
-        <div class="text-center">
-          <button type="submit" class="btn btn-light">Login</button>
-        </div>
-      </form>
+            <!-- IMG CARD -->
+            <div class="col mb-6 ">
+                <div class="card h-100">
+                <img src="../images/roleplay-news.jpg" class="card-img-top img-fit-to-galleri" alt="..." id="2" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a short card.</p>
+                </div>
+                </div>
+            </div>
+            <!-- IMG CARD END -->
 
 </div>
 
+            <!-- GALLERI CONTENT END -->
 
-                        <!-- CONTENT HERE -->
-                            </article>
-                        </div>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img class="img-responsive" src="" style="width: 100%;"/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-                        <img src="../images/perkament/perkament-bottom.png" alt="Perkament frame bottom">
-                    </div>
-
-                  <!-- PERKAMENT FRAME END -->
-               </div>
+<!-- BOOTSTRAP MODAL END -->
 
 
-          </div>
       <!-- CONTENT HERE -->
           </article>
       </div>
