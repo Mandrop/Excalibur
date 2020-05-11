@@ -76,10 +76,9 @@
     top: 120px;
 }
 
-.event-commercial{
-    background: white url(../images/group-of-people-doing-marathon.jpg) no-repeat center center /cover;
-    color: #ffe151;
-    min-height: 225px;
+
+.pachement-title-content{
+
 }
 
 /* .event-commercial:hover{
@@ -116,6 +115,26 @@
       <div class="wood-frame-content">
           <article>
       <!-- CONTENT HERE -->
+
+
+<!-- PERKAMENT TITLE START -->
+<!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+ 
+  <div class="d-flex justify-content-center">
+
+          <div>
+      <!-- CONTENT HERE -->
+
+             <img src="../images/titler/nyheder.png" alt="Nyheder">
+
+      <!-- CONTENT HERE -->
+          </div>
+
+  </div>
+
+<!-- PERKAMENT TITLE END -->
+
+
 
 
           <div class="row">
