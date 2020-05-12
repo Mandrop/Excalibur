@@ -21,7 +21,7 @@
 }
 
 .wood-frame-content{
-  background:white url("../images/wood-frame/wood-frame-middle.jpg") repeat-y center;
+  background:white url("../images/wood-frame/wood-frame-middle.png") repeat-y center;
   background-size: 100%;
   padding: 0 4rem 1px 4rem;
 }
@@ -56,7 +56,7 @@
  
   <div class="wood-frame">
 
-      <img src="../images/wood-frame/wood-frame-top.jpg" alt="Wood frame top">
+      <img src="../images/wood-frame/wood-frame-top.png" alt="Wood frame top">
 
       <div class="wood-frame-content">
           <article>
@@ -72,10 +72,13 @@
           </article>
       </div>
 
-      <img src="../images/wood-frame/wood-frame-bottom.jpg" alt="Wood frame bottom">
+      <img src="../images/wood-frame/wood-frame-bottom.png" alt="Wood frame bottom">
   </div>
 
 <!-- WOOD FRAME END -->
+
+
+<br>
 
 
 <!-- PERKAMENT FRAME START -->
@@ -106,12 +109,16 @@
 
 
 
+<br>
+
+
+
 <!-- WOOD FRAME START -->
 <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
  
   <div class="wood-frame">
 
-      <img src="../images/wood-frame/wood-frame-top.jpg" alt="Wood frame top">
+      <img src="../images/wood-frame/wood-frame-top.png" alt="Wood frame top">
 
       <div class="wood-frame-content">
           <article>
@@ -148,13 +155,13 @@
           </article>
       </div>
 
-      <img src="../images/wood-frame/wood-frame-bottom.jpg" alt="Wood frame bottom">
+      <img src="../images/wood-frame/wood-frame-bottom.png" alt="Wood frame bottom">
   </div>
 
 <!-- WOOD FRAME END -->
 
 
-
+<br>
 
 
 <!-- WOOD FRAME START -->
@@ -162,7 +169,7 @@
  
   <div class="wood-frame">
 
-      <img src="../images/wood-frame/wood-frame-top.jpg" alt="Wood frame top">
+      <img src="../images/wood-frame/wood-frame-top.png" alt="Wood frame top">
 
       <div class="wood-frame-content">
           <article>
@@ -235,7 +242,7 @@
           </article>
       </div>
 
-      <img src="../images/wood-frame/wood-frame-bottom.jpg" alt="Wood frame bottom">
+      <img src="../images/wood-frame/wood-frame-bottom.png" alt="Wood frame bottom">
   </div>
 
 <!-- WOOD FRAME END -->
@@ -243,7 +250,7 @@
 
 
 
-
+<br>
 
 
 
@@ -253,7 +260,7 @@
  
   <div class="wood-frame">
 
-      <img src="../images/wood-frame/wood-frame-top.jpg" alt="Wood frame top">
+      <img src="../images/wood-frame/wood-frame-top.png" alt="Wood frame top">
 
       <div class="wood-frame-content">
           <article>
@@ -326,7 +333,7 @@
           </article>
       </div>
 
-      <img src="../images/wood-frame/wood-frame-bottom.jpg" alt="Wood frame bottom">
+      <img src="../images/wood-frame/wood-frame-bottom.png" alt="Wood frame bottom">
   </div>
 
 <!-- WOOD FRAME END -->
