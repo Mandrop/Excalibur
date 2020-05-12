@@ -18,17 +18,23 @@
   <body>
     <!-- HEADER -->
   <div class="header">
+    <div id="header-content">
     <!-- HEADER INFO -->
     <div id="header-info-container">
       <!--<span id="header-info-text">INFO</span>-->
       <div id="header-info-text">INFO</div>
     </div>
     <!-- HEADER LOGO AND TEXT -->
-    <div class="logo-text-container">
+    <div id="logo-text-container">
       <img id="header-logo" src="images/logo_white.svg" alt="Logo">
       <h1 id="header-logo-text">Excalibur</h1>
+      
     </div>
-    <img src="images/wizard.png" alt="">
+    <div class="arrow">
+    <img class="arrow-img" src="images/arrow.svg" alt="">
+    </div>
+   
+    </div>
   </div>
 
     <div class="background" id="background">
