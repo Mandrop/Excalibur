@@ -1,4 +1,4 @@
-<!-- KARAKTER PROFIL SIDE -->
+<!--BRUGER PROFIL SIDE -->
 
 <!doctype html>
 <html lang="en" id="html">
@@ -45,14 +45,19 @@
 
 
 
-/* KARAKTER PROFIL SIDE */
+/* BRUGER PROFIL SIDE */
 
-.karakter-profil img{
+.bruger-profil .table td, .bruger-profil .table th{
+  border-color: black;
+}
+
+.bruger-profil img{
   object-fit: cover;
   width: 300px;
 }
 
-/* KARAKTER PROFIL END */
+
+/* BRUGER PROFIL END */
 
 
 
@@ -61,6 +66,12 @@
     <title>Excalibur</title>
   </head>
   <body>
+
+
+
+
+
+
 
 <br>
 
@@ -82,7 +93,7 @@
   <div class="d-flex justify-content-center">
           <div>
       <!-- CONTENT HERE -->
-             <img src="../images/titler/karakter-profil.png" alt="Medlem list">
+             <img src="../images/titler/medlem-list.png" alt="Medlem list">
       <!-- CONTENT HERE -->
           </div>
   </div>
@@ -119,17 +130,19 @@
 </nav>
 <!-- BOOTSTRAP NAVBAR END -->
 
-<div class="karakter-profil d-flex justify-content-center row">
+
+
+<div class="bruger-profil d-flex justify-content-center">
+
 
 <!-- LEFT SIDE -->
 <div class="col">
 
 <div class="col">
-  <p>Navn: <span class="font-weight-bold">Braithwait</span></p>
-  <p>Race: <span class="font-weight-bold">Menneske</span></p>
-  <p>Klasse: <span class="font-weight-bold">Ridder</span></p>
-  <p>Klan: <span class="font-weight-bold"></span></p>
-  <p>Egenskaber: <span class="font-weight-bold">Stor mægtig ridder fra det fine slot i overskoven. Fuld rustning og 1,5m sværd</span></p>
+  <p>Navn: <span class="font-weight-bold">Tobias Møller</span></p>
+  <p>Email: <span class="font-weight-bold">tobias@tobias.com</span></p>
+
+  <p>Beskrivelse: <span class="font-weight-bold">Har spillet rollespil i 3 år</span></p>
 </div>
 
 
@@ -151,18 +164,48 @@
 
 </div>
 
-<div class="row">
-        <div class="px-3">
-          <button type="submit" class="btn btn-light my-3">Opdater karakter</button>
-        </div>
-        <div class="px-3 py-3">
-          <button type="submit" class="btn btn-light">Slet karakter</button>
-        </div>
+<div class="row my-3 bruger-profil">
+<!-- TABLE -->
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Karakter navn</th>
+      <th scope="col">Race</th>
+      <th scope="col">Klasse</th>
+      <th scope="col">Klan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+ <!--    <th scope="row">1</th> -->
+      <td>Toke</td>
+      <td>Ork</td>
+      <td>Magician</td>
+      <td></td>
+    </tr>
+    <tr>
+<!--       <th scope="row">2</th> -->
+      <td>Martian</td>
+      <td>Human</td>
+      <td>Knight</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+<!--       <th scope="row">3</th> -->
+      <td>Larni</td>
+      <td>Elver</td>
+      <td>Archer</td>
+      <td>@fat</td>
+    </tr>
+  </tbody>
+</table>
+<!-- TABLE END -->
 
 </div>
-<div class="row">
 
-</div>
+
+
+
 
                         <!-- CONTENT HERE -->
                             </article>
