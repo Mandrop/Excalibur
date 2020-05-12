@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/fa60fdc8b9.js" crossorigin="anonymous"></script>
+
     <style>
     
     /* WOOD FRAME STYLE */
@@ -52,18 +55,34 @@
   <body>
     <!-- HEADER -->
   <div class="header">
+    <div id="header-content">
     <!-- HEADER INFO -->
     <div id="header-info-container">
       <!--<span id="header-info-text">INFO</span>-->
-      <div id="header-info-text">INFO</div>
+      <div id="header-info-text">  
+        <a class="infobtnflamingo">
+          <button type="button" class="infobtncontainer" data-toggle="modal" data-target="#infoModal">
+            <span>INFO</span>
+            </button>
+        </a>
+      </div>
     </div>
     <!-- HEADER LOGO AND TEXT -->
-    <div class="logo-text-container">
+    <div id="logo-text-container">
       <img id="header-logo" src="images/logo_white.svg" alt="Logo">
       <h1 id="header-logo-text">Excalibur</h1>
+      
     </div>
-    <img src="images/wizard.png" alt="">
+    <div class="arrow">
+      <a href="#background" class="arrow-down">
+        <!--<i class="fas fa-chevron-down arrow-img"></i>-->
+      </a>
+    <!--<img class="arrow-img" src="images/arrow.svg" alt="">-->
+    </div>
+   
+    </div>
   </div>
+
 
     <div class="background" id="background">
 
