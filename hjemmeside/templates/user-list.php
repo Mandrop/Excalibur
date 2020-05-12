@@ -45,11 +45,13 @@
 
 
 
-/* KONTAKT SIDE */
+/* MEDLEM LIST SIDE */
 
+.medlem-list .table td, .medlem-list .table th{
+  border-color: black;
+}
 
-
-/* KONTAKT SIDE END */
+/* MEDLEM LIST END */
 
 
 
@@ -83,26 +85,17 @@
 <!-- TITLE START -->
  
   <div class="d-flex justify-content-center">
-
           <div>
       <!-- CONTENT HERE -->
-
-             <img src="../images/titler/bliv-medlem.png" alt="Medlem login">
-
+             <img src="../images/titler/medlem-list.png" alt="Medlem list">
       <!-- CONTENT HERE -->
           </div>
-
   </div>
-
 <!-- TITLE END -->
-
-
-
-
           <div class="row">
-
-
               <div class="col">
+
+
                   <!-- PERKAMENT FRAME START -->
                   <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
                   
@@ -114,48 +107,66 @@
                             <article>
                         <!-- CONTENT HERE -->
 
-<div class="bliv-medlem d-flex justify-content-center">
+<!-- BOOTSTRAP NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent my-4">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
 
+      <a class="nav-item nav-link" href="#">Opret karakter</a>
+      <a class="nav-item nav-link" href="#">Profil</a>
 
-        <!-- FORMULAR -->
-        
-      <form class="text-center mt-5 pb-4 contact-form mb-5 w-50" action="index.php">
-        
-
-        <div class="form-group">
-          <input type="text" class="form-control" id="inputUser" placeholder="Bruger navn" required>
-        </div>
-
-        <div class="form-group">
-          <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
-        </div>
-
-        <div class="form-group">
-          <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
-        </div>
-
-        <div class="form-group">
-          <input type="password" class="form-control" id="inputRetypePassword" placeholder="Gentag password" required>
-        </div>
-
-
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label" for="defaultCheck1">
-            Jeg har tilladelse fra mine forældre/værge til at indmelde mig
-          </label>
-        </div>
-
-
-        <div class="text-center">
-          <button type="submit" class="btn btn-light">Bliv medlem</button>
-        </div>
-      </form>
+    </div>
+  </div>
+</nav>
+<!-- BOOTSTRAP NAVBAR END -->
 
 
 
-        <!-- FORMULAR -->
+<div class="medlem-list d-flex justify-content-center">
+
+<!-- TABLE -->
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Karakter navn</th>
+      <th scope="col">Race</th>
+      <th scope="col">Klasse</th>
+      <th scope="col">Klan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+ <!--    <th scope="row">1</th> -->
+      <td>Toke</td>
+      <td>Ork</td>
+      <td>Magician</td>
+      <td></td>
+    </tr>
+    <tr>
+<!--       <th scope="row">2</th> -->
+      <td>Martian</td>
+      <td>Human</td>
+      <td>Knight</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+<!--       <th scope="row">3</th> -->
+      <td>Larni</td>
+      <td>Elver</td>
+      <td>Archer</td>
+      <td>@fat</td>
+    </tr>
+  </tbody>
+</table>
+<!-- TABLE END -->
 </div>
+
+
+
                         <!-- CONTENT HERE -->
                             </article>
                         </div>
@@ -165,8 +176,6 @@
 
                   <!-- PERKAMENT FRAME END -->
                </div>
-
-
           </div>
       <!-- CONTENT HERE -->
           </article>

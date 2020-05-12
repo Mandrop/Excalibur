@@ -83,8 +83,27 @@
     </div>
   </div>
 
+  <div class="background-one">
+    <!-- BACKGROUND IMAGE -->
+    <img class="background-image" src="Images/background/BG-del1-uden-farm.png" alt="">
+
+    <!-- STALD WAYPOINT -->
+    <div class="stald-two">
+      
+    </div>
+
+    <!-- STALD IMAGE -->
+    <div class="background-image-content">
+    <div class="stald-waypoint first background-image-content" id="basic-waypoint"></div>
+      <img src="Images/background/barn-farm.png" alt="">
+      
+    </div>
+    
+  </div>
+
 
     <div class="background" id="background">
+      
 
     <!-- INFO BOKS -->
       <div class="info-waypoint"></div>
@@ -180,10 +199,10 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 
     
     
-    <div class="stald">
+    <!--<div class="stald">
       <div class="first" id="basic-waypoint"></div>
     
-    </div>
+    </div>-->
 
     <div id="hest">
       <img src="images/hest1.1.png" class="hest" alt="">
