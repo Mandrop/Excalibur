@@ -1,4 +1,8 @@
 /* FONTS STYLING */
+html{
+    box-sizing:border-box;
+}
+
 @font-face {
     font-family: myFirstFont;
     src: url(fonts/OpenSans-Bold.ttf);
@@ -31,16 +35,30 @@ h5{
 .header{
     /*background-color: black;*/
     background-image: url(images/header_baggrund.png);
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    text-align: center;
+    /*text-align: center;*/
+    /*padding-top: 17px;*/
+    /*height: 100vh;*/
+    height: 100vh;
+    max-height: 100vh;
+}
+#header-content{
+    height: 100vh;
+    max-height: 100vh;
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
-    padding-top: 17px;
+    
 }
 #header-info-container{
-    position: relative;
+
+    /*position: relative;*/
     width: 0;
     height: 0;
 }
@@ -56,6 +74,27 @@ h5{
 }
 #header-logo-text{
     font-size: 10em;
+    margin-bottom: 0;
+}
+#logo-text-container{
+    /*background-color: green;*/
+    width: 100%;
+    text-align: center;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.arrow{
+    height: 20%;
+    max-height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.arrow-img{
+    width: 2.7em;
 }
 @media screen and (max-width: 1000px) {
     #header-logo-text{
@@ -64,6 +103,9 @@ h5{
     #header-info-text{
         font-size: 2em;
     }
+    .arrow{
+        width: 2.5em;
+    }
 }
 @media screen and (max-width: 800px) {
     #header-logo-text{
@@ -71,6 +113,9 @@ h5{
     }
     #header-info-text{
         font-size: 1.5em;
+    }
+    .arrow{
+        width: 1.9em;
     }
 }
 

@@ -43,7 +43,7 @@
 .modal-content{
   background: none;
 }
-    
+
     </style>
     
 
@@ -52,17 +52,23 @@
   <body>
     <!-- HEADER -->
   <div class="header">
+    <div id="header-content">
     <!-- HEADER INFO -->
     <div id="header-info-container">
       <!--<span id="header-info-text">INFO</span>-->
       <div id="header-info-text">INFO</div>
     </div>
     <!-- HEADER LOGO AND TEXT -->
-    <div class="logo-text-container">
+    <div id="logo-text-container">
       <img id="header-logo" src="images/logo_white.svg" alt="Logo">
       <h1 id="header-logo-text">Excalibur</h1>
+      
     </div>
-    <img src="images/wizard.png" alt="">
+    <div class="arrow">
+    <img class="arrow-img" src="images/arrow.svg" alt="">
+    </div>
+   
+    </div>
   </div>
 
     <div class="background" id="background">
@@ -171,37 +177,9 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
     </div>
 
     <div class="hus1" style="height:400px; width:400px; z-index: 999; background: grey;" data-toggle="modal" data-target="#exampleModal"></div>
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="height: 866px; width: 1000px;">
+    
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="height: 866px; width: 1000px;">
       <div class="modal-dialog" role="document" style="height: 866px; width: 1000px; max-width: 1000px; margin: 0;">
-      <!-- <div class="wood-frame">
-
-        <img src="images/wood-frame/wood-frame-top.png" alt="Wood frame top">
-
-        <div class="modal-content" style="background-size: 100% 100%; height: height: 866px; width: 1000px;"">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 20px;">
-            <div class="lille lille1"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille2"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille3"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille4"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille5"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille6"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille7"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille8"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille9"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille10" style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-          </div>
-        </div>
-      </div>
-      <img src="images/wood-frame/wood-frame-bottom.png" alt="Wood frame bottom"> -->
-
-      <!-- WOOD FRAME START -->
-<!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
  
   <div class="wood-frame">
 
@@ -216,7 +194,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 <div>
 <!-- CONTENT HERE -->
 
-   <img src="images/titler/attangementer.png" alt="Arrangementer" style="margin-bottom: 30px;">
+   <img src="images/titler/arrangementer.png" alt="Arrangementer" style="margin-bottom: 30px;">
 
 <!-- CONTENT HERE -->
 </div>
@@ -296,33 +274,95 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
       </div>
     </div>
 
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="height: 866px; width: 1641px;">
-      <div class="modal-dialog modal-dialog-centered" role="document" style="height: 866px; width: 1641px;">
-        <div class="modal-content" style="background-image: url(images/frame.jpg); background-size: 100% 100%; height: height: 866px; width: 1641px;">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; grid-gap: 20px;">
-            <div class="lille lille1"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille2"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille3"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille4"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille5"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille6"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille7"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille8"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille9"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille10" style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-          </div>
-          <div class="modal-footer">
-          </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document" >
+      <div class="modal-body">
+      <div class="wood-frame">
+
+        <img src="images/wood-frame/wood-frame-top.png" alt="Wood frame top">
+
+        <div class="wood-frame-content">
+            <article>
+        <!-- CONTENT HERE -->
+
+
+            <div class="row d-flex">
+            <img src="images/titler/arrangementer.png" alt="Arrangementer" style="margin-bottom: 30px;">
+
+                <div class="w-25">
+                    <!-- PERKAMENT FRAME START -->
+                    <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+
+                      <div class="perkament-frame">
+
+                          <img src="images/perkament_rigtig/Lille_perchmant_top.png" alt="perkament frame top">
+
+                          <div class="perkament-frame-content">
+                              <article>
+                          <!-- CONTENT HERE -->
+
+                            <h1>Test</h1>
+                            <p>Dette er en test</p>
+
+                            <h1>Test</h1>
+                            <p>Dette er en test</p>
+
+                          <!-- CONTENT HERE -->
+                              </article>
+                          </div>
+
+                          <img src="images/perkament_rigtig/Lille_perchmant_bottom.png" alt="Perkament frame bottom">
+                      </div>
+
+                    <!-- PERKAMENT FRAME END -->
+                 </div>
+
+
+                <div class="w-25">
+                    <!-- PERKAMENT FRAME START -->
+                    <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+
+                      <div class="perkament-frame">
+
+                          <img src="images/perkament_rigtig/Lille_perchmant_top.png" alt="perkament frame top">
+
+                          <div class="perkament-frame-content">
+                              <article>
+                          <!-- CONTENT HERE -->
+
+                            <h1>Test</h1>
+                            <p>Dette er en test</p>
+
+                            <h1>Test</h1>
+                            <p>Dette er en test</p>
+
+                          <!-- CONTENT HERE -->
+                              </article>
+                          </div>
+
+                          <img src="images/perkament_rigtig/Lille_perchmant_bottom.png" alt="Perkament frame bottom">
+                      </div>
+
+                    <!-- PERKAMENT FRAME END -->
+                 </div>
+
+
+            </div>
+        <!-- CONTENT HERE -->
+            </article>
         </div>
+
+        <img src="images/wood-frame/wood-frame-bottom.png" alt="Wood frame bottom">
       </div>
-    </div>
+      <!-- WOOD FRAME END -->
 
-
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    
+  </div>
+</div>
 
 <div class="second" id="second"></div>
 <!-- Button trigger modal -->

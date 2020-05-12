@@ -1,4 +1,5 @@
 <!-- MEDLEM SIDE -->
+
 <!doctype html>
 <html lang="en" id="html">
   <head>
@@ -46,11 +47,7 @@
 
 /* KONTAKT SIDE */
 
-.kontakt-side .card{
-  background-color: transparent;
-  border: none;
 
-}
 
 /* KONTAKT SIDE END */
 
@@ -91,7 +88,7 @@
           <div>
       <!-- CONTENT HERE -->
 
-             <img src="../images/titler/kontakt.png" alt="Kontakt">
+             <img src="../images/titler/medlem-login.png" alt="Medlem login">
 
       <!-- CONTENT HERE -->
           </div>
@@ -118,10 +115,28 @@
                             <article>
                         <!-- CONTENT HERE -->
 
-<div class="kontakt-side">
-<?php
-include('../templates/kontakt.php');
-?>
+<div class="medlem-login d-flex justify-content-center">
+
+
+        <!-- KONTAKTFORMULAR -->
+        
+      <form class="text-center mt-5 pb-4 contact-form mb-5 w-50" action="index.php">
+        
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="inputUser" placeholder="Bruger navn" required>
+        </div>
+
+        <div class="form-group">
+          <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+        </div>
+
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-light">Login</button>
+        </div>
+      </form>
+
 </div>
 
 
