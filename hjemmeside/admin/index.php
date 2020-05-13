@@ -14,11 +14,34 @@ include('config.php');
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>Place2run.dk - Admin</title>
+
+    <style>
+    
+html, body{
+  height: 96.2%;
+}
+
+nav{
+  background-color: #D6AB90;
+}
+
+.wrapper{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background: url(parchment.png) no-repeat 0;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+
+
+    </style>
   </head>
   <body>
     
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="#">Admin</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -33,24 +56,30 @@ include('config.php');
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Events
+          Arrangementer
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="?page=create_event">Opret event</a>
-          <a class="dropdown-item" href="?page=list_events">Event oversigt</a>
+          <a class="dropdown-item" href="?page=create_event">Opret arrangement</a>
+          <a class="dropdown-item" href="?page=list_events">Arrangement oversigt</a>
         </div>
       </li>
     </ul>
   </div>
 </nav>
 
+<div class="wrapper">
+  <div class="login">
+    <form action="/action_page.php">
+      <label for="brugernavn">Brugernavn</label><br>
+      <input type="text" id="brugernavn" name="Brugernavn"><br>
+      <label for="kodeord">Kodeord</label><br>
+      <input type="password" id="kodeord" name="kodeord"><br><br>
+      <input type="submit" value="Submit">
+    </form> 
+  </div>
+</div>
+
 <?php
-
-    $page = $_GET['page'];
-
-    if(function_exists($page)){
-        call_user_func($page,$db);
-    }
 
 ?>
 
