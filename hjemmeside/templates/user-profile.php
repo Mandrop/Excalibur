@@ -93,7 +93,7 @@
   <div class="d-flex justify-content-center">
           <div>
       <!-- CONTENT HERE -->
-             <img src="../images/titler/medlem-list.png" alt="Medlem list">
+             <img src="../images/titler/bruger-profil.png" alt="Medlem list">
       <!-- CONTENT HERE -->
           </div>
   </div>
@@ -123,7 +123,8 @@
     <div class="navbar-nav">
 
       <a class="nav-item nav-link" href="#">Opret karakter</a>
-      <a class="nav-item nav-link" href="#">Profil</a>
+      <a class="nav-item nav-link" href="#">Opdater Profil</a>
+      
 
     </div>
   </div>
