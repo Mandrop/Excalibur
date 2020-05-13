@@ -194,7 +194,7 @@ h5{
     margin-left: 1%;
     width: 11%;
     min-width: 70px;
-    position: relative;
+    position: absolute;
 }
 .info-img{
     max-width: 100%;
@@ -270,7 +270,7 @@ h5{
 .first {
     /*position: absolute;*/
     background:green;
-    height: 5px;
+    /*height: 5px;*/
     /*width:100%;*/
 
 }
