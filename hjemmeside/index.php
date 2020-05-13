@@ -91,7 +91,7 @@
   <div class="background-fade-in">
     <div class="gradient-one"></div>
     <div class="gradient-two"></div>
-    <img class="background-image" src="Images/background/top-part.jpg" alt="">
+    <img class="background-image" src="Images/background/top-part-v2.jpg" alt="">
 
   </div>
 
