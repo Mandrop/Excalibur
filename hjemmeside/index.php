@@ -444,7 +444,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
         if (direction == 'down') {
           console.log('waypoint down!')
           //document.getElementById("sprite").src = "Images/shrek.png";
-          imageArr = ["Images/1,1.png","Images/1,2.png","Images/1,3.png","Images/1,2.png"];
+          imageArr = ["Images/Hovedperson 21.png","Images/Hovedperson 31.png","Images/Hovedperson 21.png","Images/Hovedperson 31.png"];
         }else {
           console.log('waypoint up!')
           imageArr = ["Images/2,1.png","Images/2,2.png","Images/2,3.png","Images/2,2.png"];
