@@ -58,6 +58,159 @@
   border:none;
 }
 
+.wrapper{
+  display: grid;
+  align-items: center;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 40px;
+}
+
+.grid img{
+  height: 145px;
+  width: 160px;
+}
+
+.right{
+  margin-left: 40px;
+}
+
+.top{
+  margin-bottom: 40px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  background-image: none;
+}
+
+.arrow-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 50px;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+  margin-left: 60px;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
+  margin-right: 60px;
+}
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 /* GALLERI SIDE END */
 
 
@@ -89,59 +242,46 @@
       <!-- CONTENT HERE -->
 
 
-<!-- BOOTSTRAP MODAL -->
-
-<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Launch demo modal
-</button> -->
-
-
-
-            <!-- GALLERI SECTION START -->
-        <div class="row row-cols-1 row-cols-md-3 mx-0 my-5 d-flex justify-content-center">
-            <!-- IMG CARD -->
-
-            <div class="col mb-6 " data-toggle="modal" data-target="#myModal">
-                <div class="card h-100 ">
-                <img src="../images/roleplay-news.jpg" class="card-img-top img-fit-to-galleri" alt="..." id="1" data-toggle="modal" data-target="#myModal">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-                </div>
+      <div class="wrapper">
+        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel" style="fixed">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="false">
+              <div class="grid">
+                <img src="../images/DSC06825.JPG" alt="" class="top">
+                <img src="../images/roleplay-news.jpg" alt="" class="right top">
+                <img src="../images/roleplay-news.jpg" alt="">
+                <img src="../images/roleplay-news.jpg" alt="" class="right">
+              </div>
             </div>
-            <!-- IMG CARD END -->
-
-            <!-- IMG CARD -->
-            <div class="col mb-6 ">
-                <div class="card h-100">
-                <img src="../images/roleplay-news.jpg" class="card-img-top img-fit-to-galleri" alt="..." id="2" data-toggle="modal" data-target="#myModal">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a short card.</p>
-                </div>
-                </div>
+            <div class="carousel-item" data-interval="2000">
+            <div class="grid">
+                <img src="../images/DSC06825.JPG" alt="" class="top">
+                <img src="../images/roleplay-news.jpg" alt="" class="right top">
+                <img src="../images/roleplay-news.jpg" alt="">
+                <img src="../images/roleplay-news.jpg" alt="" class="right">
+              </div>
             </div>
-            <!-- IMG CARD END -->
-
-</div>
-
-            <!-- GALLERI CONTENT END -->
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-body">
-                <img class="img-responsive" src="" style="width: 100%;"/>
+            <div class="carousel-item">
+            <div class="grid">
+                <img src="../images/DSC06825.JPG" alt="" class="top">
+                <img src="../images/roleplay-news.jpg" alt="" class="right top">
+                <img src="../images/roleplay-news.jpg" alt="">
+                <img src="../images/roleplay-news.jpg" alt="" class="right">
+              </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-    </div>
-</div>
+      </div>
+
+
 
 <!-- BOOTSTRAP MODAL END -->
 
@@ -158,12 +298,6 @@
 
 
 
-
-
-
-
-
-
     <!-- Optional JavaScript -->
     
     
@@ -175,6 +309,55 @@
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
 
     <script src="Scripts/waypoint/lib/jquery.waypoints.min.js"></script>
+
+    <script src="galleri.js"></script>
     
   </body>
 </html>
+
+<?php
+            /*<!-- GALLERI SECTION START -->
+            <div class="row row-cols-1 row-cols-md-3 mx-0 my-5 d-flex justify-content-center">
+                <!-- IMG CARD -->
+    
+                <div class="col mb-6 " data-toggle="modal" data-target="#myModal">
+                    <div class="card h-100 ">
+                    <img src="../images/roleplay-news.jpg" class="card-img-top img-fit-to-galleri" alt="..." id="1" data-toggle="modal" data-target="#myModal">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    </div>
+                </div>
+                <!-- IMG CARD END -->
+    
+                <!-- IMG CARD -->
+                <div class="col mb-6 ">
+                    <div class="card h-100">
+                    <img src="../images/roleplay-news.jpg" class="card-img-top img-fit-to-galleri" alt="..." id="2" data-toggle="modal" data-target="#myModal">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a short card.</p>
+                    </div>
+                    </div>
+                </div>
+                <!-- IMG CARD END -->
+    
+    </div>
+    
+                <!-- GALLERI CONTENT END -->
+    
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img class="img-responsive" src="" style="width: 100%;"/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>*/
+?>
