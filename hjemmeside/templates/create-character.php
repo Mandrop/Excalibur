@@ -88,7 +88,7 @@
   <div class="d-flex justify-content-center">
           <div>
       <!-- CONTENT HERE -->
-             <img src="../images/titler/opret-karakter.png" alt="Medlem list">
+             <img src="../images/titler/opret-karakter.png" alt="Opret karakter">
       <!-- CONTENT HERE -->
           </div>
   </div>
