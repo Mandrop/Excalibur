@@ -134,8 +134,11 @@
 
     <div class="background" id="background">
 
-    <!-- BJERG OG ORKBY IMAGE -->
-    <img class="background-image" src="Images/background/del2/BG-del2-EDIT.jpg" alt="">
+    <!-- ORKBY IMAGE  -->
+    <img class="background-image" src="Images/background/orc/ORC Del final.jpg" alt="">
+
+    <!-- DWARD  IMAGE  -->
+    <img class="background-image" src="Images/background/dwarf/DWARF del.jpg" alt="">
 
     <!-- BORG IMAGE -->
     <div class="relative">
