@@ -1,4 +1,4 @@
-<!-- BRUGER PROFIL SIDE -->
+<!-- KARAKTER PROFIL SIDE -->
 
 <!doctype html>
 <html lang="en" id="html">
@@ -45,14 +45,14 @@
 
 
 
-/* BRUGER PROFIL SIDE */
+/* KARAKTER PROFIL SIDE */
 
-.bruger-profil img{
+.karakter-profil img{
   object-fit: cover;
   width: 300px;
 }
 
-/* BRUGER PROFIL END */
+/* KARAKTER PROFIL END */
 
 
 
@@ -61,12 +61,6 @@
     <title>Excalibur</title>
   </head>
   <body>
-
-
-
-
-
-
 
 <br>
 
@@ -88,7 +82,7 @@
   <div class="d-flex justify-content-center">
           <div>
       <!-- CONTENT HERE -->
-             <img src="../images/titler/bruger-profil.png" alt="Medlem list">
+             <img src="../images/titler/karakter-profil.png" alt="Medlem list">
       <!-- CONTENT HERE -->
           </div>
   </div>
@@ -125,7 +119,7 @@
 </nav>
 <!-- BOOTSTRAP NAVBAR END -->
 
-<div class="bruger-profil d-flex justify-content-center row">
+<div class="karakter-profil d-flex justify-content-center row">
 
 <!-- LEFT SIDE -->
 <div class="col">
@@ -157,8 +151,18 @@
 
 </div>
 
+<div class="row">
+        <div class="px-3">
+          <button type="submit" class="btn btn-light my-3">Opdater karakter</button>
+        </div>
+        <div class="px-3 py-3">
+          <button type="submit" class="btn btn-light">Slet karakter</button>
+        </div>
 
+</div>
+<div class="row">
 
+</div>
 
                         <!-- CONTENT HERE -->
                             </article>
