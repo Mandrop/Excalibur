@@ -61,6 +61,7 @@
 .wrapper{
   display: grid;
   align-items: center;
+  width:700px;
 }
 
 .grid{
@@ -253,7 +254,7 @@
                 <img src="../images/roleplay-news.jpg" alt="" class="right">
               </div>
             </div>
-            <div class="carousel-item" data-interval="2000">
+            <div class="carousel-item" data-interval="false">
             <div class="grid">
                 <img src="../images/DSC06825.JPG" alt="" class="top">
                 <img src="../images/roleplay-news.jpg" alt="" class="right top">
