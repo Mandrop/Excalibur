@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/fa60fdc8b9.js" crossorigin="anonymous"></script>
+
     <style>
     
     /* WOOD FRAME STYLE */
@@ -20,7 +23,7 @@
 }
 
 .wood-frame-content{
-  background: url("images/Lille_perchmant.png") repeat-y center;
+  background: url("images/wood-frame/wood-frame-middle.png") repeat-y center;
   background-size: 100%;
   padding: 0 4rem 1px 4rem;
 }
@@ -34,12 +37,16 @@
 }
 
 .perkament-frame-content{
-  background:transparent url("images/perkament/perkament-center.png") repeat-y center;
+  background:transparent url("images/perkament_rigtig/Lille_perchmant_middle.png") no-repeat center;
   background-size: 100%;
   padding: 0 10% 1px 15%;
 }
 /* PERKAMENT FRAME END */
-    
+
+.modal-content{
+  background: none;
+}
+
     </style>
     
 
@@ -48,20 +55,55 @@
   <body>
     <!-- HEADER -->
   <div class="header">
+    <div id="header-content">
     <!-- HEADER INFO -->
     <div id="header-info-container">
       <!--<span id="header-info-text">INFO</span>-->
-      <div id="header-info-text">INFO</div>
+      <div id="header-info-text">  
+        <a class="infobtnflamingo">
+          <button type="button" class="infobtncontainer" data-toggle="modal" data-target="#infoModal">
+            <span>INFO</span>
+            </button>
+        </a>
+      </div>
     </div>
     <!-- HEADER LOGO AND TEXT -->
-    <div class="logo-text-container">
+    <div id="logo-text-container">
       <img id="header-logo" src="images/logo_white.svg" alt="Logo">
       <h1 id="header-logo-text">Excalibur</h1>
+      
     </div>
-    <img src="images/wizard.png" alt="">
+    <div class="arrow">
+      <a href="#background" class="arrow-down">
+        <!--<i class="fas fa-chevron-down arrow-img"></i>-->
+      </a>
+    <!--<img class="arrow-img" src="images/arrow.svg" alt="">-->
+    </div>
+   
+    </div>
   </div>
 
+  <div class="background-one">
+    <!-- BACKGROUND IMAGE -->
+    <img class="background-image" src="Images/background/BG-del1-uden-farm.png" alt="">
+
+    <!-- STALD WAYPOINT -->
+    <div class="stald-two">
+      
+    </div>
+
+    <!-- STALD IMAGE -->
+    <div class="background-image-content">
+    <div class="stald-waypoint first background-image-content" id="basic-waypoint"></div>
+      <img src="Images/background/barn-farm.png" alt="">
+      
+    </div>
+    
+  </div>
+
+
     <div class="background" id="background">
+      
 
     <!-- INFO BOKS -->
       <div class="info-waypoint"></div>
@@ -157,209 +199,212 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 
     
     
-    <div class="stald">
+    <!--<div class="stald">
       <div class="first" id="basic-waypoint"></div>
     
-    </div>
+    </div>-->
 
     <div id="hest">
       <img src="images/hest1.1.png" class="hest" alt="">
     </div>
 
     <div class="hus1" style="height:400px; width:400px; z-index: 999; background: grey;" data-toggle="modal" data-target="#exampleModal"></div>
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="height: 866px; width: 1000px;">
+    
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="height: 866px; width: 1000px;">
       <div class="modal-dialog" role="document" style="height: 866px; width: 1000px; max-width: 1000px; margin: 0;">
-        <div class="modal-content" style="background-size: 100% 100%; height: height: 866px; width: 1000px;"">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 20px;">
-<!--             <div class="lille lille1"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille2"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille3"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille4"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille5"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille6"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille7"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille8"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille9"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille10" style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div> -->
-            <div class="wood-frame">
+ 
+  <div class="wood-frame">
 
-            <img src="images/wood-frame/wood-frame-top.jpg" alt="Wood frame top">
+<img src="images/wood-frame/wood-frame-top.png" alt="Wood frame top">
 
-            <div class="wood-frame-content">
-                <article>
-            <!-- CONTENT HERE -->
+<div class="wood-frame-content">
+    <article>
+<!-- CONTENT HERE -->
 
-              <h1>Dette er en test</h1>
-              <p>Dette er en test</p>
+<div class="d-flex justify-content-center">
 
-                      <h1>Dette er en test</h1>
-              <p>Dette er en test</p>
+<div>
+<!-- CONTENT HERE -->
 
-            <!-- CONTENT HERE -->
-                </article>
-            </div>
+   <img src="images/titler/arrangementer.png" alt="Arrangementer" style="margin-bottom: 30px;">
 
-            <img src="images/wood-frame/wood-frame-bottom.jpg" alt="Wood frame bottom">
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
+<!-- CONTENT HERE -->
+</div>
+
+</div>
+
+
+    <div class="row d-flex">
+
+
+        <div class="w-25">
+            <!-- PERKAMENT FRAME START -->
+            <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+            
+              <div class="perkament-frame">
+
+                  <img src="images/perkament_rigtig/Lille_perchmant_top.png" alt="perkament frame top">
+
+                  <div class="perkament-frame-content">
+                      <article>
+                  <!-- CONTENT HERE -->
+
+                    <h1>Test</h1>
+                    <p>Dette er en test</p>
+
+                    <h1>Test</h1>
+                    <p>Dette er en test</p>
+
+                  <!-- CONTENT HERE -->
+                      </article>
+                  </div>
+
+                  <img src="images/perkament_rigtig/Lille_perchmant_bottom.png" alt="Perkament frame bottom">
+              </div>
+
+            <!-- PERKAMENT FRAME END -->
+         </div>
+
+
+        <div class="w-25">
+            <!-- PERKAMENT FRAME START -->
+            <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+            
+              <div class="perkament-frame">
+
+                  <img src="images/perkament_rigtig/Lille_perchmant_top.png" alt="perkament frame top">
+
+                  <div class="perkament-frame-content">
+                      <article>
+                  <!-- CONTENT HERE -->
+
+                    <h1>Test</h1>
+                    <p>Dette er en test</p>
+
+                    <h1>Test</h1>
+                    <p>Dette er en test</p>
+
+                  <!-- CONTENT HERE -->
+                      </article>
+                  </div>
+
+                  <img src="images/perkament_rigtig/Lille_perchmant_bottom.png" alt="Perkament frame bottom">
+              </div>
+
+            <!-- PERKAMENT FRAME END -->
+         </div>
+
+
+    </div>
+<!-- CONTENT HERE -->
+    </article>
+</div>
+
+<img src="images/wood-frame/wood-frame-bottom.png" alt="Wood frame bottom">
+</div>
+
       </div>
     </div>
 
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="height: 866px; width: 1641px;">
-      <div class="modal-dialog modal-dialog-centered" role="document" style="height: 866px; width: 1641px;">
-        <div class="modal-content" style="background-image: url(images/frame.jpg); background-size: 100% 100%; height: height: 866px; width: 1641px;">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; grid-gap: 20px;">
-            <div class="lille lille1"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille2"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille3"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille4"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille5"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille6"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille7"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille8"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille9"  style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-            <div class="lille lille10" style="background-image: url(Images/Lille_perchmant.png); width: 257px; height: 334px; background-size: 100% 100%;"></div>
-          </div>
-          <div class="modal-footer">
-          </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document" >
+      <div class="modal-body">
+      <div class="wood-frame">
+
+        <img src="images/wood-frame/wood-frame-top.png" alt="Wood frame top">
+
+        <div class="wood-frame-content">
+            <article>
+        <!-- CONTENT HERE -->
+
+
+            <div class="row d-flex">
+            <img src="images/titler/arrangementer.png" alt="Arrangementer" style="margin-bottom: 30px;">
+
+                <div class="w-25">
+                    <!-- PERKAMENT FRAME START -->
+                    <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+
+                      <div class="perkament-frame">
+
+                          <img src="images/perkament_rigtig/Lille_perchmant_top.png" alt="perkament frame top">
+
+                          <div class="perkament-frame-content">
+                              <article>
+                          <!-- CONTENT HERE -->
+
+                            <h1>Test</h1>
+                            <p>Dette er en test</p>
+
+                            <h1>Test</h1>
+                            <p>Dette er en test</p>
+
+                          <!-- CONTENT HERE -->
+                              </article>
+                          </div>
+
+                          <img src="images/perkament_rigtig/Lille_perchmant_bottom.png" alt="Perkament frame bottom">
+                      </div>
+
+                    <!-- PERKAMENT FRAME END -->
+                 </div>
+
+
+                <div class="w-25">
+                    <!-- PERKAMENT FRAME START -->
+                    <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+
+                      <div class="perkament-frame">
+
+                          <img src="images/perkament_rigtig/Lille_perchmant_top.png" alt="perkament frame top">
+
+                          <div class="perkament-frame-content">
+                              <article>
+                          <!-- CONTENT HERE -->
+
+                            <h1>Test</h1>
+                            <p>Dette er en test</p>
+
+                            <h1>Test</h1>
+                            <p>Dette er en test</p>
+
+                          <!-- CONTENT HERE -->
+                              </article>
+                          </div>
+
+                          <img src="images/perkament_rigtig/Lille_perchmant_bottom.png" alt="Perkament frame bottom">
+                      </div>
+
+                    <!-- PERKAMENT FRAME END -->
+                 </div>
+
+
+            </div>
+        <!-- CONTENT HERE -->
+            </article>
         </div>
+
+        <img src="images/wood-frame/wood-frame-bottom.png" alt="Wood frame bottom">
       </div>
-    </div>
+      <!-- WOOD FRAME END -->
 
-
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    
+  </div>
+</div>
 
 <div class="second" id="second"></div>
 <!-- Button trigger modal -->
 
 <footer id="kontakt">
-      <div class="container">
-  
-        <!-- INFORMATION CARD DECK -->
-        <div class="card-deck pt-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Telefon</h5>
-              <p class="card-text">Sigurd - 12 34 56 78</p>
-              <p class="card-text">Jonas - 15 34 56 68</p>
-              <p class="card-text">Michael - 32 44 66 38</p>
-            </div>
-          </div>
 
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Email</h5>
-              <p class="card-text">indmelding@excalibur.dk</p>
-              <p class="card-text">praktisk@excalibur.dk</p>
-            </div>
-          </div>
-          
-          <!--<div class="card">
-            <div class="card-body">
-              <h5 class="card-title">ADRESSE</h5>
-              <p class="card-text">Kærbyvej 7</p>
-              <p class="card-text">2610 Rødovre</p>
-            </div>
-          </div>-->
-
-
-        </div>
-        <br>
-        
-        <h5 class="text-center card-title">Spillesteder</h5>
-        <br>
-
-        <!-- SPILLESTEDER -->
-        <div class="row row-cols-1 row-cols-md-2">
-  <div class="col mb-4">
-    <div class="card">
-      <!--<img src="..." class="card-img-top" alt="...">-->
-      <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18134.45889417193!2d10.323192105196053!3d55.378818031556314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464cdfbb0a9b29f3%3A0xc9693e9382f41e9f!2sTusind%C3%A5rsskoven!5e0!3m2!1sda!2sdk!4v1588762046567!5m2!1sda!2sdk" width="300" height="280" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      <div class="card-body">
-        <h5 class="card-title">Tusindeårsskoven</h5>
-        <h6>Odense SV, 5250</h6>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem, architecto repudiandae et quos consequatur maiores dolorem repellat nisi odit necessitatibus quae dicta a voluptate, amet perspiciatis voluptatem nostrum magnam provident corrupti quam assumenda! Et deleniti aliquid omnis impedit ipsam.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card">
-      <!--<img src="..." class="card-img-top" alt="...">-->
-      <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18134.45889417193!2d10.323192105196053!3d55.378818031556314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464cdfbb0a9b29f3%3A0xc9693e9382f41e9f!2sTusind%C3%A5rsskoven!5e0!3m2!1sda!2sdk!4v1588762046567!5m2!1sda!2sdk" width="300" height="280" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      <div class="card-body">
-        <h5 class="card-title">Tusindeårsskoven</h5>
-        <h6>Odense SV, 5250</h6>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem, architecto repudiandae et quos consequatur maiores dolorem repellat nisi odit necessitatibus quae dicta a voluptate, amet perspiciatis voluptatem nostrum magnam provident corrupti quam assumenda! Et deleniti aliquid omnis impedit ipsam.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card">
-      <!--<img src="..." class="card-img-top" alt="...">-->
-      <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18134.45889417193!2d10.323192105196053!3d55.378818031556314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464cdfbb0a9b29f3%3A0xc9693e9382f41e9f!2sTusind%C3%A5rsskoven!5e0!3m2!1sda!2sdk!4v1588762046567!5m2!1sda!2sdk" width="300" height="280" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      <div class="card-body">
-        <h5 class="card-title">Tusindeårsskoven</h5>
-        <h6>Odense SV, 5250</h6>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem, architecto repudiandae et quos consequatur maiores dolorem repellat nisi odit necessitatibus quae dicta a voluptate, amet perspiciatis voluptatem nostrum magnam provident corrupti quam assumenda! Et deleniti aliquid omnis impedit ipsam.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card">
-      <!--<img src="..." class="card-img-top" alt="...">-->
-      <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18134.45889417193!2d10.323192105196053!3d55.378818031556314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464cdfbb0a9b29f3%3A0xc9693e9382f41e9f!2sTusind%C3%A5rsskoven!5e0!3m2!1sda!2sdk!4v1588762046567!5m2!1sda!2sdk" width="300" height="280" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      <div class="card-body">
-        <h5 class="card-title">Tusindeårsskoven</h5>
-        <h6>Odense SV, 5250</h6>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem, architecto repudiandae et quos consequatur maiores dolorem repellat nisi odit necessitatibus quae dicta a voluptate, amet perspiciatis voluptatem nostrum magnam provident corrupti quam assumenda! Et deleniti aliquid omnis impedit ipsam.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-        <!-- KONTAKTFORMULAR -->
-        
-      <form class="text-center mt-5 pb-4 contact-form mb-5" action="index.php">
-        <h5 class="pb-4">Send Os En Besked</h5>
-
-        <div class="form-group">
-          <input type="text" class="form-control" id="inputAddress" placeholder="Navn" required>
-        </div>
-
-        <div class="form-group">
-          <input type="email" class="form-control" id="inputAddress" placeholder="Email" required>
-        </div>
-
-        <div class="form-group">
-          <input type="tel" class="form-control" id="inputAddress" placeholder="Telefonnumer" required>
-        </div>
-
-        <div class="form-group">
-          <textarea class="form-control" rows="5" cols="50"id="inputAddress" placeholder="Besked" required></textarea>
-
-        </div>
-
-        <div class="text-center">
-          <button type="submit" class="btn btn-primary">SEND BESKED</button>
-        </div>
-      </form>
-
-
-      </div>
+<?php
+ include('templates/kontakt.php');
+ ?>
+ 
       <div class="copyright text-center">© 2020</div>
     </footer>
 
