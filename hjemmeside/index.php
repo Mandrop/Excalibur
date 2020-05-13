@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/fa60fdc8b9.js" crossorigin="anonymous"></script>
+
     <style>
     
     /* WOOD FRAME STYLE */
@@ -56,7 +59,13 @@
     <!-- HEADER INFO -->
     <div id="header-info-container">
       <!--<span id="header-info-text">INFO</span>-->
-      <div id="header-info-text">INFO</div>
+      <div id="header-info-text">  
+        <a class="infobtnflamingo">
+          <button type="button" class="infobtncontainer" data-toggle="modal" data-target="#infoModal">
+            <span>INFO</span>
+            </button>
+        </a>
+      </div>
     </div>
     <!-- HEADER LOGO AND TEXT -->
     <div id="logo-text-container">
@@ -65,13 +74,40 @@
       
     </div>
     <div class="arrow">
-    <img class="arrow-img" src="images/arrow.svg" alt="">
+      <a href="#background" class="arrow-down">
+        <!--<i class="fas fa-chevron-down arrow-img"></i>-->
+      </a>
+    <!--<img class="arrow-img" src="images/arrow.svg" alt="">-->
     </div>
    
     </div>
   </div>
 
+  <div class="background-one">
+    <!-- BACKGROUND IMAGE -->
+    <img class="background-image" src="Images/background/BG-del1-uden-farm.png" alt="">
+
+    <!-- STALD WAYPOINT -->
+    <!--<div class="stald-two">
+      
+    </div>-->
+    <div class="background-image-content2">
+
+<div class="first" id="basic-waypoint"></div>
+
+</div>
+
+    <!-- STALD IMAGE -->
+    <div class="background-image-content">
+    
+      <img class="barn-img" src="Images/background/barn-farm.png" alt="">
+    </div>
+    
+  </div>
+
+
     <div class="background" id="background">
+      
 
     <!-- INFO BOKS -->
       <div class="info-waypoint"></div>
@@ -167,10 +203,8 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 
     
     
-    <div class="stald">
-      <div class="first" id="basic-waypoint"></div>
-    
-    </div>
+    <!--<div class="stald">
+      -->
 
     <div id="hest">
       <img src="images/hest1.1.png" class="hest" alt="">

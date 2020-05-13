@@ -152,9 +152,10 @@
         </div>
       </form>
 
-</div>
+
 
         <!-- FORMULAR -->
+</div>
                         <!-- CONTENT HERE -->
                             </article>
                         </div>
