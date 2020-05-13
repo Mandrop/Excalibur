@@ -108,7 +108,7 @@
       <button type="button" class="btn btn-primary info-btn" data-toggle="modal" data-target="#infoModal"></button>
       </div>
     <!-- BACKGROUND IMAGE -->
-    <img class="background-image" src="Images/background/BG-del1-uden-farm.jpg" alt="">
+    <img class="background-image" src="Images/background/BG-del1-without-farm.jpg" alt="">
 
     <!-- STALD WAYPOINT -->
     <!--<div class="stald-two">
@@ -123,7 +123,7 @@
     <!-- STALD IMAGE -->
     <div class="background-image-content">
     
-      <img class="barn-img" src="Images/background/barn-farm.png" alt="">
+      <img class="barn-img" src="Images/background/barn-farm-v2.png" alt="">
     </div>
     
   </div>
