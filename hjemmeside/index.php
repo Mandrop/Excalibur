@@ -83,6 +83,18 @@
     </div>
   </div>
 
+  <!-- HEADER END -->
+
+  <!-- MAIN START -->
+
+  <!-- FADE IN START -->
+  <div class="background-fadein">
+    <img class="background-image" src="Images/background/top-part.jpg" alt="">
+
+  </div>
+
+
+
   <div class="background-one" id="background-one">
 
 
