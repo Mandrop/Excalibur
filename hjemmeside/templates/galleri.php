@@ -50,8 +50,11 @@
 .galleri{
     background:transparent url("../images/bog.png") no-repeat center;
     background-size:contain;
-    height: 50vw;
+    height: 58vw;
+    padding: 0 15%;
 }
+
+
 
 .galleri .card{
   background-color: transparent;
@@ -61,7 +64,7 @@
 .wrapper{
   display: grid;
   align-items: center;
-  width:700px;
+  width:65vw;
 }
 
 .grid{
@@ -69,11 +72,13 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin-top: 40px;
+  justify-items:center;
 }
 
 .grid img{
-  height: 145px;
-  width: 160px;
+/*   height: 145px;
+  width: 160px; */
+  width: 70%;
 }
 
 .right{
@@ -192,7 +197,7 @@
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: transparent;
 }
 
 /* Fading animation */
@@ -211,6 +216,19 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media (max-width: 979px) {
+  /* Selectors and styles affecting screens UP TO 979px (Desktop) */
+}
+
+@media (max-width: 767px) {
+    /* Selectors and styles affecting screens UP TO 767px (Tablet) */
+
+}
+
+@media (max-width: 480px) {
+    /* Selectors and styles affecting screens UP TO 480px (Phone) */
 }
 /* GALLERI SIDE END */
 
@@ -239,6 +257,7 @@
       <img src="../images/wood-frame/wood-frame-top.png" alt="Wood frame top">
 
       <div class="wood-frame-content">
+                   <img src="../images/titler/galleri.png" alt="Opret karakter">
           <article class="galleri d-flex justify-content-center">
       <!-- CONTENT HERE -->
 
@@ -248,26 +267,26 @@
           <div class="carousel-inner">
             <div class="carousel-item active" data-interval="false">
               <div class="grid">
-                <img src="../images/DSC06825.JPG" alt="" class="top">
-                <img src="../images/roleplay-news.jpg" alt="" class="right top">
-                <img src="../images/roleplay-news.jpg" alt="">
-                <img src="../images/roleplay-news.jpg" alt="" class="right">
+                <img src="../images/galleri-img/DSC06880.jpg" alt="" class="top">
+                <img src="../images/galleri-img/DSC06908.jpg" alt="" class="right top">
+                <img src="../images/galleri-img/DSC06910.jpg" alt="">
+                <img src="../images/galleri-img/DSC06921.jpg" alt="" class="right">
               </div>
             </div>
             <div class="carousel-item" data-interval="false">
             <div class="grid">
-                <img src="../images/DSC06825.JPG" alt="" class="top">
-                <img src="../images/roleplay-news.jpg" alt="" class="right top">
-                <img src="../images/roleplay-news.jpg" alt="">
-                <img src="../images/roleplay-news.jpg" alt="" class="right">
+                <img src="../images/galleri-img/DSC06948.jpg" alt="" class="top">
+                <img src="../images/galleri-img/DSC06951.jpg" alt="" class="right top">
+                <img src="../images/galleri-img/DSC06969.jpg" alt="">
+                <img src="../images/galleri-img/DSC06970.jpg" alt="" class="right">
               </div>
             </div>
             <div class="carousel-item">
             <div class="grid">
-                <img src="../images/DSC06825.JPG" alt="" class="top">
-                <img src="../images/roleplay-news.jpg" alt="" class="right top">
-                <img src="../images/roleplay-news.jpg" alt="">
-                <img src="../images/roleplay-news.jpg" alt="" class="right">
+                <img src="../images/galleri-img/DSC06975.jpg" alt="" class="top">
+                <img src="../images/galleri-img/DSC06977.jpg" alt="" class="right top">
+                <img src="../images/galleri-img/DSC06999.jpg" alt="">
+                <img src="../images/galleri-img/DSC07014.jpg" alt="" class="right">
               </div>
             </div>
           </div>
