@@ -215,7 +215,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 </div>
       
     <!-- INFO BOKS SLUT -->
-    </img><img id="sprite" src="Images/2,1.png" alt="walk01" class="walk"/>
+    </img><img id="sprite" src="Images/1,2.png" alt="walk01" class="walk"/>
     <div id="scrollDiv"></div>
     </div>
 
@@ -452,16 +452,16 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
       var $first = $('.first');
       //var imageArr = ["Images/Layer1.png","Images/Layer2.png","Images/Layer3.png","Images/Layer4.png",,"Images/Layer5.png",,"Images/Layer6.png",,"Images/Layer7.png"];
 
-      var imageArr = ["Images/2,1.png","Images/2,2.png","Images/2,3.png","Images/2,2.png"];
+      var imageArr = ["Images/1,2.png","Images/1,3.png","Images/1,2.png","Images/1,3.png"];
 
       $first.waypoint(function (direction) {
         if (direction == 'down') {
           console.log('waypoint down!')
           //document.getElementById("sprite").src = "Images/shrek.png";
-          imageArr = ["Images/Hovedperson 21.png","Images/Hovedperson 31.png","Images/Hovedperson 21.png","Images/Hovedperson 31.png"];
+          imageArr = ["Images/H1.png","Images/H3.png","Images/H1.png","Images/H3.png"];
         }else {
           console.log('waypoint up!')
-          imageArr = ["Images/2,1.png","Images/2,2.png","Images/2,3.png","Images/2,2.png"];
+          imageArr = ["Images/1,2.png","Images/1,3.png","Images/1,2.png","Images/1,3.png"];
         }
       }, { offset: '50%'});
 
