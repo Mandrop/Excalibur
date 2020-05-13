@@ -262,14 +262,11 @@ h5{
 }
 
 #sprite{
-<<<<<<< HEAD
     z-index: 1;
     
-=======
     /*z-index: -1;*/
 
 
->>>>>>> 22915371449bbc3b19bf6a784a2f0a16c1939d9a
 }
 
 .first {
