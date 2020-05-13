@@ -135,13 +135,13 @@
     <div class="background" id="background">
 
     <!-- ORKBY IMAGE  -->
-    <img class="background-image" src="Images/background/orc/ORC Del final.jpg" alt="">
+    <img class="background-image" src="Images/background/orcdelfinal.jpg" alt="">
 
     <!-- DWARD  IMAGE  -->
     <img class="background-image" src="Images/background/dwarf/DWARF del.jpg" alt="">
 
     <!-- NYHED  IMAGE  -->
-    <img class="background-image" src="Images/background/nyhed/nyheddel2.jpg" alt="">
+    <img class="background-image" src="Images/background/nyheddel3.jpg" alt="">
 
     <!-- BORG IMAGE -->
     <div class="relative">
