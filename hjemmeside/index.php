@@ -74,7 +74,7 @@
       
     </div>
     <div class="arrow">
-      <a href="#background" class="arrow-down">
+      <a href="#background-one" class="arrow-down">
         <!--<i class="fas fa-chevron-down arrow-img"></i>-->
       </a>
     <!--<img class="arrow-img" src="images/arrow.svg" alt="">-->
@@ -83,9 +83,30 @@
     </div>
   </div>
 
-  <div class="background-one">
+  <!-- HEADER END -->
+
+  <!-- MAIN START -->
+
+  <!-- FADE IN START -->
+  <div class="background-fadein">
+    <img class="background-image" src="Images/background/top-part.jpg" alt="">
+
+  </div>
+
+
+
+  <div class="background-one" id="background-one">
+
+
+
+      <!-- INFO BOKS -->
+      <div class="info-waypoint"></div>
+      <div class="info">
+      <img class="info-img" src="images/info.png" alt="">
+      <button type="button" class="btn btn-primary info-btn" data-toggle="modal" data-target="#infoModal"></button>
+      </div>
     <!-- BACKGROUND IMAGE -->
-    <img class="background-image" src="Images/background/BG-del1-uden-farm.png" alt="">
+    <img class="background-image" src="Images/background/BG-del1-uden-farm.jpg" alt="">
 
     <!-- STALD WAYPOINT -->
     <!--<div class="stald-two">
@@ -109,12 +130,7 @@
     <div class="background" id="background">
       
 
-    <!-- INFO BOKS -->
-      <div class="info-waypoint"></div>
-      <div class="info">
-      <img class="info-img" src="images/info.png" alt="">
-      <button type="button" class="btn btn-primary info-btn" data-toggle="modal" data-target="#infoModal"></button>
-      </div>
+
 
 <!-- Modal -->
 <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
@@ -440,7 +456,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
         if (direction == 'down') {
           console.log('waypoint down!')
           //document.getElementById("sprite").src = "Images/shrek.png";
-          imageArr = ["Images/1,1.png","Images/1,2.png","Images/1,3.png","Images/1,2.png"];
+          imageArr = ["Images/Hovedperson 21.png","Images/Hovedperson 31.png","Images/Hovedperson 21.png","Images/Hovedperson 31.png"];
         }else {
           console.log('waypoint up!')
           imageArr = ["Images/2,1.png","Images/2,2.png","Images/2,3.png","Images/2,2.png"];
@@ -459,7 +475,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
           
         }else {
           console.log('not fixed')
-          $info.css({'position': 'relative', 'top': '0px'}); 
+          $info.css({'position': 'absolute', 'top': '0px'}); 
           
         }
       }, { offset: '2%'});

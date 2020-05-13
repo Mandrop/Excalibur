@@ -194,7 +194,7 @@ h5{
     margin-left: 1%;
     width: 11%;
     min-width: 70px;
-    position: relative;
+    position: absolute;
 }
 .info-img{
     max-width: 100%;
@@ -217,6 +217,10 @@ h5{
     /*background: url(Images/forestBackground.jpg) repeat-y; background-size: 100%;*/
 }
 .background-one{
+    position: relative;
+    width: 100%;
+}
+.background-fade-in{
     position: relative;
     width: 100%;
 }
@@ -262,6 +266,8 @@ h5{
 }
 
 #sprite{
+    z-index: 1;
+    
     /*z-index: -1;*/
 
 
@@ -270,7 +276,7 @@ h5{
 .first {
     /*position: absolute;*/
     background:green;
-    height: 5px;
+    /*height: 5px;*/
     /*width:100%;*/
 
 }
