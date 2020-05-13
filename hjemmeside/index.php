@@ -140,6 +140,9 @@
     <!-- DWARD  IMAGE  -->
     <img class="background-image" src="Images/background/dwarf/DWARF del.jpg" alt="">
 
+    <!-- NYHED  IMAGE  -->
+    <img class="background-image" src="Images/background/nyhed/nyheddel2.jpg" alt="">
+
     <!-- BORG IMAGE -->
     <div class="relative">
       <img class="background-image" src="Images/background/del3/BG-del3-BORG.png" alt="">
