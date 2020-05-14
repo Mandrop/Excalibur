@@ -159,35 +159,47 @@
       <img class="borgmur" src="Images/background/del3/borg.png" alt="">
 
       <!-- HUS 1 -->
+      <a href="">
       <div class="absolute hus" id="hus1">
-        <img class="hus-image" src="Images/background/borg/house1.png" alt="">
+ <!--        <img class="hus-image" src="Images/background/borg/house1.png" alt=""> -->
       </div>
+      </a>
 
       <!-- HUS 2 -->
+      <a href="">
       <div class="absolute hus" id="hus2">
-        <img class="hus-image" src="Images/background/borg/house2.png" alt="">
+<!--         <img class="hus-image" src="Images/background/borg/house2.png" alt=""> -->
       </div>
+      </a>
 
       <!-- HUS 3 -->
+      <a href="">
       <div class="absolute hus" id="hus3">
-        <img class="hus-image" src="Images/background/borg/house3.png" alt="">
+<!--         <img class="hus-image" src="Images/background/borg/house3.png" alt=""> -->
       </div>
+      </a>
 
       <!-- HUS 4 -->
+      <a href="">
       <div class="absolute hus" id="hus4">
-        <img class="hus-image" src="Images/background/borg/house4.png" alt="">
+<!--         <img class="hus-image" src="Images/background/borg/house4.png" alt=""> -->
       </div>
+      </a>
+
 
       <!-- HUS 5 -->
+      <a href="">
       <div class="absolute hus" id="hus5">
-        <img class="hus-image" src="Images/background/borg/house5.png" alt="">
+<!--         <img class="hus-image" src="Images/background/borg/house5.png" alt=""> -->
       </div>
+      </a>
 
       <!-- HUS 6 -->
+      <a href="">
       <div class="absolute hus" id="hus6">
-        <img class="hus-image" src="Images/background/borg/house6.png" alt="">
+<!--         <img class="hus-image" src="Images/background/borg/house6.png" alt=""> -->
       </div>
-
+      </a>
 
     </div>  
 
