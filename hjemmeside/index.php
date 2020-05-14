@@ -162,6 +162,36 @@
       <!-- BORGMUR -->
       <img class="borgmur" src="Images/background/del3/borg.png" alt="">
 
+
+
+
+
+
+<!-- Modal SværdSten -->
+<div class="modal fade" id="sværdstenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-contentst">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <h5 class="Excaliburheader">You are not worthy of the sword Excalibur</h5>
+      
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<!--- SværdSten ----->
+
+  <div class="sværdsten" data-toggle="modal" data-target="#sværdstenModal"> 
+  </div>
+
       <!-- HUS 1 -->
       <a href="">
       <div class="absolute hus" id="hus1" >

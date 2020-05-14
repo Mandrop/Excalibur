@@ -283,6 +283,21 @@ height: 100%;
     width: 100%;
 
 }
+
+.modal-contentst {
+    background-image: url(images/stonebackground1.jpg)!important;
+    margin-top: 50%;
+}
+
+/* ------Excalibur------- */
+.sværdsten {
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    bottom: 2%;
+    left: 46%;
+}
+
 /* HUSE INDIVIDUEL STYLE */
 #hus1{
     background: transparent url('Images/background/borg/house1.png') no-repeat;
