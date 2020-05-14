@@ -10,7 +10,7 @@
 }
 
 .wood-frame-content{
-  background:white url("images/wood-frame/wood-frame-middle.png") repeat-y center;
+  /*background:white url("images/wood-frame/wood-frame-middle.png") repeat-y center;*/
   background-size: 100%;
   padding: 1px 4rem 1px 4rem;
 }
@@ -153,21 +153,21 @@
 
     <!-- BORG IMAGE -->
     <div class="relative">
-      <img class="background-image" src="Images/background/borg/BORG-v2.jpg" alt="">
+      <img class="background-image" src="Images/background/borg/borgfinal.jpg" alt="">
 
       <!-- BORGMUR -->
       <img class="borgmur" src="Images/background/del3/borg.png" alt="">
 
       <!-- HUS 1 -->
       <a href="">
-      <div class="absolute hus" id="hus1">
- <!--        <img class="hus-image" src="Images/background/borg/house1.png" alt=""> -->
+      <div class="absolute hus" id="hus1" >
+<!--         <img class="hus-image" src="Images/background/borg/house1.png" alt=""> -->
       </div>
       </a>
 
       <!-- HUS 2 -->
       <a href="">
-      <div class="absolute hus" id="hus2">
+      <div class="absolute hus" id="hus2" data-toggle="modal" data-target="#tilmeld-modal">
 <!--         <img class="hus-image" src="Images/background/borg/house2.png" alt=""> -->
       </div>
       </a>
@@ -207,45 +207,26 @@
 
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tilmeld-modal">TILMELD</button>
 
-    <!-- Modal -->
+    <!-- Tilmeld Modal -->
 <div class="modal fade" id="tilmeld-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content by-modal">
       <div class="modal-header">
         
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        <h5 class="text-center modal-title">Tilmeld</h5>
- 
-  <h5 class="text-center">Tilmeld content</h5>
+      <div class="modal-body modal-body-by">
+
 
   <!-- TILMELD CONTENT -->
-  
-  <!-- TILMELD CONTENT END -->
-  
-  
-</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
-        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
-      </div>
-    </div>
-  </div>
-</div>
-      
-    <!-- INFO BOKS SLUT -->
 
-    
-
-    <!-- WOOD FRAME START -->
+      <!-- WOOD FRAME START -->
 <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
  
-  <div class="wood-frame">
+<div class="wood-frame">
 
-<img src="images/wood-frame/wood-frame-top.png" alt="Wood frame top">
 
 <div class="wood-frame-content">
     <article>
@@ -344,10 +325,26 @@
     </article>
 </div>
 
-<img src="images/wood-frame/wood-frame-bottom.png" alt="Wood frame bottom">
 </div>
 
 <!-- WOOD FRAME END -->
+  <!-- TILMELD CONTENT END -->
+  
+  
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+      
+    <!-- INFO BOKS SLUT -->
+
+    
+
+ 
 
 
     
