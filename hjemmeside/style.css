@@ -708,3 +708,11 @@ footer .card-body h6{
     border: none!important;
     outline: none!important;
 }
+
+/* MEDLEM LIST SIDE */
+
+.medlem-list .table td, .medlem-list .table th{
+  border-color: black;
+}
+
+/* MEDLEM LIST END */

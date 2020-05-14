@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en" id="html">
   <head>
@@ -222,10 +223,12 @@
 
   <!-- TILMELD CONTENT -->
 
+  
+      
       <!-- WOOD FRAME START -->
 <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
  
-<div class="wood-frame">
+<div id="tilmeldDig" class="wood-frame">
 
 
 <div class="wood-frame-content">
@@ -301,8 +304,8 @@
 
 
   <div class="text-center">
-    <a href="../templates/user-list.php" class="btn btn-light">Bliv medlem</a>
-    <button  type="submit" class="btn btn-light">Bliv medlem</button>
+
+    <div id="btnToUserList" class="btn btn-light">Bliv medlem</div>
   </div>
 </form>
 
@@ -329,6 +332,8 @@
 </div>
 
 <!-- WOOD FRAME END -->
+
+
   <!-- TILMELD CONTENT END -->
   
   
@@ -768,6 +773,13 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
         })
 
 
+//LINKS I MODALS - SKIFTER SIDE
+document.getElementById("btnToUserList").addEventListener("click", user_list);
+
+function user_list() {
+  document.getElementById("tilmeldDig").style.display = "none";
+  alert ("Hello World!");
+}
     </script>
   </body>
 </html>
