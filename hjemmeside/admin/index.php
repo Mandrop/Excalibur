@@ -29,7 +29,7 @@ nav{
   display: grid;
   justify-items: center;
   align-items: center;
-  background: url(parchment.png) no-repeat 0;
+  background: url(parchment2.jpg) no-repeat 0;
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
@@ -40,32 +40,9 @@ nav{
   </head>
   <body>
     
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand" href="#">Admin</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="?page=logout">Log ud <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Arrangementer
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="?page=create_event">Opret arrangement</a>
-          <a class="dropdown-item" href="?page=list_events">Arrangement oversigt</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
+<?php
+include("navbar.php")
+?>
 
 <div class="wrapper">
   <div class="login">
@@ -74,7 +51,7 @@ nav{
       <input type="text" id="brugernavn" name="Brugernavn"><br>
       <label for="kodeord">Kodeord</label><br>
       <input type="password" id="kodeord" name="kodeord"><br><br>
-      <input type="submit" value="Submit">
+      <input type="submit" value="Log in">
     </form> 
   </div>
 </div>

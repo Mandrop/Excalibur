@@ -145,8 +145,11 @@
 
     <!-- BORG IMAGE -->
     <div class="relative">
-      <img class="background-image" src="Images/background/del3/BG-del3-BORG.png" alt="">
-      <img class="borgmur" src="Images/background/del3/borg.png" alt="">
+      <img class="background-image" src="Images/background/borg/BORG1.jpg" alt="">
+      <div class="absolute hus" id="hus1"></div>
+      <div class="absolute hus" id="hus2"></div>
+      <div class="absolute hus" id="hus3"></div>
+      <!--<img class="borgmur" src="Images/background/del3/borg.png" alt="">-->
     </div>  
 
 
@@ -241,9 +244,9 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
     <!--<div class="stald">
       -->
 
-    <div id="hest">
+    <!--<div id="hest">
       <img src="images/hest1.1.png" class="hest" alt="">
-    </div>
+    </div>-->
 
     <div class="hus1" style="height:400px; width:400px; z-index: 999; background: grey;" data-toggle="modal" data-target="#exampleModal"></div>
     
