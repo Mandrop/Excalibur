@@ -157,7 +157,7 @@
 
     <!-- BORG IMAGE -->
     <div class="relative">
-      <img class="background-image" src="Images/background/borg/borgfinal1.jpg" alt="">
+      <img class="background-image" src="Images/background/borg/borgfinal2.jpg" alt="">
 
       <!-- BORGMUR -->
       <img class="borgmur" src="Images/background/del3/borg.png" alt="">
