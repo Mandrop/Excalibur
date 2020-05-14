@@ -169,7 +169,7 @@
 
 <!-- Modal SværdSten -->
 <div class="modal fade" id="sværdstenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-contentst">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -178,6 +178,7 @@
       </div>
       <div class="modal-body">
       <h5 class="Excaliburheader">You are not worthy of the sword Excalibur</h5>
+
       
 </div>
 </div>
