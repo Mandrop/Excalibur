@@ -425,8 +425,17 @@ height: 100%;
     /*background-size: cover;*/
     /*background-size: cover;*/
     background-size: 195% 120%!important;
-    
 }
+.by-modal{
+    background:white url("images/wood-frame/wood-frame-middle.png") repeat-y center!important;
+
+}
+/*.modal-body-by{
+    background-color: red;
+    width: 100%;
+    padding: 0;
+}*/
+
 
 .modal-header {
     border-bottom: 0;
