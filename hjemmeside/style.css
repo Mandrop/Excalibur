@@ -490,14 +490,29 @@ height: 100%;
     font-weight: 800;
 }
 
-#hest{
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    display: none;
-    z-index: 999;
-    top: 6100px;
+
+@media only screen and (max-width: 1950px) {
+    #hest{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        display: none;
+        z-index: 999;
+        top: 5%;
+    }
 }
+
+@media only screen and (max-width: 1400px) {
+    #hest{
+        top: 800px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #hest{
+        position: none;
+    }
+  }
 
 .hus1{
     background: grey;

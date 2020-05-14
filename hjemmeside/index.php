@@ -135,6 +135,10 @@
       <img class="barn-img" src="Images/background/barn-farm1.png" alt="">
     </div>
 
+    <div id="hest">
+      <img src="images/hest1.1.png" class="hest" alt="">
+    </div>
+
     
     
   </div>
@@ -587,10 +591,6 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
     <!--<div class="stald">
       -->
 
-    <!--<div id="hest">
-      <img src="images/hest1.1.png" class="hest" alt="">
-    </div>-->
-
     <div class="hus1" style="height:400px; width:400px; z-index: 999; background: grey;" data-toggle="modal" data-target="#exampleModal"></div>
     
     <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="height: 866px; width: 1000px;">
@@ -865,47 +865,50 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 
         //Hest
 
+
         //Waypoint
-        var $hest = $('#hest')
+        if(window.matchMedia("(min-width: 1300px)").matches){
+          var $hest = $('#hest')
 
-        $hest.waypoint(function () {
-          //Gå
-          var window_width = $(window).width() - $('#hest').width();
-          
-          var document_height = $(document).height() - $(window).height();
-
-          $hest.css("display", "block")
-                    
-          $(function hest() {
-              $(window).scroll(function () {
-                  var scroll_position = $(window).scrollTop();
-                  var object_position_left = window_width * ((scroll_position - 5100) / document_height) * 7;
-                  $('#hest').css({
-                      'left': object_position_left
-                  });
-              });
-          });
-        }, {offset: '50%'})
-
-        imageArrHest = ["Images/hest1.1.png","Images/hest1.2.png","Images/hest1.3.png"];
-
-        var image = 1;
-        //console.log("document.getElementById('sprite').innerHTML = testDiv.offsetTop");
-        $(window).scroll(function() {
+          $hest.waypoint(function () {
+            //Gå
+            var window_width = $(window).width() - $('#hest').width();
             
-            //console.log("scrolled");
-            windowScrollCount   = $(this).scrollTop();
-            animationFrame      = (windowScrollCount / 50);
+            var document_height = $(document).height() - $(window).height();
+            
+            $hest.css("display", "block")
+                      
+            $(function hest() {
+                $(window).scroll(function () {
+                    var scroll_position = $(window).scrollTop();
+                    var object_position_left = window_width * ((scroll_position - 350) / document_height) * 12;
+                    $('#hest').css({
+                        'left': object_position_left
+                    });
+                });
+            });
+          }, {offset: '50%'})
 
-            animationFrame = Math.floor(animationFrame % imageArr.length);
-            //console.log(animationFrame + " : " + windowScrollCount);
-            $('.hest').attr("src", imageArrHest[animationFrame]);
-        });
+          imageArrHest = ["Images/hest1.1.png","Images/hest1.2.png","Images/hest1.3.png"];
 
-        $('.hus1').click(function() {
-          $('#arrangementer').css('display', 'block')
-          $('#lille1').css('display', 'block')
-        })
+          var image = 1;
+          //console.log("document.getElementById('sprite').innerHTML = testDiv.offsetTop");
+          $(window).scroll(function() {
+              
+              //console.log("scrolled");
+              windowScrollCount   = $(this).scrollTop();
+              animationFrame      = (windowScrollCount / 50);
+
+              animationFrame = Math.floor(animationFrame % imageArr.length);
+              //console.log(animationFrame + " : " + windowScrollCount);
+              $('.hest').attr("src", imageArrHest[animationFrame]);
+          });
+
+          $('.hus1').click(function() {
+            $('#arrangementer').css('display', 'block')
+            $('#lille1').css('display', 'block')
+          })
+        }
 
 
     </script>
