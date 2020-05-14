@@ -92,7 +92,7 @@
     <!--<div class="gradient-one"></div>
     <div class="gradient-two"></div>-->
     <img class="background-image absolute" src="Images/background/top-part-gradient.png" alt="">
-    <img class="background-image" src="Images/background/top-part-v2.jpg" alt="">
+    <img class="background-image" src="Images/background/top-part-v3.jpg" alt="">
 
   </div>
 
@@ -109,7 +109,7 @@
       <button type="button" class="btn btn-primary info-btn" data-toggle="modal" data-target="#infoModal"></button>
       </div>
     <!-- BACKGROUND IMAGE -->
-    <img class="background-image" src="Images/background/BG-del1-without-farm.jpg" alt="">
+    <img class="background-image" src="Images/background/del1final2.jpg" alt="">
 
     <!-- STALD WAYPOINT -->
     <!--<div class="stald-two">
@@ -124,7 +124,7 @@
     <!-- STALD IMAGE -->
     <div class="background-image-content">
     
-      <img class="barn-img" src="Images/background/barn-farm-v2.png" alt="">
+      <img class="barn-img" src="Images/background/barn-farm1.png" alt="">
     </div>
 
     
