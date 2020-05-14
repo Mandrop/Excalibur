@@ -28,12 +28,30 @@ nav{
 .wrapper{
   display: grid;
   justify-items: center;
-  align-items: center;
   background: url(parchment2.jpg) no-repeat 0;
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
 }
+
+.table{
+    width: 80%;
+    margin-top: 30px;
+}
+
+td, th{
+    border-bottom: 1px solid black;
+}
+
+tr{
+    border: 1px solid black;
+}
+
+
+
+/* a:not([href]){
+    color: white;
+} */
 
 
     </style>
@@ -45,15 +63,32 @@ include("navbar.php")
 ?>
 
 <div class="wrapper">
-  <div class="login">
-    <form action="/action_page.php">
-      <label for="brugernavn">Brugernavn</label><br>
-      <input type="text" id="brugernavn" name="Brugernavn"><br>
-      <label for="kodeord">Kodeord</label><br>
-      <input type="password" id="kodeord" name="kodeord"><br><br>
-      <input type="submit" value="Log in">
-    </form> 
-  </div>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Navn</th>
+        <th scope="col">Email</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Peter Hansen</th>
+        <td>peter.hansen@gmail.com</td>
+        <td><a href="us_delete.php" class="btn btn-danger">Delete</a></td>
+      </tr>
+      <tr>
+        <th scope="row">Johannes Nielsen</th>
+        <td>johannes.nielsen@gmail.com</td>
+        <td><a href="us_delete.php" class="btn btn-danger">Delete</a></td>
+      </tr>
+      <tr>
+        <th scope="row">Lise Johansen</th>
+        <td>lise.johansen@gmail.com</td>
+        <td><a href="us_delete.php" class="btn btn-danger">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <?php

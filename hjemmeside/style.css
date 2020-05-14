@@ -103,7 +103,6 @@ h5{
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    
 }
 .arrow-down::after{
     content: "";

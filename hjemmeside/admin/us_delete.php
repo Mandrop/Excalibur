@@ -35,6 +35,11 @@ nav{
   width: 100%;
 }
 
+.grid{
+    display: grid;
+    justify-items: center;
+}
+
 
     </style>
   </head>
@@ -45,14 +50,9 @@ include("navbar.php")
 ?>
 
 <div class="wrapper">
-  <div class="login">
-    <form action="/action_page.php">
-      <label for="brugernavn">Brugernavn</label><br>
-      <input type="text" id="brugernavn" name="Brugernavn"><br>
-      <label for="kodeord">Kodeord</label><br>
-      <input type="password" id="kodeord" name="kodeord"><br><br>
-      <input type="submit" value="Log in">
-    </form> 
+  <div class="grid">
+    <h2>Er du sikker på at du vil slette ...</h2>
+    <button class="btn btn-danger">Slet</button>
   </div>
 </div>
 
