@@ -285,6 +285,8 @@ height: 100%;
 }
 /* HUSE INDIVIDUEL STYLE */
 #hus1{
+    background: transparent url('Images/background/borg/house1.png') no-repeat;
+    background-size: 100%;
     background-color: rgba(255, 0, 0, 0.4);
     height: 23%;
     width: 34.6%;
@@ -292,8 +294,14 @@ height: 100%;
     left: 3%;
     z-index: 1001;
 }
+#hus1:hover{
+    background: transparent url('Images/background/borg/house1-hoverv2.png') no-repeat;
+    background-size: 100%;
+}
 
 #hus2{
+    background: transparent url('Images/background/borg/house2.png') no-repeat;
+    background-size: 100%;
     background-color: rgba(255, 0, 0, 0.4);
     height: 26.8%;
     width: 34.8%;
@@ -301,7 +309,13 @@ height: 100%;
     right: 4%;
     z-index: 1001;
 }
+#hus2:hover{
+    background: transparent url('Images/background/borg/house2-hoverv2.png') no-repeat;
+    background-size: 100%;
+}
 #hus3{
+    background: transparent url('Images/background/borg/house3.png') no-repeat;
+    background-size: 100%;
     background-color:rgba(0,255,0,0.3);
     height: 25%;
     width: 43.1%;
@@ -309,7 +323,13 @@ height: 100%;
     left: 1.7%;
     z-index: 1002;
 }
+#hus3:hover{
+    background: transparent url('Images/background/borg/house3-hoverv2.png') no-repeat;
+    background-size: 100%;
+}
 #hus4{
+    background: transparent url('Images/background/borg/house4.png') no-repeat;
+    background-size: 100%;
     background-color:rgba(0,255,0,0.3);
     height: 22.6%;
     width: 41.7%;
@@ -317,7 +337,13 @@ height: 100%;
     right: 3.4%;
     z-index: 1002;
 }
+#hus4:hover{
+    background: transparent url('Images/background/borg/house4-hoverv2.png') no-repeat;
+    background-size: 100%;
+}
 #hus5{
+    background: transparent url('Images/background/borg/house5.png') no-repeat;
+    background-size: 100%;
     background-color:rgba(0,0,255,0.3);
     height: 23%;
     width: 35.5%;
@@ -325,13 +351,23 @@ height: 100%;
     left: 1.3%;
     z-index: 1003;
 }
+#hus5:hover{
+    background: transparent url('Images/background/borg/house5-hoverv2.png') no-repeat;
+    background-size: 100%;
+}
 #hus6{
+    background: transparent url('Images/background/borg/house6.png') no-repeat;
+    background-size: 100%;
     background-color:rgba(0,0,255,0.3);
     height: 26.7%;
     width: 42.1%;
     top: 67.8%;
     right: 0;
     z-index: 1003;
+}
+#hus6:hover{
+    background: transparent url('Images/background/borg/house6-hoverv2.png') no-repeat;
+    background-size: 100%;
 }
 .background-content{
 
@@ -425,8 +461,17 @@ height: 100%;
     /*background-size: cover;*/
     /*background-size: cover;*/
     background-size: 195% 120%!important;
-    
 }
+.by-modal{
+    background:white url("images/wood-frame/wood-frame-middle.png") repeat-y center!important;
+
+}
+/*.modal-body-by{
+    background-color: red;
+    width: 100%;
+    padding: 0;
+}*/
+
 
 .modal-header {
     border-bottom: 0;
