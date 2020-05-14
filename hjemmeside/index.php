@@ -193,51 +193,192 @@
   </div>
 
       <!-- HUS 1 -->
-      <a href="">
+
       <div class="absolute hus" id="hus1" >
 <!--         <img class="hus-image" src="Images/background/borg/house1.png" alt=""> -->
       </div>
-      </a>
+
 
       <!-- HUS 2 -->
-      <a href="">
+
       <div class="absolute hus" id="hus2" data-toggle="modal" data-target="#tilmeld-modal">
 <!--         <img class="hus-image" src="Images/background/borg/house2.png" alt=""> -->
       </div>
-      </a>
+
 
       <!-- HUS 3 -->
-      <a href="">
+
       <div class="absolute hus" id="hus3">
 <!--         <img class="hus-image" src="Images/background/borg/house3.png" alt=""> -->
       </div>
-      </a>
+
 
       <!-- HUS 4 -->
-      <a href="">
+
       <div class="absolute hus" id="hus4">
 <!--         <img class="hus-image" src="Images/background/borg/house4.png" alt=""> -->
       </div>
-      </a>
+ 
 
 
       <!-- HUS 5 -->
-      <a href="">
+
       <div class="absolute hus" id="hus5">
 <!--         <img class="hus-image" src="Images/background/borg/house5.png" alt=""> -->
       </div>
-      </a>
+
 
       <!-- HUS 6 -->
-      <a href="">
+    
       <div class="absolute hus" id="hus6">
 <!--         <img class="hus-image" src="Images/background/borg/house6.png" alt=""> -->
       </div>
-      </a>
+   
 
     </div>  
 
     <!-- ARRANGEMENTER BUTTON -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#arrangementer-modal">ARRANGEMENTER</button>
+
+    <!-- Tilmeld Modal -->
+<div class="modal fade" id="arrangementer-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content by-modal">
+      <div class="modal-header">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-body-by">
+
+
+  <!-- TILMELD CONTENT -->
+
+      <!-- WOOD FRAME START -->
+<!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+ 
+<div class="wood-frame">
+
+
+<div class="wood-frame-content">
+    <article>
+<!-- CONTENT HERE -->
+
+
+<!-- TITLE START -->
+
+<div class="d-flex justify-content-center">
+
+    <div>
+<!-- CONTENT HERE -->
+
+       <img src="images/titler/bliv-medlem.png" alt="Medlem login">
+
+<!-- CONTENT HERE -->
+    </div>
+
+</div>
+
+<!-- TITLE END -->
+
+
+
+
+    <div class="row">
+
+
+        <div class="col">
+            <!-- PERKAMENT FRAME START -->
+            <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+            
+              <div class="perkament-frame">
+
+                  <img src="images/perkament/perkament-top.png" alt="perkament frame top">
+
+                  <div class="perkament-frame-content">
+                      <article>
+                  <!-- CONTENT HERE -->
+
+<div class="bliv-medlem d-flex justify-content-center">
+
+
+  <!-- FORMULAR -->
+  
+<form class="text-center mt-5 pb-4 contact-form mb-5 w-50" action="index.php">
+  
+
+  <div class="form-group">
+    <input type="text" class="form-control" id="inputUser" placeholder="Bruger navn" required>
+  </div>
+
+  <div class="form-group">
+    <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+  </div>
+
+  <div class="form-group">
+    <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+  </div>
+
+  <div class="form-group">
+    <input type="password" class="form-control" id="inputRetypePassword" placeholder="Gentag password" required>
+  </div>
+
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+    <label class="form-check-label" for="defaultCheck1">
+      Jeg har tilladelse fra mine forældre/værge til at indmelde mig
+    </label>
+  </div>
+
+
+  <div class="text-center">
+    <button type="submit" class="btn btn-light">Bliv medlem</button>
+  </div>
+</form>
+
+
+
+  <!-- FORMULAR -->
+</div>
+                  <!-- CONTENT HERE -->
+                      </article>
+                  </div>
+
+                  <img src="images/perkament/perkament-bottom.png" alt="Perkament frame bottom">
+              </div>
+
+            <!-- PERKAMENT FRAME END -->
+         </div>
+
+
+    </div>
+<!-- CONTENT HERE -->
+    </article>
+</div>
+
+</div>
+
+<!-- WOOD FRAME END -->
+  <!-- TILMELD CONTENT END -->
+  
+  
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+      
+    <!-- INFO BOKS SLUT -->
+
+
+    
+
+
 
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tilmeld-modal">TILMELD</button>
 
