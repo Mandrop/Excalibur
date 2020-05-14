@@ -89,8 +89,9 @@
 
   <!-- FADE IN START -->
   <div class="background-fade-in">
-    <div class="gradient-one"></div>
-    <div class="gradient-two"></div>
+    <!--<div class="gradient-one"></div>
+    <div class="gradient-two"></div>-->
+    <img class="background-image absolute" src="Images/background/top-part-gradient.png" alt="">
     <img class="background-image" src="Images/background/top-part-v2.jpg" alt="">
 
   </div>
@@ -125,12 +126,28 @@
     
       <img class="barn-img" src="Images/background/barn-farm-v2.png" alt="">
     </div>
+
+    
     
   </div>
 
 
     <div class="background" id="background">
-      
+
+    <!-- ORKBY IMAGE  -->
+    <img class="background-image" src="Images/background/orcdelfinal.jpg" alt="">
+
+    <!-- DWARD  IMAGE  -->
+    <img class="background-image" src="Images/background/dwarf/DWARF del.jpg" alt="">
+
+    <!-- NYHED  IMAGE  -->
+    <img class="background-image" src="Images/background/nyheddel3.jpg" alt="">
+
+    <!-- BORG IMAGE -->
+    <div class="relative">
+      <img class="background-image" src="Images/background/del3/BG-del3-BORG.png" alt="">
+      <img class="borgmur" src="Images/background/del3/borg.png" alt="">
+    </div>  
 
 
 

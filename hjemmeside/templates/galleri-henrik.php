@@ -58,67 +58,7 @@
   border:none;
 }
 
-.wrapper{
-  display: grid;
-  align-items: center;
-  width:700px;
-}
-
-.grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin-top: 40px;
-}
-
-.grid img{
-  height: 145px;
-  width: 160px;
-}
-
-.right{
-  margin-left: 40px;
-}
-
-.top{
-  margin-bottom: 40px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  /* border: 1px solid black; */
-  background-image: none;
-}
-
-.arrow-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-row-gap: 50px;
-}
-
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: black;
-  margin-left: 60px;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: black;
-  margin-right: 60px;
-}
-
-
-
-
+* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
@@ -243,44 +183,40 @@
       <!-- CONTENT HERE -->
 
 
-      <div class="wrapper">
-        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel" style="fixed">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-interval="false">
-              <div class="grid">
-                <img src="../images/DSC06825.JPG" alt="" class="top">
-                <img src="../images/roleplay-news.jpg" alt="" class="right top">
-                <img src="../images/roleplay-news.jpg" alt="">
-                <img src="../images/roleplay-news.jpg" alt="" class="right">
-              </div>
-            </div>
-            <div class="carousel-item" data-interval="false">
-            <div class="grid">
-                <img src="../images/DSC06825.JPG" alt="" class="top">
-                <img src="../images/roleplay-news.jpg" alt="" class="right top">
-                <img src="../images/roleplay-news.jpg" alt="">
-                <img src="../images/roleplay-news.jpg" alt="" class="right">
-              </div>
-            </div>
-            <div class="carousel-item">
-            <div class="grid">
-                <img src="../images/DSC06825.JPG" alt="" class="top">
-                <img src="../images/roleplay-news.jpg" alt="" class="right top">
-                <img src="../images/roleplay-news.jpg" alt="">
-                <img src="../images/roleplay-news.jpg" alt="" class="right">
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="../images/galleri-img/DSC06880.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="../images/galleri-img/DSC06880.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="../images/galleri-img/DSC06880.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> 
 
 
 
