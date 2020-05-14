@@ -25,6 +25,20 @@ nav{
   background-color: #D6AB90;
 }
 
+form label{
+    margin-top: -10px;
+    margin-bottom: -20px
+}
+
+#submit{
+    margin-top: -30px
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
 .wrapper{
   display: grid;
   justify-items: center;
@@ -45,13 +59,19 @@ include("navbar.php")
 ?>
 
 <div class="wrapper">
-  <div class="login">
+  <div class="create">
     <form action="/action_page.php">
-      <label for="brugernavn">Brugernavn</label><br>
-      <input type="text" id="brugernavn" name="Brugernavn"><br>
-      <label for="kodeord">Kodeord</label><br>
-      <input type="password" id="kodeord" name="kodeord"><br><br>
-      <input type="submit" value="Log in">
+      <label for="titel">Titel</label><br>
+      <input type="text" id="titel" name="titel"><br>
+      <label for="dato">Dato</label><br>
+      <input type="date" id="dato" name="dato"><br>
+      <label for="lokation">Lokation</label><br>
+      <input type="text" id="lokation" name="lokation"><br>
+      <label for="information" id="information" name="information">Information</label><br>
+      <textarea type="textarea" id="information" name="information"></textarea><br>
+      <label for="arrangør">Arrangør</label><br>
+      <input type="text" id="arrangør" name="arrangør"><br><br>
+      <input type="submit" id="submit" value="Create">
     </form> 
   </div>
 </div>

@@ -28,12 +28,30 @@ nav{
 .wrapper{
   display: grid;
   justify-items: center;
-  align-items: center;
   background: url(parchment2.jpg) no-repeat 0;
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
 }
+
+.table{
+    width: 80%;
+    margin-top: 30px;
+}
+
+td, th{
+    border-bottom: 1px solid black;
+}
+
+tr{
+    border: 1px solid black;
+}
+
+
+
+/* a:not([href]){
+    color: white;
+} */
 
 
     </style>
@@ -45,15 +63,32 @@ include("navbar.php")
 ?>
 
 <div class="wrapper">
-  <div class="login">
-    <form action="/action_page.php">
-      <label for="brugernavn">Brugernavn</label><br>
-      <input type="text" id="brugernavn" name="Brugernavn"><br>
-      <label for="kodeord">Kodeord</label><br>
-      <input type="password" id="kodeord" name="kodeord"><br><br>
-      <input type="submit" value="Log in">
-    </form> 
-  </div>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Navn på karakter</th>
+        <th scope="col">Navn på bruger</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Legolas</th>
+        <td>Peter Hansen</td>
+        <td><a href="ka_delete.php" class="btn btn-danger">Delete</a></td>
+      </tr>
+      <tr>
+        <th scope="row">Bilbo</th>
+        <td>Johannes Nielsen</td>
+        <td><a href="ka_delete.php" class="btn btn-danger">Delete</a></td>
+      </tr>
+      <tr>
+        <th scope="row">Gandalf</th>
+        <td>Lise Johansen</td>
+        <td><a href="ka_delete.php" class="btn btn-danger">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <?php

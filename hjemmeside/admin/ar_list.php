@@ -28,12 +28,30 @@ nav{
 .wrapper{
   display: grid;
   justify-items: center;
-  align-items: center;
   background: url(parchment2.jpg) no-repeat 0;
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
 }
+
+.table{
+    width: 80%;
+    margin-top: 30px;
+}
+
+td, th{
+    border-bottom: 1px solid black;
+}
+
+tr{
+    border: 1px solid black;
+}
+
+
+
+/* a:not([href]){
+    color: white;
+} */
 
 
     </style>
@@ -45,15 +63,36 @@ include("navbar.php")
 ?>
 
 <div class="wrapper">
-  <div class="login">
-    <form action="/action_page.php">
-      <label for="brugernavn">Brugernavn</label><br>
-      <input type="text" id="brugernavn" name="Brugernavn"><br>
-      <label for="kodeord">Kodeord</label><br>
-      <input type="password" id="kodeord" name="kodeord"><br><br>
-      <input type="submit" value="Log in">
-    </form> 
-  </div>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Titel</th>
+        <th scope="col">Arrangør</th>
+        <th scope="col">Update</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Rollespil i Odense skov</th>
+        <td>Tim Mogensen</td>
+        <td><a href="ar_update.php" class="btn btn-primary">Update</a></td>
+        <td><a href="ar_delete.php" class="btn btn-danger">Delete</a></td>
+      </tr>
+      <tr>
+        <th scope="row">Bål aften</th>
+        <td>Tom Pedersen</td>
+        <td><a href="ar_update.php" class="btn btn-primary">Update</a></td>
+        <td><a href="ar_delete.php" class="btn btn-danger">Delete</a></td>
+      </tr>
+      <tr>
+        <th scope="row">Rollespil i Vejle skov</th>
+        <td>Lars Hansen</td>
+        <td><a href="ar_update.php" class="btn btn-primary">Update</a></td>
+        <td><a href="ar_delete.php" class="btn btn-danger">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <?php
