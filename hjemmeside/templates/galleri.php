@@ -22,10 +22,10 @@
   width:100%;
 }
 
-.wood-frame-content{
+.wood-frame-galleri-content{
   background:white url("../images/wood-frame/wood-frame-middle.png") repeat-y center;
   background-size: 100%;
-  padding: 1px 4rem 1px 4rem;
+  padding: 1px 0rem 1px 0rem;
 }
 /* WOOD FRAME STYLE END */
 
@@ -49,9 +49,12 @@
 
 .galleri{
     background:transparent url("../images/bog.png") no-repeat center;
-    background-size:contain;
-    height: 50vw;
+    background-size:115vw;
+    height: 58vw;
+    display:flex
 }
+
+
 
 .galleri .card{
   background-color: transparent;
@@ -61,6 +64,7 @@
 .wrapper{
   display: grid;
   align-items: center;
+  width:80vw;
 }
 
 .grid{
@@ -68,11 +72,13 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin-top: 40px;
+  justify-items:center;
 }
 
 .grid img{
-  height: 145px;
-  width: 160px;
+/*   height: 145px;
+  width: 160px; */
+  width: 70%;
 }
 
 .right{
@@ -191,7 +197,7 @@
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: transparent;
 }
 
 /* Fading animation */
@@ -210,6 +216,44 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.galleri-responsive{
+    background:transparent url("../images/book-half.png") no-repeat center;
+    background-size:contain;
+    height: 135vw;
+    padding: 0 15%;
+    display: none;
+}
+
+
+
+.galleri .card{
+  background-color: transparent;
+  border:none;
+}
+
+}
+
+
+@media (max-width: 979px) {
+  /* Selectors and styles affecting screens UP TO 979px (Desktop) */
+}
+
+@media (max-width: 767px) {
+    /* Selectors and styles affecting screens UP TO 767px (Tablet) */
+
+}
+
+@media (max-width: 600px) {
+    /* Selectors and styles affecting screens UP TO 480px (Phone) */
+.galleri{
+  display:none;
+}
+.galleri-responsive{
+  display: flex;
+}
+
 }
 /* GALLERI SIDE END */
 
@@ -237,8 +281,9 @@
 
       <img src="../images/wood-frame/wood-frame-top.png" alt="Wood frame top">
 
-      <div class="wood-frame-content">
-          <article class="galleri d-flex justify-content-center">
+      <div class="wood-frame-galleri-content">
+                   <img src="../images/titler/galleri.png" alt="Opret karakter">
+          <article class="galleri justify-content-center align-content-center">
       <!-- CONTENT HERE -->
 
 
@@ -247,26 +292,26 @@
           <div class="carousel-inner">
             <div class="carousel-item active" data-interval="false">
               <div class="grid">
-                <img src="../images/DSC06825.JPG" alt="" class="top">
-                <img src="../images/roleplay-news.jpg" alt="" class="right top">
-                <img src="../images/roleplay-news.jpg" alt="">
-                <img src="../images/roleplay-news.jpg" alt="" class="right">
+                <img src="../images/galleri-img/DSC06880.jpg" alt="" class="top">
+                <img src="../images/galleri-img/DSC06908.jpg" alt="" class="right top">
+                <img src="../images/galleri-img/DSC06910.jpg" alt="">
+                <img src="../images/galleri-img/DSC06921.jpg" alt="" class="right">
               </div>
             </div>
-            <div class="carousel-item" data-interval="2000">
+            <div class="carousel-item" data-interval="false">
             <div class="grid">
-                <img src="../images/DSC06825.JPG" alt="" class="top">
-                <img src="../images/roleplay-news.jpg" alt="" class="right top">
-                <img src="../images/roleplay-news.jpg" alt="">
-                <img src="../images/roleplay-news.jpg" alt="" class="right">
+                <img src="../images/galleri-img/DSC06948.jpg" alt="" class="top">
+                <img src="../images/galleri-img/DSC06951.jpg" alt="" class="right top">
+                <img src="../images/galleri-img/DSC06969.jpg" alt="">
+                <img src="../images/galleri-img/DSC06970.jpg" alt="" class="right">
               </div>
             </div>
             <div class="carousel-item">
             <div class="grid">
-                <img src="../images/DSC06825.JPG" alt="" class="top">
-                <img src="../images/roleplay-news.jpg" alt="" class="right top">
-                <img src="../images/roleplay-news.jpg" alt="">
-                <img src="../images/roleplay-news.jpg" alt="" class="right">
+                <img src="../images/galleri-img/DSC06975.jpg" alt="" class="top">
+                <img src="../images/galleri-img/DSC06977.jpg" alt="" class="right top">
+                <img src="../images/galleri-img/DSC06999.jpg" alt="">
+                <img src="../images/galleri-img/DSC07014.jpg" alt="" class="right">
               </div>
             </div>
           </div>
@@ -283,11 +328,63 @@
 
 
 
-<!-- BOOTSTRAP MODAL END -->
-
 
       <!-- CONTENT HERE -->
           </article>
+
+
+       <article class="galleri-responsive justify-content-center align-content-center">
+      <!-- CONTENT HERE -->
+
+
+      <div class="wrapper">
+        <div id="carouselExampleInterval2" class="carousel slide" data-ride="carousel" style="fixed">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="false">
+             <div class="d-flex flex-column">
+                <img src="../images/galleri-img/DSC06880.jpg" alt="" class="top">
+                <img src="../images/galleri-img/DSC06910.jpg" alt="">
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="false">
+            <div class="d-flex flex-column">
+                <img src="../images/galleri-img/DSC06948.jpg" alt="" class="top">
+                <img src="../images/galleri-img/DSC06969.jpg" alt="">
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="false">
+            <div class="d-flex flex-column">
+                <img src="../images/galleri-img/DSC06951.jpg" alt="" class="top">
+                <img src="../images/galleri-img/DSC06970.jpg" alt="">
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="false">
+            <div class="d-flex flex-column">
+                <img src="../images/galleri-img/DSC06975.jpg" alt="" class="top">
+                <img src="../images/galleri-img/DSC06977.jpg" alt="">
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="false">
+            <div class="d-flex flex-column">
+                <img src="../images/galleri-img/DSC06999.jpg" alt="" class="top">
+                <img src="../images/galleri-img/DSC07014.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleInterval2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleInterval2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- CONTENT HERE -->
+          </article>
+          
       </div>
 
       <img src="../images/wood-frame/wood-frame-bottom.png" alt="Wood frame bottom">
