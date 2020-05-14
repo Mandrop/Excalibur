@@ -715,47 +715,50 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 
         //Hest
 
+
         //Waypoint
-        var $hest = $('#hest')
+        if(window.matchMedia("(min-width: 1300px)").matches){
+          var $hest = $('#hest')
 
-        $hest.waypoint(function () {
-          //Gå
-          var window_width = $(window).width() - $('#hest').width();
-          
-          var document_height = $(document).height() - $(window).height();
-
-          $hest.css("display", "block")
-                    
-          $(function hest() {
-              $(window).scroll(function () {
-                  var scroll_position = $(window).scrollTop();
-                  var object_position_left = window_width * ((scroll_position + 0) / document_height) * 9;
-                  $('#hest').css({
-                      'left': object_position_left
-                  });
-              });
-          });
-        }, {offset: '50%'})
-
-        imageArrHest = ["Images/hest1.1.png","Images/hest1.2.png","Images/hest1.3.png"];
-
-        var image = 1;
-        //console.log("document.getElementById('sprite').innerHTML = testDiv.offsetTop");
-        $(window).scroll(function() {
+          $hest.waypoint(function () {
+            //Gå
+            var window_width = $(window).width() - $('#hest').width();
             
-            //console.log("scrolled");
-            windowScrollCount   = $(this).scrollTop();
-            animationFrame      = (windowScrollCount / 50);
+            var document_height = $(document).height() - $(window).height();
+            
+            $hest.css("display", "block")
+                      
+            $(function hest() {
+                $(window).scroll(function () {
+                    var scroll_position = $(window).scrollTop();
+                    var object_position_left = window_width * ((scroll_position - 350) / document_height) * 12;
+                    $('#hest').css({
+                        'left': object_position_left
+                    });
+                });
+            });
+          }, {offset: '50%'})
 
-            animationFrame = Math.floor(animationFrame % imageArr.length);
-            //console.log(animationFrame + " : " + windowScrollCount);
-            $('.hest').attr("src", imageArrHest[animationFrame]);
-        });
+          imageArrHest = ["Images/hest1.1.png","Images/hest1.2.png","Images/hest1.3.png"];
 
-        $('.hus1').click(function() {
-          $('#arrangementer').css('display', 'block')
-          $('#lille1').css('display', 'block')
-        })
+          var image = 1;
+          //console.log("document.getElementById('sprite').innerHTML = testDiv.offsetTop");
+          $(window).scroll(function() {
+              
+              //console.log("scrolled");
+              windowScrollCount   = $(this).scrollTop();
+              animationFrame      = (windowScrollCount / 50);
+
+              animationFrame = Math.floor(animationFrame % imageArr.length);
+              //console.log(animationFrame + " : " + windowScrollCount);
+              $('.hest').attr("src", imageArrHest[animationFrame]);
+          });
+
+          $('.hus1').click(function() {
+            $('#arrangementer').css('display', 'block')
+            $('#lille1').css('display', 'block')
+          })
+        }
 
 
     </script>
