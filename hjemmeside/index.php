@@ -127,6 +127,10 @@
       <img class="barn-img" src="Images/background/barn-farm-v2.png" alt="">
     </div>
 
+    <div id="hest">
+      <img src="images/hest1.1.png" class="hest" alt="">
+    </div>
+
     
     
   </div>
@@ -243,10 +247,6 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
     
     <!--<div class="stald">
       -->
-
-    <!--<div id="hest">
-      <img src="images/hest1.1.png" class="hest" alt="">
-    </div>-->
 
     <div class="hus1" style="height:400px; width:400px; z-index: 999; background: grey;" data-toggle="modal" data-target="#exampleModal"></div>
     
@@ -535,7 +535,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
           $(function hest() {
               $(window).scroll(function () {
                   var scroll_position = $(window).scrollTop();
-                  var object_position_left = window_width * ((scroll_position - 5100) / document_height) * 7;
+                  var object_position_left = window_width * ((scroll_position + 0) / document_height) * 9;
                   $('#hest').css({
                       'left': object_position_left
                   });
