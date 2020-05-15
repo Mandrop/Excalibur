@@ -216,7 +216,7 @@
     <img class="background-image" src="Images/background/orc/orcdelfinal6.jpg" alt="">
 
     <!-- DWARD  IMAGE  -->
-    <img class="background-image" src="Images/background/dwarf/DWARF del.jpg" alt="">
+    <img class="background-image" src="Images/background/dwarf/dwarfdel.jpg" alt="">
 
     <!-- NYHED  IMAGE  -->
     <img class="background-image" src="Images/background/nyheddel3.jpg" alt="">
