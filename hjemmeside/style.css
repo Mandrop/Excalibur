@@ -1082,6 +1082,12 @@ padding:0px 1px;
   .bliv-medlem form{
       width: 90% !important;
   }
+  .table td, .table th{
+      padding: 0 !important;
+  }
+  .table{
+    width: 80% !important;
+  }
   }
   /* GALLERI SIDE END */
 

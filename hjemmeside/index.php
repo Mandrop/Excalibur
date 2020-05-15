@@ -55,10 +55,6 @@
     width: 93%;
   }
 }
-
-.w-100{
-  margin: 10px;
-}
 /* PERKAMENT FRAME END */
 
 
@@ -1239,7 +1235,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
             <div class="">
             <img src="images/titler/arrangementer.png" alt="Arrangementer" style="margin-bottom: 30px;">
               <div class="ar_grid">
-                <div class="w-100">
+                <div class="w-100" style="margin: 10px">
                     <!-- PERKAMENT FRAME START -->
                     <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
 
@@ -1268,7 +1264,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
                  </div>
 
 
-                <div class="w-100">
+                <div class="w-100" style="margin: 10px">
                     <!-- PERKAMENT FRAME START -->
                     <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
 
