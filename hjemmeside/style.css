@@ -1051,8 +1051,9 @@ footer .card-body h6{
     background-color: transparent;
     border:none;
   }
-  
-  }
+
+
+
   
   
   @media (max-width: 979px) {
@@ -1074,6 +1075,12 @@ footer .card-body h6{
   }
   .wood-frame-content{
 padding:0px 1px;
+  }
+  .tilmeld-frame-content{
+      padding: 1px 0;
+  }
+  .bliv-medlem form{
+      width: 90% !important;
   }
   }
   /* GALLERI SIDE END */
