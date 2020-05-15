@@ -502,7 +502,7 @@ height: 100%;
 .stald-waypoint{
     margin-top: -50px;
     height: 1px;
-    background-color: red;
+    
 }
 
 .walk {
@@ -1182,3 +1182,9 @@ padding:0px 1px;
     bottom: 13%;
     width: 100%;
 }
+
+#infoModal{
+    z-index: 5000;
+}
+
+

@@ -177,7 +177,7 @@
       <!-- INFO BOKS -->
       <div class="info-waypoint"></div>
       <div class="info">
-      <img class="info-img" src="images/info.png" alt="">
+      <img class="info-img" src="images/info1.png" alt="">
       <button type="button" class="btn btn-primary info-btn" data-toggle="modal" data-target="#infoModal"></button>
       </div>
     <!-- BACKGROUND IMAGE -->
@@ -213,7 +213,7 @@
     <div class="background" id="background">
 
     <!-- ORKBY IMAGE  -->
-    <img class="background-image" src="Images/background/orc/orcdelfinal4.jpg" alt="">
+    <img class="background-image" src="Images/background/orc/orcdelfinal6.jpg" alt="">
 
     <!-- DWARD  IMAGE  -->
     <img class="background-image" src="Images/background/dwarf/DWARF del.jpg" alt="">
@@ -301,7 +301,7 @@
 
       </img><img id="sprite" src="Images/1,2.png" alt="walk01" class="walk"/>
       <div class="slut absolute"></div>
-      <img class="absolute sprite-slut" src="Images/H1.png" alt="walk01"/>
+
       
    
 
@@ -1039,7 +1039,7 @@ include('templates/kontakt.php');
 
 <!-- Modal -->
 <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         
@@ -1105,8 +1105,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 <h6>Spørgsmål</h6>
 <p>Hvis du har spørgsmål er du altid velkommen til at e-maile eller ringe til os. Du kan finde vores kontaktinformation under Kontakt.</p>
   <hr>
-  <h5 class="text-center">Sidste Nyt</h5>
-  <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+  <p><a href="admin/" class="tooltip-test" title="Tooltip">Admin panel</a></p>
   
 </div>
       <div class="modal-footer">
@@ -1356,8 +1355,11 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
         if (direction == 'down') {
           console.log('Slut aktiveret');
           $walk.css({'position': 'absolute', 'top': '87%'})
+          imageArr = ["Images/Hovedperson 1.png"];
         }else {
           console.log('slut deaktiveret');
+          $walk.css({'position': 'fixed', 'top': '50%'})
+          imageArr = ["Images/H1.png","Images/H3.png","Images/H1.png","Images/H3.png"];
         }
       }, { offset: '50%'});
 
