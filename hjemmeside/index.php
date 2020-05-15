@@ -4,6 +4,7 @@
   <style>
 
 
+
 /* WOOD FRAME STYLE */
 .wood-frame img{
   width:100%;
@@ -162,6 +163,8 @@
 
 </div>
 
+<a href="admin/index.php" id="admin"></a>
+
     <!-- STALD IMAGE -->
     <div class="background-image-content">
     
@@ -180,7 +183,7 @@
     <div class="background" id="background">
 
     <!-- ORKBY IMAGE  -->
-    <img class="background-image" src="Images/background/orc/orcdelfinal4.jpg" alt="">
+    <img class="background-image" src="Images/background/orc/orcdelfinal6.jpg" alt="">
 
     <!-- DWARD  IMAGE  -->
     <img class="background-image" src="Images/background/dwarf/DWARF del.jpg" alt="">
@@ -221,7 +224,7 @@
 
 
 
-<!--- SværdSten ----->
+<!--- SværdSten --->
 
   <div class="sværdsten" data-toggle="modal" data-target="#sværdstenModal"> 
   </div>
@@ -265,6 +268,11 @@
       <div class="absolute hus" id="hus6" data-toggle="modal" data-target="#kontakt-modal">
 <!--         <img class="hus-image" src="Images/background/borg/house6.png" alt=""> -->
       </div>
+
+      </img><img id="sprite" src="Images/1,2.png" alt="walk01" class="walk"/>
+      <div class="slut absolute"></div>
+
+      
    
 
     </div>  
@@ -1080,7 +1088,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 </div>
       
     <!-- INFO BOKS SLUT -->
-    </img><img id="sprite" src="Images/1,2.png" alt="walk01" class="walk"/>
+    
     <div id="scrollDiv"></div>
     </div>
 
@@ -1280,7 +1288,9 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 <!--<div class="second" id="second"></div>-->
 <!-- Button trigger modal -->
 
-
+<div class="container-fluid p-0">
+<img class="w-100" src="images/background/bottom-part.jpg" alt="Bottom part">
+</div>
 <footer id="kontakt">
 
 <?php
@@ -1306,6 +1316,24 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
     
 
     <script>
+
+      var $slut = $('.slut');
+
+      var $walk = $('.walk')
+
+      $slut.waypoint(function (direction) {
+        if (direction == 'down') {
+          console.log('Slut aktiveret');
+          $walk.css({'position': 'absolute', 'top': '87%'})
+          imageArr = ["Images/Hovedperson 1.png"];
+        }else {
+          console.log('slut deaktiveret');
+          $walk.css({'position': 'fixed', 'top': '50%'})
+          imageArr = ["Images/H1.png","Images/H3.png","Images/H1.png","Images/H3.png"];
+        }
+      }, { offset: '50%'});
+
+      
       
 
 

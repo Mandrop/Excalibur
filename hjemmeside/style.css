@@ -166,6 +166,15 @@ html, body {
 }
 
 
+#admin{
+    display: block;
+    height: 25%;
+    width: 13.5%;
+/*     background: grey; */
+    position: absolute;
+    top: 0px;
+    left: 66%;
+}
 
 
 .fixedElement {
@@ -493,7 +502,7 @@ height: 100%;
 .stald-waypoint{
     margin-top: -50px;
     height: 1px;
-    background-color: red;
+    
 }
 
 .walk {
@@ -1063,7 +1072,9 @@ footer .card-body h6{
   .galleri-responsive{
     display: flex;
   }
-  
+  .wood-frame-content{
+padding:0px 1px;
+  }
   }
   /* GALLERI SIDE END */
 
@@ -1150,4 +1161,17 @@ footer .card-body h6{
 
 .info{
     z-index: 4000;
+}
+
+
+
+
+
+.slut{
+    
+    background-color: red;
+    
+    width: 50px;
+    bottom: 13%;
+    width: 100%;
 }
