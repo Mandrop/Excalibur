@@ -1200,4 +1200,7 @@ padding:0px 1px;
     z-index: 5000;
 }
 
+.bottom-part{
+    line-height: 0;
+}
 
