@@ -1285,7 +1285,9 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 <!--<div class="second" id="second"></div>-->
 <!-- Button trigger modal -->
 
-
+<div class="container-fluid p-0">
+<img class="w-100" src="images/background/bottom-part.jpg" alt="Bottom part">
+</div>
 <footer id="kontakt">
 
 <?php
