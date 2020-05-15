@@ -10,8 +10,41 @@
 }
 
 .wood-frame-content{
+  background:white url("images/wood-frame/wood-frame-middle.png") repeat-y center;
+  background-size: 100%;
+  padding: 1px 4rem 1px 4rem;
+}
+/* WOOD FRAME STYLE END */
+
+
+
+/* PERKAMENT FRAME */
+.perkament-frame img{
+  width:100%;
+}
+
+.perkament-frame-content{
+  background:transparent url("images/perkament/perkament-center.png") repeat-y center;
+  background-size: 100%;
+  padding: 1px 10% 1px 10%;
+}
+/* PERKAMENT FRAME END */
+
+
+
+
+
+/* WOOD FRAME STYLE */
+.wood-frame img{
+  width:100%;
+}
+
+.wood-frame-content{
   /*background:white url("images/wood-frame/wood-frame-middle.png") repeat-y center;*/
   background-size: 100%;
+  padding: 1px 4rem 1px 4rem;
+}
+.tilmeld-frame-content{
   padding: 1px 4rem 1px 4rem;
 }
 /* WOOD FRAME STYLE END */
@@ -195,7 +228,8 @@
 
       <!-- HUS 1 -->
 
-      <div class="absolute hus" id="hus1" >
+      <div class="absolute hus" id="hus1" data-toggle="modal" data-target="#exampleModal">
+<!--         <img class="hus-image" src="Images/background/borg/house1.png" alt=""> -->
       </div>
 
 
@@ -205,50 +239,57 @@
 
 
       <!-- HUS 3 -->
-      <div class="absolute hus" id="hus3">
+
+      <div class="absolute hus" id="hus3" data-toggle="modal" data-target="#galleri-modal">
+<!--         <img class="hus-image" src="Images/background/borg/house3.png" alt=""> -->
       </div>
 
 
       <!-- HUS 4 -->
-      <div class="absolute hus" id="hus4">
+
+      <div class="absolute hus" id="hus4" data-toggle="modal" data-target="#login-modal">
+<!--         <img class="hus-image" src="Images/background/borg/house4.png" alt=""> -->
       </div>
  
 
 
       <!-- HUS 5 -->
-      <div class="absolute hus" id="hus5">
+
+      <div class="absolute hus" id="hus5" data-toggle="modal" data-target="#nyheder-modal">
+<!--         <img class="hus-image" src="Images/background/borg/house5.png" alt=""> -->
       </div>
 
 
       <!-- HUS 6 -->
-      <div class="absolute hus" id="hus6">
+    
+      <div class="absolute hus" id="hus6" data-toggle="modal" data-target="#kontakt-modal">
+<!--         <img class="hus-image" src="Images/background/borg/house6.png" alt=""> -->
       </div>
    
 
     </div>  
 
-    <!-- ARRANGEMENTER BUTTON -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#arrangementer-modal">ARRANGEMENTER</button>
-
-    <!-- Tilmeld Modal -->
-<div class="modal fade" id="arrangementer-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content by-modal">
-      <div class="modal-header">
-        
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body modal-body-by">
 
 
-  <!-- TILMELD CONTENT -->
+    <!-- Kontakt Modal -->
+<div class="modal fade" id="kontakt-modal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content by-modal">
+            <div class="modal-header">
 
-      <!-- WOOD FRAME START -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body modal-body-by">
+
+
+                <!-- MODAL  CONTENT -->
+                <!-- WOOD FRAME START -->
 <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
  
-<div class="wood-frame">
+  <div class="wood-frame">
 
 
 <div class="wood-frame-content">
@@ -256,21 +297,22 @@
 <!-- CONTENT HERE -->
 
 
-<!-- TITLE START -->
+<!-- PERKAMENT TITLE START -->
+<!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
 
 <div class="d-flex justify-content-center">
 
     <div>
 <!-- CONTENT HERE -->
 
-       <img src="images/titler/bliv-medlem.png" alt="Medlem login">
+       <img src="images/titler/kontakt.png" alt="Kontakt">
 
 <!-- CONTENT HERE -->
     </div>
 
 </div>
 
-<!-- TITLE END -->
+<!-- PERKAMENT TITLE END -->
 
 
 
@@ -290,10 +332,281 @@
                       <article>
                   <!-- CONTENT HERE -->
 
-<div class="bliv-medlem d-flex justify-content-center">
+<div class="kontakt-side">
+<?php
+include('templates/kontakt.php');
+?>
+</div>
 
 
-  <!-- FORMULAR -->
+                  <!-- CONTENT HERE -->
+                      </article>
+                  </div>
+
+                  <img src="images/perkament/perkament-bottom.png" alt="Perkament frame bottom">
+              </div>
+
+            <!-- PERKAMENT FRAME END -->
+         </div>
+
+
+    </div>
+<!-- CONTENT HERE -->
+    </article>
+</div>
+
+
+</div>
+
+<!-- WOOD FRAME END -->
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- INFO BOKS SLUT -->
+
+
+    <!-- NYHEDER Modal -->
+<div class="modal fade" id="nyheder-modal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content by-modal">
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body modal-body-by">
+
+
+                <!-- MODAL  CONTENT -->
+                <!-- WOOD FRAME START -->
+<!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+ 
+  <div class="wood-frame">
+
+
+
+<div class="wood-frame-content">
+    <article>
+<!-- CONTENT HERE -->
+
+
+<!-- PERKAMENT TITLE START -->
+<!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+
+<div class="d-flex justify-content-center">
+
+    <div>
+<!-- CONTENT HERE -->
+
+       <img src="images/titler/nyheder.png" alt="Nyheder">
+
+<!-- CONTENT HERE -->
+    </div>
+
+</div>
+
+<!-- PERKAMENT TITLE END -->
+
+
+
+
+    <div class="row">
+
+
+        <div class="col-6">
+            <!-- PERKAMENT FRAME START -->
+            <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+            
+              <div class="perkament-frame">
+
+                  <img src="images/perkament/perkament-top.png" alt="perkament frame top">
+
+                  <div class="perkament-frame-content">
+                      <article>
+                  <!-- CONTENT HERE -->
+
+                      <!-- NEWS CARD -->
+                                  <div class="w-100 bg-opacity m-2">
+                                      <img class="rounded w-100 object-fit-news-card" src="images/roleplay-news.jpg" alt="">
+
+                                      <div class="row m-0 position-relative">
+
+                                          <div class="position-absolute news-date d-flex align-items-center bg-warning">
+                                              <p class="m-0 font-weight-bold">4. JANUAR 2020</p>
+                                                      
+                                          </div>
+
+                                          <div class="col p-0">
+                                              <h4 class="mb-0 p-2">
+                                                  Nyt marathon kommer til viborg
+                                              </h2>
+                                          </div>
+
+                                      </div>
+
+                                  </div>
+                      <!-- NEWS CARD END -->
+
+                  <!-- CONTENT HERE -->
+                      </article>
+                  </div>
+
+                  <img src="images/perkament/perkament-bottom.png" alt="Perkament frame bottom">
+              </div>
+
+            <!-- PERKAMENT FRAME END -->
+         </div>
+
+
+        <div class="col-6">
+            <!-- PERKAMENT FRAME START -->
+            <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+            
+              <div class="perkament-frame">
+
+                  <img src="images/perkament/perkament-top.png" alt="perkament frame top">
+
+                  <div class="perkament-frame-content">
+                      <article>
+                  <!-- CONTENT HERE -->
+
+                      <!-- NEWS CARD -->
+                                  <div class="w-100 bg-opacity m-2">
+                                      <img class="rounded w-100 object-fit-news-card" src="images/roleplay-news.jpg" alt="">
+
+                                      <div class="row m-0 position-relative">
+
+                                          <div class="position-absolute news-date d-flex align-items-center bg-warning">
+                                              <p class="m-0 font-weight-bold">4. APRIL 2020</p>
+                                                      
+                                          </div>
+
+                                          <div class="col p-0">
+                                              <h4 class="mb-0 p-2">
+                                                  Nyt marathon kommer til viborg
+                                              </h2>
+                                          </div>
+
+                                      </div>
+
+                                  </div>
+                      <!-- NEWS CARD END -->
+
+
+
+
+                  <!-- CONTENT HERE -->
+                      </article>
+                  </div>
+
+                  <img src="images/perkament/perkament-bottom.png" alt="Perkament frame bottom">
+              </div>
+
+            <!-- PERKAMENT FRAME END -->
+         </div>
+
+
+    </div>
+<!-- CONTENT HERE -->
+    </article>
+</div>
+
+
+</div>
+
+<!-- WOOD FRAME END -->
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- INFO BOKS SLUT -->
+
+
+    <!-- LOG IN MODAL -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content by-modal">
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body modal-body-by">
+
+
+                <!-- MODAL  CONTENT -->
+                <!-- WOOD FRAME START -->
+<!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+ 
+  <div class="wood-frame">
+
+
+
+<div class="wood-frame-content">
+    <article>
+<!-- CONTENT HERE -->
+
+
+<!-- PERKAMENT TITLE START -->
+<!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+
+<div class="d-flex justify-content-center">
+
+    <div>
+<!-- CONTENT HERE -->
+
+       <img src="images/titler/medlem-login.png" alt="Medlem login">
+
+<!-- CONTENT HERE -->
+    </div>
+
+</div>
+
+<!-- PERKAMENT TITLE END -->
+
+
+
+
+    <div class="row">
+
+
+        <div class="col">
+            <!-- PERKAMENT FRAME START -->
+            <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+            
+              <div class="perkament-frame">
+
+                  <img src="images/perkament/perkament-top.png" alt="perkament frame top">
+
+                  <div class="perkament-frame-content">
+                      <article>
+                  <!-- CONTENT HERE -->
+
+<div class="medlem-login d-flex justify-content-center">
+
+
+  <!-- KONTAKTFORMULAR -->
   
 <form class="text-center mt-5 pb-4 contact-form mb-5 w-50" action="index.php">
   
@@ -303,35 +616,18 @@
   </div>
 
   <div class="form-group">
-    <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
-  </div>
-
-  <div class="form-group">
     <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
-  </div>
-
-  <div class="form-group">
-    <input type="password" class="form-control" id="inputRetypePassword" placeholder="Gentag password" required>
-  </div>
-
-
-  <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-      Jeg har tilladelse fra mine forældre/værge til at indmelde mig
-    </label>
   </div>
 
 
   <div class="text-center">
-    <button type="submit" class="btn btn-light">Bliv medlem</button>
+    <button type="submit" class="btn btn-light">Login</button>
   </div>
 </form>
 
-
-
-  <!-- FORMULAR -->
 </div>
+
+
                   <!-- CONTENT HERE -->
                       </article>
                   </div>
@@ -351,7 +647,189 @@
 </div>
 
 <!-- WOOD FRAME END -->
-  <!-- TILMELD CONTENT END -->
+
+
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- INFO BOKS SLUT -->
+
+
+    <!-- GALLERI Modal -->
+<div class="modal fade" id="galleri-modal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content by-modal">
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body modal-body-by">
+
+
+                <!-- WOOD FRAME START -->
+<!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+ 
+  <div class="wood-frame">
+
+
+
+<div class="wood-frame-galleri-content">
+             <img src="images/titler/galleri.png" alt="Opret karakter">
+    <article class="galleri justify-content-center align-content-center">
+<!-- CONTENT HERE -->
+
+
+<div class="wrapper">
+  <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel" style="fixed">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-interval="false">
+        <div class="grid">
+          <img src="images/galleri-img/DSC06880.jpg" alt="" class="top">
+          <img src="images/galleri-img/DSC06908.jpg" alt="" class="right top">
+          <img src="images/galleri-img/DSC06910.jpg" alt="">
+          <img src="images/galleri-img/DSC06921.jpg" alt="" class="right">
+        </div>
+      </div>
+      <div class="carousel-item" data-interval="false">
+      <div class="grid">
+          <img src="images/galleri-img/DSC06948.jpg" alt="" class="top">
+          <img src="images/galleri-img/DSC06951.jpg" alt="" class="right top">
+          <img src="images/galleri-img/DSC06969.jpg" alt="">
+          <img src="images/galleri-img/DSC06970.jpg" alt="" class="right">
+        </div>
+      </div>
+      <div class="carousel-item">
+      <div class="grid">
+          <img src="images/galleri-img/DSC06975.jpg" alt="" class="top">
+          <img src="images/galleri-img/DSC06977.jpg" alt="" class="right top">
+          <img src="images/galleri-img/DSC06999.jpg" alt="">
+          <img src="images/galleri-img/DSC07014.jpg" alt="" class="right">
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+
+
+<!-- CONTENT HERE -->
+    </article>
+
+
+ <article class="galleri-responsive justify-content-center align-content-center">
+<!-- CONTENT HERE -->
+
+
+<div class="wrapper">
+  <div id="carouselExampleInterval2" class="carousel slide" data-ride="carousel" style="fixed">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-interval="false">
+       <div class="d-flex flex-column">
+          <img src="images/galleri-img/DSC06880.jpg" alt="" class="top">
+          <img src="images/galleri-img/DSC06910.jpg" alt="">
+        </div>
+      </div>
+      <div class="carousel-item" data-interval="false">
+      <div class="d-flex flex-column">
+          <img src="images/galleri-img/DSC06948.jpg" alt="" class="top">
+          <img src="images/galleri-img/DSC06969.jpg" alt="">
+        </div>
+      </div>
+      <div class="carousel-item" data-interval="false">
+      <div class="d-flex flex-column">
+          <img src="images/galleri-img/DSC06951.jpg" alt="" class="top">
+          <img src="images/galleri-img/DSC06970.jpg" alt="">
+        </div>
+      </div>
+      <div class="carousel-item" data-interval="false">
+      <div class="d-flex flex-column">
+          <img src="images/galleri-img/DSC06975.jpg" alt="" class="top">
+          <img src="images/galleri-img/DSC06977.jpg" alt="">
+        </div>
+      </div>
+      <div class="carousel-item" data-interval="false">
+      <div class="d-flex flex-column">
+          <img src="images/galleri-img/DSC06999.jpg" alt="" class="top">
+          <img src="images/galleri-img/DSC07014.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleInterval2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleInterval2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- CONTENT HERE -->
+    </article>
+    
+</div>
+
+
+</div>
+
+<!-- WOOD FRAME END -->
+
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- INFO BOKS SLUT -->
+
+
+    <!-- Tilmeld Modal -->
+<div class="modal fade" id="arrangementer-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content by-modal">
+      <div class="modal-header">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-body-by">
+
+
+  <!-- MODAL CONTENT -->
+
+  
+
+  <!-- MODAL CONTENT END -->
+
   
   
 </div>
@@ -370,11 +848,10 @@
 
 
 
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tilmeld-modal">TILMELD</button>
 
     <!-- Tilmeld Modal -->
 <div class="modal fade" id="tilmeld-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
+  <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content by-modal">
       <div class="modal-header">
         
@@ -393,8 +870,8 @@
 <div  class="wood-frame">
 
 
-<div class="wood-frame-content">
-    <article >
+<div class="tilmeld-frame-content">
+    <article>
 <!-- CONTENT HERE -->
 
 
@@ -816,7 +1293,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 
 
     <!-- Optional JavaScript -->
-    
+ 
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

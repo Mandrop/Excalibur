@@ -38,7 +38,7 @@
                         <!-- CONTENT HERE -->
 
 <!-- BOOTSTRAP NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-transparent my-4">
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent my-4">
 <!-- <p onclick="display_user_list()" class="navbar-brand">Tilbage</p> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -59,7 +59,7 @@
 
 
 
-<div class="bruger-profil d-flex justify-content-center">
+<div class="bruger-profil d-lg-flex justify-content-center">
 
 
 <!-- LEFT SIDE -->
