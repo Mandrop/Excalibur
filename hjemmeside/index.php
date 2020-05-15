@@ -208,11 +208,18 @@
 
     <div class="background" id="background">
 
+
+
     <!-- ORKBY IMAGE  -->
     <img class="background-image" src="Images/background/orc/orcdelfinal6.jpg" alt="">
 
+    <!-- RABBIT GIF -->
+    <div class="absolute rabbit-container">
+      <img class="rabbit" src="images/rabbit-jump.gif" alt="">
+    </div> 
+
     <!-- DWARD  IMAGE  -->
-    <img class="background-image" src="Images/background/dwarf/DWARF del.jpg" alt="">
+    <img class="background-image" src="Images/background/dwarf/dwarfdel.jpg" alt="">
 
     <!-- NYHED  IMAGE  -->
     <img class="background-image" src="Images/background/nyheddel3.jpg" alt="">
@@ -223,6 +230,10 @@
 
       <!-- BORGMUR -->
       <img class="borgmur" src="Images/background/del3/borg.png" alt="">
+
+      <div class="absolute cat-container">
+        <img class="cat" src="images/kat.gif" alt="">
+      </div>
 
 
 
@@ -1314,8 +1325,8 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 <!--<div class="second" id="second"></div>-->
 <!-- Button trigger modal -->
 
-<div class="container-fluid p-0">
-<img class="w-100" src="images/background/bottom-part.jpg" alt="Bottom part">
+<div class="bottom-part container-fluid p-0">
+<img class="w-100 m-0" src="images/background/bottom-part.jpg" alt="Bottom part">
 </div>
 <footer id="kontakt">
 
