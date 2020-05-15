@@ -1444,7 +1444,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
             $(function hest() {
                 $(window).scroll(function () {
                     var scroll_position = $(window).scrollTop();
-                    var object_position_left = window_width * ((scroll_position - 350) / document_height) * 12;
+                    var object_position_left = window_width * ((scroll_position - 350) / document_height) * 4;
                     $('#hest').css({
                         'left': object_position_left
                     });
