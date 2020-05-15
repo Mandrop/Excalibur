@@ -72,6 +72,7 @@ h5{
     top: 17px;
     font-family: medieval;
     font-size: 2.5em;
+    z-index: 4000;
 }
 #header-logo{
     width: 25%;
@@ -427,7 +428,7 @@ height: 100%;
     margin-top: -100px;
     }
 #scrollDiv {
-    height:5000px;
+    /*height:5000px;*/
 }
 
 #sprite{
@@ -555,7 +556,7 @@ height: 100%;
     width: 200px;
     /* position: relative; */
     z-index: 999;
-    margin-top: 10000px;
+    
 }
 
 #arrangementer{
@@ -1124,3 +1125,10 @@ footer .card-body h6{
 }
   
   /* KONTAKT SIDE END */
+
+
+
+
+.info{
+    z-index: 4000;
+}

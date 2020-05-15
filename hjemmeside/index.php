@@ -1089,7 +1089,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
     <!--<div class="stald">
       -->
 
-    <div class="hus1" style="height:400px; width:400px; z-index: 999; background: grey;" data-toggle="modal" data-target="#exampleModal"></div>
+    <!--<div class="hus1" style="height:400px; width:400px; z-index: 999; background: grey;" data-toggle="modal" data-target="#exampleModal"></div>-->
     
     <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="height: 866px; width: 1000px;">
       <div class="modal-dialog" role="document" style="height: 866px; width: 1000px; max-width: 1000px; margin: 0;">
@@ -1277,7 +1277,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
   </div>
 </div>
 
-<div class="second" id="second"></div>
+<!--<div class="second" id="second"></div>-->
 <!-- Button trigger modal -->
 
 
