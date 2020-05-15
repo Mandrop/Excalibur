@@ -283,11 +283,46 @@ height: 100%;
     width: 100%;
 
 }
+
+.Excaliburheader {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.modal-contentst {
+    background-image: url(images/bannerscroll2.png) !important;
+    background-repeat: no-repeat;
+    margin-top: 30%;
+}
+
+@media screen and (max-width: 992px) {
+    .modal-contentst {
+        background-image: url(images/parchmentstor.jpg) !important;
+    }
+    .Excaliburheader {
+        padding-bottom: 0;
+    }
+}
+
+/* ------Excalibur------- */
+.sværdsten {
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    bottom: 2%;
+    left: 46%;
+}
+
+
+#hus1, #hus2, #hus3, #hus4, #hus5, #hus6{
+    cursor:pointer;
+}
 /* HUSE INDIVIDUEL STYLE */
 #hus1{
     background: transparent url('Images/background/borg/house1.png') no-repeat;
     background-size: 100%;
-    background-color: rgba(255, 0, 0, 0.4);
+/*     background-color: rgba(255, 0, 0, 0.4); */
     height: 23%;
     width: 34.6%;
     top: 29%;
@@ -302,7 +337,7 @@ height: 100%;
 #hus2{
     background: transparent url('Images/background/borg/house2.png') no-repeat;
     background-size: 100%;
-    background-color: rgba(255, 0, 0, 0.4);
+/*     background-color: rgba(255, 0, 0, 0.4); */
     height: 26.8%;
     width: 34.8%;
     top:25.8%;
@@ -316,7 +351,7 @@ height: 100%;
 #hus3{
     background: transparent url('Images/background/borg/house3.png') no-repeat;
     background-size: 100%;
-    background-color:rgba(0,255,0,0.3);
+/*     background-color:rgba(0,255,0,0.3); */
     height: 25%;
     width: 43.1%;
     top: 49.2%;
@@ -330,7 +365,7 @@ height: 100%;
 #hus4{
     background: transparent url('Images/background/borg/house4.png') no-repeat;
     background-size: 100%;
-    background-color:rgba(0,255,0,0.3);
+/*     background-color:rgba(0,255,0,0.3); */
     height: 22.6%;
     width: 41.7%;
     top: 51.2%;
@@ -344,7 +379,7 @@ height: 100%;
 #hus5{
     background: transparent url('Images/background/borg/house5.png') no-repeat;
     background-size: 100%;
-    background-color:rgba(0,0,255,0.3);
+/*     background-color:rgba(0,0,255,0.3); */
     height: 23%;
     width: 35.5%;
     top: 68.1%;
@@ -358,7 +393,7 @@ height: 100%;
 #hus6{
     background: transparent url('Images/background/borg/house6.png') no-repeat;
     background-size: 100%;
-    background-color:rgba(0,0,255,0.3);
+/*     background-color:rgba(0,0,255,0.3); */
     height: 26.7%;
     width: 42.1%;
     top: 67.8%;
@@ -723,3 +758,45 @@ footer .card-body h6{
     border: none!important;
     outline: none!important;
 }
+
+/* MEDLEM LIST SIDE */
+
+.medlem-list .table td, .medlem-list .table th{
+  border-color: black;
+}
+
+/* MEDLEM LIST END */
+
+/* BRUGER PROFIL SIDE */
+
+.bruger-profil .table td, .bruger-profil .table th{
+  border-color: black;
+}
+
+.bruger-profil img{
+  object-fit: cover;
+  width: 300px;
+}
+
+
+/* BRUGER PROFIL END */
+
+.navbar-nav p{
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: black!important;
+}
+
+.navbar-brand{
+    cursor: pointer;
+    
+}
+
+/* OPRET KARAKTER SIDE */
+
+.opret-karakter img{
+  object-fit: cover;
+  width: 300px;
+}
+
+/* OPRET KARAKTER END */
