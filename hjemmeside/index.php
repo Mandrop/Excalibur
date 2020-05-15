@@ -157,51 +157,71 @@
 
     <!-- BORG IMAGE -->
     <div class="relative">
-      <img class="background-image" src="Images/background/borg/borgfinal.jpg" alt="">
+      <img class="background-image" src="Images/background/borg/borgfinal2.jpg" alt="">
 
       <!-- BORGMUR -->
       <img class="borgmur" src="Images/background/del3/borg.png" alt="">
 
+
+
+
+
+
+<!-- Modal SværdSten -->
+<div class="modal fade" id="sværdstenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-contentst">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <h5 class="Excaliburheader">You are not worthy of the sword Excalibur</h5>
+
+      
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<!--- SværdSten ----->
+
+  <div class="sværdsten" data-toggle="modal" data-target="#sværdstenModal"> 
+  </div>
+
       <!-- HUS 1 -->
 
       <div class="absolute hus" id="hus1" >
-<!--         <img class="hus-image" src="Images/background/borg/house1.png" alt=""> -->
       </div>
 
 
       <!-- HUS 2 -->
-
       <div class="absolute hus" id="hus2" data-toggle="modal" data-target="#tilmeld-modal">
-<!--         <img class="hus-image" src="Images/background/borg/house2.png" alt=""> -->
       </div>
 
 
       <!-- HUS 3 -->
-
       <div class="absolute hus" id="hus3">
-<!--         <img class="hus-image" src="Images/background/borg/house3.png" alt=""> -->
       </div>
 
 
       <!-- HUS 4 -->
-
       <div class="absolute hus" id="hus4">
-<!--         <img class="hus-image" src="Images/background/borg/house4.png" alt=""> -->
       </div>
  
 
 
       <!-- HUS 5 -->
-
       <div class="absolute hus" id="hus5">
-<!--         <img class="hus-image" src="Images/background/borg/house5.png" alt=""> -->
       </div>
 
 
       <!-- HUS 6 -->
-    
       <div class="absolute hus" id="hus6">
-<!--         <img class="hus-image" src="Images/background/borg/house6.png" alt=""> -->
       </div>
    
 
@@ -362,7 +382,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body modal-body-by">
+      <div id="tilmeldDig" class="modal-body modal-body-by">
 
 
   <!-- TILMELD CONTENT -->
@@ -370,11 +390,11 @@
       <!-- WOOD FRAME START -->
 <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
  
-<div class="wood-frame">
+<div  class="wood-frame">
 
 
 <div class="wood-frame-content">
-    <article>
+    <article >
 <!-- CONTENT HERE -->
 
 
@@ -439,14 +459,15 @@
 
   <div class="form-check">
     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-      Jeg har tilladelse fra mine forældre/værge til at indmelde mig
+    <label class="form-check-label text-left" for="defaultCheck1">
+      Jeg er indforstået med, at mine forældre/værge skal godkende indmeldelsen, ved at underskrive og returnere blanketten via mail eller brev.
     </label>
+    <a href="images/ExcaliburPDF.pdf">Download Indmeldelses blanket</a>
   </div>
 
 
   <div class="text-center">
-    <button type="submit" class="btn btn-light">Bliv medlem</button>
+    <button id="btnToUserList" type="button" class="btn btn-light">Bliv medlem</button>
   </div>
 </form>
 
@@ -910,6 +931,41 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
           })
         }
 
+
+//LINKS I MODALS - SKIFTER SIDE
+//document.getElementById("btnToUserList").addEventListener("click", user_list);
+$(document).ready(function() {
+  $('#btnToUserList').click(display_user_list);
+  //$('#btnToUserProfile').click(display_user_profile);
+});
+
+
+function display_user_list() {
+  $('#tilmeldDig').load("templates/user-list.php");
+  //user_list();
+}
+
+function display_user_profile() {
+  $('#tilmeldDig').load("templates/user-profile.php");
+}
+
+function display_character_list() {
+  $('#tilmeldDig').load("templates/character-list.php");
+}
+
+function display_create_character() {
+  $('#tilmeldDig').load("templates/create-character.php");
+}
+
+function display_update_character() {
+  $('#tilmeldDig').load("templates/update-character.php");
+}
+
+
+
+//function user_list(){
+//  $('#tilmeldDig').load("templates/user-list.php");
+//}
 
     </script>
   </body>
