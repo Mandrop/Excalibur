@@ -1319,7 +1319,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 <!-- Button trigger modal -->
 
 <div class="bottom-part container-fluid p-0">
-<img class="w-100" src="images/background/bottom-part.jpg" alt="Bottom part">
+<img class="w-100 m-0" src="images/background/bottom-part.jpg" alt="Bottom part">
 </div>
 <footer id="kontakt">
 
