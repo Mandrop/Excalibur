@@ -224,7 +224,7 @@
 
 
 
-<!--- SværdSten ----->
+<!--- SværdSten --->
 
   <div class="sværdsten" data-toggle="modal" data-target="#sværdstenModal"> 
   </div>
@@ -268,6 +268,11 @@
       <div class="absolute hus" id="hus6" data-toggle="modal" data-target="#kontakt-modal">
 <!--         <img class="hus-image" src="Images/background/borg/house6.png" alt=""> -->
       </div>
+
+      </img><img id="sprite" src="Images/1,2.png" alt="walk01" class="walk"/>
+      <div class="slut absolute"></div>
+      <img class="absolute sprite-slut" src="Images/H1.png" alt="walk01"/>
+      
    
 
     </div>  
@@ -1083,7 +1088,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 </div>
       
     <!-- INFO BOKS SLUT -->
-    </img><img id="sprite" src="Images/1,2.png" alt="walk01" class="walk"/>
+    
     <div id="scrollDiv"></div>
     </div>
 
@@ -1092,7 +1097,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
     <!--<div class="stald">
       -->
 
-    <div class="hus1" style="height:400px; width:400px; z-index: 999; background: grey;" data-toggle="modal" data-target="#exampleModal"></div>
+    <!--<div class="hus1" style="height:400px; width:400px; z-index: 999; background: grey;" data-toggle="modal" data-target="#exampleModal"></div>-->
     
     <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="height: 866px; width: 1000px;">
       <div class="modal-dialog" role="document" style="height: 866px; width: 1000px; max-width: 1000px; margin: 0;">
@@ -1280,10 +1285,12 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
   </div>
 </div>
 
-<div class="second" id="second"></div>
+<!--<div class="second" id="second"></div>-->
 <!-- Button trigger modal -->
 
-
+<div class="container-fluid p-0">
+<img class="w-100" src="images/background/bottom-part.jpg" alt="Bottom part">
+</div>
 <footer id="kontakt">
 
 <?php
@@ -1309,6 +1316,21 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
     
 
     <script>
+
+      var $slut = $('.slut');
+
+      var $walk = $('.walk')
+
+      $slut.waypoint(function (direction) {
+        if (direction == 'down') {
+          console.log('Slut aktiveret');
+          $walk.css({'position': 'absolute', 'top': '87%'})
+        }else {
+          console.log('slut deaktiveret');
+        }
+      }, { offset: '50%'});
+
+      
       
 
 
