@@ -334,6 +334,19 @@ height: 100%;
     
 }
 
+@media screen and (min-width: 320px) and (max-width: 499px) {
+    .modal-contentst {
+        background-image: url(images/bannerscroll5.png) !important;
+        margin-top: 50%;
+    }
+    .Excaliburheader {
+        font-size: 15px;
+        margin-top: -40px;
+
+    }
+    
+}
+
 /* ------Excalibur------- */
 .sværdsten {
     width: 8%;
@@ -1051,8 +1064,9 @@ footer .card-body h6{
     background-color: transparent;
     border:none;
   }
-  
-  }
+
+
+
   
   
   @media (max-width: 979px) {
@@ -1074,6 +1088,12 @@ footer .card-body h6{
   }
   .wood-frame-content{
 padding:0px 1px;
+  }
+  .tilmeld-frame-content{
+      padding: 1px 0;
+  }
+  .bliv-medlem form{
+      width: 90% !important;
   }
   }
   /* GALLERI SIDE END */
@@ -1180,6 +1200,9 @@ padding:0px 1px;
     z-index: 5000;
 }
 
+.bottom-part{
+    line-height: 0;
+}
 
 
 

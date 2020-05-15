@@ -24,10 +24,40 @@
   width:100%;
 }
 
-.perkament-frame-content{
-  background:transparent url("images/perkament/perkament-center.png") repeat-y center;
+.perkament-center{
+/*   background:transparent url("images/perkament_rigtig/Lille_perchmant_middle.png")no-repeat !important;
   background-size: 100%;
-  padding: 1px 10% 1px 10%;
+  padding: 1px 10% 1px 10%; */
+
+  background: transparent url(images/perkament_rigtig/Lille_perchmant_middle.png)/* repeat-y center;*/ no-repeat !important;
+    background-image: url(images/perkament_rigtig/Lille_perchmant_middle.png);
+    background-position-x: initial !important;
+    background-position-y: initial !important;
+    background-size: 100% !important;
+    background-repeat-x: initial !important;
+    background-repeat-y: initial !important;
+    background-attachment: initial !important;
+    background-origin: initial !important;
+    background-clip: initial !important;
+    background-color: transparent !important;
+    background-size: 100% !important;
+    padding: 1px 10% 1px 10% !important;
+}
+
+.ar_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 600px) {
+  .ar_grid{
+    grid-template-columns: 1fr;
+    width: 93%;
+  }
+}
+
+.w-100{
+  margin: 10px;
 }
 /* PERKAMENT FRAME END */
 
@@ -193,8 +223,7 @@
     </div> 
 
     <!-- DWARD  IMAGE  -->
-    <img class="background-image" src="Images/background/dwarf/DWARF del.jpg" alt="">
-    
+    <img class="background-image" src="Images/background/dwarf/dwarfdel.jpg" alt="">
 
     <!-- NYHED  IMAGE  -->
     <img class="background-image" src="Images/background/nyheddel3.jpg" alt="">
@@ -619,7 +648,7 @@ include('templates/kontakt.php');
 
                   <img src="images/perkament/perkament-top.png" alt="perkament frame top">
 
-                  <div class="perkament-frame-content">
+                  <div class="perkament-frame-content" style="background:transparent url('images/perkament/perkament-center.png') repeat-y center;">
                       <article>
                   <!-- CONTENT HERE -->
 
@@ -1218,10 +1247,10 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
         <!-- CONTENT HERE -->
 
 
-            <div class="row d-flex">
+            <div class="">
             <img src="images/titler/arrangementer.png" alt="Arrangementer" style="margin-bottom: 30px;">
-
-                <div class="w-25">
+              <div class="ar_grid">
+                <div class="w-100">
                     <!-- PERKAMENT FRAME START -->
                     <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
 
@@ -1229,15 +1258,15 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 
                           <img src="images/perkament_rigtig/Lille_perchmant_top.png" alt="perkament frame top">
 
-                          <div class="perkament-frame-content">
+                          <div class="perkament-frame-content perkament-center">
                               <article>
                           <!-- CONTENT HERE -->
 
-                            <h1>Test</h1>
-                            <p>Dette er en test</p>
+                            <h1>Rollespil i Odense skov</h1>
+                            <p>10/7</p>
 
-                            <h1>Test</h1>
-                            <p>Dette er en test</p>
+                            <p>Odense skov</p>
+                            <p>Tim Mogensen</p>
 
                           <!-- CONTENT HERE -->
                               </article>
@@ -1250,7 +1279,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
                  </div>
 
 
-                <div class="w-25">
+                <div class="w-100">
                     <!-- PERKAMENT FRAME START -->
                     <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
 
@@ -1258,15 +1287,15 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 
                           <img src="images/perkament_rigtig/Lille_perchmant_top.png" alt="perkament frame top">
 
-                          <div class="perkament-frame-content">
+                          <div class="perkament-frame-content perkament-center">
                               <article>
                           <!-- CONTENT HERE -->
 
-                            <h1>Test</h1>
-                            <p>Dette er en test</p>
+                            <h1>Rollespil i Vejle skov</h1>
+                            <p>20/6</p>
 
-                            <h1>Test</h1>
-                            <p>Dette er en test</p>
+                            <p>Vejle skov</p>
+                            <p>Lars Hansen</p>
 
                           <!-- CONTENT HERE -->
                               </article>
@@ -1276,7 +1305,8 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
                       </div>
 
                     <!-- PERKAMENT FRAME END -->
-                 </div>
+                  </div>
+                </div>
 
 
             </div>
@@ -1299,7 +1329,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 <!--<div class="second" id="second"></div>-->
 <!-- Button trigger modal -->
 
-<div class="container-fluid p-0">
+<div class="bottom-part container-fluid p-0">
 <img class="w-100" src="images/background/bottom-part.jpg" alt="Bottom part">
 </div>
 <footer id="kontakt">
