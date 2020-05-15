@@ -294,15 +294,33 @@ height: 100%;
     background-image: url(images/bannerscroll2.png) !important;
     background-repeat: no-repeat;
     margin-top: 30%;
+    width: 100%;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 501px) and (max-width: 993px) {
     .modal-contentst {
-        background-image: url(images/parchmentstor.jpg) !important;
+        background-image: url(images/bannerscroll3.png) !important;
+        margin-top: 50%;
     }
     .Excaliburheader {
-        padding-bottom: 0;
+        font-size: 25px;
+        margin-top: -20px;
+
     }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .modal-contentst {
+        background-image: url(images/bannerscroll4.png) !important;
+        margin-top: 50%;
+    }
+    .Excaliburheader {
+        font-size: 20px;
+        margin-top: -20px;
+
+    }
+    
 }
 
 /* ------Excalibur------- */
