@@ -1063,7 +1063,9 @@ footer .card-body h6{
   .galleri-responsive{
     display: flex;
   }
-  
+  .wood-frame-content{
+padding:0px 1px;
+  }
   }
   /* GALLERI SIDE END */
 
