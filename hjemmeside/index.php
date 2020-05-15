@@ -55,10 +55,6 @@
     width: 93%;
   }
 }
-
-.w-100{
-  margin: 10px;
-}
 /* PERKAMENT FRAME END */
 
 
@@ -212,8 +208,15 @@
 
     <div class="background" id="background">
 
+
+
     <!-- ORKBY IMAGE  -->
     <img class="background-image" src="Images/background/orc/orcdelfinal6.jpg" alt="">
+
+    <!-- RABBIT GIF -->
+    <div class="absolute rabbit-container">
+      <img class="rabbit" src="images/rabbit-jump.gif" alt="">
+    </div> 
 
     <!-- DWARD  IMAGE  -->
     <img class="background-image" src="Images/background/dwarf/dwarfdel.jpg" alt="">
@@ -227,6 +230,10 @@
 
       <!-- BORGMUR -->
       <img class="borgmur" src="Images/background/del3/borg.png" alt="">
+
+      <div class="absolute cat-container">
+        <img class="cat" src="images/kat.gif" alt="">
+      </div>
 
 
 
@@ -1239,7 +1246,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
             <div class="">
             <img src="images/titler/arrangementer.png" alt="Arrangementer" style="margin-bottom: 30px;">
               <div class="ar_grid">
-                <div class="w-100">
+                <div class="w-100" style="margin: 10px">
                     <!-- PERKAMENT FRAME START -->
                     <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
 
@@ -1268,7 +1275,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
                  </div>
 
 
-                <div class="w-100">
+                <div class="w-100" style="margin: 10px">
                     <!-- PERKAMENT FRAME START -->
                     <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
 
@@ -1319,7 +1326,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 <!-- Button trigger modal -->
 
 <div class="bottom-part container-fluid p-0">
-<img class="w-100" src="images/background/bottom-part.jpg" alt="Bottom part">
+<img class="w-100 m-0" src="images/background/bottom-part.jpg" alt="Bottom part">
 </div>
 <footer id="kontakt">
 
