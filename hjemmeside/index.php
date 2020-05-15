@@ -147,7 +147,7 @@
       <!-- INFO BOKS -->
       <div class="info-waypoint"></div>
       <div class="info">
-      <img class="info-img" src="images/info.png" alt="">
+      <img class="info-img" src="images/info1.png" alt="">
       <button type="button" class="btn btn-primary info-btn" data-toggle="modal" data-target="#infoModal"></button>
       </div>
     <!-- BACKGROUND IMAGE -->
