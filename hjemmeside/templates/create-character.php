@@ -53,7 +53,7 @@
 </nav>
 <!-- BOOTSTRAP NAVBAR END -->
 
-<div class="opret-karakter d-flex justify-content-center row">
+<div class="opret-karakter d-lg-flex justify-content-center row-lg">
 
 <!-- LEFT SIDE -->
 <div class="col">

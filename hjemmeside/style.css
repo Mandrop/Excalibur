@@ -800,3 +800,27 @@ footer .card-body h6{
 }
 
 /* OPRET KARAKTER END */
+
+/* TILMELD MEDLEM */
+
+@media (max-width: 979px) {
+  /* Selectors and styles affecting screens UP TO 979px (Desktop) */
+  .wood-frame-content{
+      padding: 1px 0 1px 0;
+  }
+  .bliv-medlem form{
+      width: 90%!important;
+  }
+}
+
+@media (max-width: 767px) {
+    /* Selectors and styles affecting screens UP TO 767px (Tablet) */
+
+}
+
+@media (max-width: 600px) {
+    /* Selectors and styles affecting screens UP TO 480px (Phone) */
+
+}
+
+/* TILMELD MEDLEM */
