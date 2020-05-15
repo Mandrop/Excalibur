@@ -23,7 +23,7 @@
 }
 
 .wood-frame-content{
-  background:white url("../images/wood-frame/wood-frame-middle.png") repeat-y center;
+  background:white url("images/wood-frame/wood-frame-middle.png") repeat-y center;
   background-size: 100%;
   padding: 1px 4rem 1px 4rem;
 }
@@ -37,7 +37,7 @@
 }
 
 .perkament-frame-content{
-  background:transparent url("../images/perkament/perkament-center.png") repeat-y center;
+  background:transparent url("images/perkament/perkament-center.png") repeat-y center;
   background-size: 100%;
   padding: 1px 10% 1px 10%;
 }
@@ -48,7 +48,7 @@
 /* GALLERI SIDE */
 
 .galleri{
-    background:transparent url("../images/bog.png") no-repeat center;
+    background:transparent url("images/bog.png") no-repeat center;
     background-size:contain;
     height: 50vw;
 }
@@ -176,7 +176,7 @@
  
   <div class="wood-frame">
 
-      <img src="../images/wood-frame/wood-frame-top.png" alt="Wood frame top">
+      <img src="images/wood-frame/wood-frame-top.png" alt="Wood frame top">
 
       <div class="wood-frame-content">
           <article class="galleri d-flex justify-content-center">
@@ -189,19 +189,19 @@
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="../images/galleri-img/DSC06880.jpg" style="width:100%">
+    <img src="images/galleri-img/DSC06880.jpg" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="../images/galleri-img/DSC06880.jpg" style="width:100%">
+    <img src="images/galleri-img/DSC06880.jpg" style="width:100%">
     <div class="text">Caption Two</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="../images/galleri-img/DSC06880.jpg" style="width:100%">
+    <img src="images/galleri-img/DSC06880.jpg" style="width:100%">
     <div class="text">Caption Three</div>
   </div>
 
@@ -227,7 +227,7 @@
           </article>
       </div>
 
-      <img src="../images/wood-frame/wood-frame-bottom.png" alt="Wood frame bottom">
+      <img src="images/wood-frame/wood-frame-bottom.png" alt="Wood frame bottom">
   </div>
 
 <!-- WOOD FRAME END -->

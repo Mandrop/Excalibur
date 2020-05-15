@@ -10,8 +10,155 @@
 }
 
 .wood-frame-content{
-  /*background:white url("images/wood-frame/wood-frame-middle.png") repeat-y center;*/
+  background:white url("images/wood-frame/wood-frame-middle.png") repeat-y center;
   background-size: 100%;
+  padding: 1px 4rem 1px 4rem;
+}
+/* WOOD FRAME STYLE END */
+
+
+
+/* PERKAMENT FRAME */
+.perkament-frame img{
+  width:100%;
+}
+
+.perkament-frame-content{
+  background:transparent url("images/perkament/perkament-center.png") repeat-y center;
+  background-size: 100%;
+  padding: 1px 10% 1px 10%;
+}
+/* PERKAMENT FRAME END */
+
+
+
+/* GALLERI SIDE */
+
+.galleri{
+    background:transparent url("images/bog.png") no-repeat center;
+    background-size:contain;
+    height: 50vw;
+}
+
+.galleri .card{
+  background-color: transparent;
+  border:none;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* GALLERI SIDE END */
+
+
+
+    </style>
+
+  <style>
+
+
+/* WOOD FRAME STYLE */
+.wood-frame img{
+  width:100%;
+}
+
+.wood-frame-content{
+  background:white url("images/wood-frame/wood-frame-middle.png") repeat-y center;*/
+  background-size: 100%;
+  padding: 1px 4rem 1px 4rem;
+}
+.tilmeld-frame-content{
   padding: 1px 4rem 1px 4rem;
 }
 /* WOOD FRAME STYLE END */
@@ -164,7 +311,7 @@
 
       <!-- HUS 1 -->
 
-      <div class="absolute hus" id="hus1" >
+      <div class="absolute hus" id="hus1" data-toggle="modal" data-target="#exampleModal">
 <!--         <img class="hus-image" src="Images/background/borg/house1.png" alt=""> -->
       </div>
 
@@ -178,14 +325,14 @@
 
       <!-- HUS 3 -->
 
-      <div class="absolute hus" id="hus3">
+      <div class="absolute hus" id="hus3" data-toggle="modal" data-target="#galleri-modal">
 <!--         <img class="hus-image" src="Images/background/borg/house3.png" alt=""> -->
       </div>
 
 
       <!-- HUS 4 -->
 
-      <div class="absolute hus" id="hus4">
+      <div class="absolute hus" id="hus4" data-toggle="modal" data-target="#login-modal">
 <!--         <img class="hus-image" src="Images/background/borg/house4.png" alt=""> -->
       </div>
  
@@ -193,14 +340,14 @@
 
       <!-- HUS 5 -->
 
-      <div class="absolute hus" id="hus5">
+      <div class="absolute hus" id="hus5" data-toggle="modal" data-target="#nyheder-modal">
 <!--         <img class="hus-image" src="Images/background/borg/house5.png" alt=""> -->
       </div>
 
 
       <!-- HUS 6 -->
     
-      <div class="absolute hus" id="hus6">
+      <div class="absolute hus" id="hus6" data-toggle="modal" data-target="#kontakt-modal">
 <!--         <img class="hus-image" src="Images/background/borg/house6.png" alt=""> -->
       </div>
    
@@ -208,7 +355,101 @@
     </div>  
 
     <!-- ARRANGEMENTER BUTTON -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#arrangementer-modal">ARRANGEMENTER</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">ARRANGEMENTER</button>
+
+    <!-- GALLERI BUTTON -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#galleri-modal">GALLERI</button>
+
+    <!-- Tilmeld Modal -->
+<div class="modal fade" id="galleri-modal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content by-modal">
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body modal-body-by">
+
+
+              
+                <!-- WOOD FRAME START -->
+<!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
+ 
+  <div class="wood-frame">
+
+<img src="Images/wood-frame/wood-frame-top.png" alt="Wood frame top">
+
+<div class="wood-frame-content">
+    <article class="galleri d-flex justify-content-center">
+<!-- CONTENT HERE -->
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+<!-- Full-width images with number and caption text -->
+<div class="mySlides fade">
+<div class="numbertext">1 / 3</div>
+<img src="../Images/galleri-img/DSC06880.jpg" style="width:100%">
+<div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 3</div>
+<img src="Images/galleri-img/DSC06880.jpg" style="width:100%">
+<div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 3</div>
+<img src="Images/galleri-img/DSC06880.jpg" style="width:100%">
+<div class="text">Caption Three</div>
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+</div> 
+
+
+
+<!-- BOOTSTRAP MODAL END -->
+
+
+<!-- CONTENT HERE -->
+    </article>
+</div>
+
+<img src="Images/wood-frame/wood-frame-bottom.png" alt="Wood frame bottom">
+</div>
+
+                
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- INFO BOKS SLUT -->
+
+
 
     <!-- Tilmeld Modal -->
 <div class="modal fade" id="arrangementer-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
@@ -223,115 +464,12 @@
       <div class="modal-body modal-body-by">
 
 
-  <!-- TILMELD CONTENT -->
+  <!-- MODAL CONTENT -->
 
-      <!-- WOOD FRAME START -->
-<!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
- 
-<div class="wood-frame">
-
-
-<div class="wood-frame-content">
-    <article>
-<!-- CONTENT HERE -->
-
-
-<!-- TITLE START -->
-
-<div class="d-flex justify-content-center">
-
-    <div>
-<!-- CONTENT HERE -->
-
-       <img src="images/titler/bliv-medlem.png" alt="Medlem login">
-
-<!-- CONTENT HERE -->
-    </div>
-
-</div>
-
-<!-- TITLE END -->
-
-
-
-
-    <div class="row">
-
-
-        <div class="col">
-            <!-- PERKAMENT FRAME START -->
-            <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
-            
-              <div class="perkament-frame">
-
-                  <img src="images/perkament/perkament-top.png" alt="perkament frame top">
-
-                  <div class="perkament-frame-content">
-                      <article>
-                  <!-- CONTENT HERE -->
-
-<div class="bliv-medlem d-flex justify-content-center">
-
-
-  <!-- FORMULAR -->
-  
-<form class="text-center mt-5 pb-4 contact-form mb-5 w-50" action="index.php">
   
 
-  <div class="form-group">
-    <input type="text" class="form-control" id="inputUser" placeholder="Bruger navn" required>
-  </div>
+  <!-- MODAL CONTENT END -->
 
-  <div class="form-group">
-    <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
-  </div>
-
-  <div class="form-group">
-    <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
-  </div>
-
-  <div class="form-group">
-    <input type="password" class="form-control" id="inputRetypePassword" placeholder="Gentag password" required>
-  </div>
-
-
-  <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-      Jeg har tilladelse fra mine forældre/værge til at indmelde mig
-    </label>
-  </div>
-
-
-  <div class="text-center">
-    <button type="submit" class="btn btn-light">Bliv medlem</button>
-  </div>
-</form>
-
-
-
-  <!-- FORMULAR -->
-</div>
-                  <!-- CONTENT HERE -->
-                      </article>
-                  </div>
-
-                  <img src="images/perkament/perkament-bottom.png" alt="Perkament frame bottom">
-              </div>
-
-            <!-- PERKAMENT FRAME END -->
-         </div>
-
-
-    </div>
-<!-- CONTENT HERE -->
-    </article>
-</div>
-
-</div>
-
-<!-- WOOD FRAME END -->
-  <!-- TILMELD CONTENT END -->
   
   
 </div>
@@ -373,7 +511,7 @@
 <div class="wood-frame">
 
 
-<div class="wood-frame-content">
+<div class="tilmeld-frame-content">
     <article>
 <!-- CONTENT HERE -->
 
@@ -795,7 +933,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 
 
     <!-- Optional JavaScript -->
-    
+ 
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
