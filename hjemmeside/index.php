@@ -898,7 +898,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
             var document_height = $(document).height() - $(window).height();
             
             $hest.css("display", "block")
-                      
+
             $(function hest() {
                 $(window).scroll(function () {
                     var scroll_position = $(window).scrollTop();
@@ -909,6 +909,14 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
                 });
             });
           }, {offset: '50%'})
+          
+
+/*           $hest.waypoint(function () {
+            $('#hest').css('height', '500px')
+            $('.hest').css('height', '500px')
+          },) */
+
+
 
           imageArrHest = ["Images/hest1.1.png","Images/hest1.2.png","Images/hest1.3.png"];
 
