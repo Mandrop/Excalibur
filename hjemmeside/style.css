@@ -188,7 +188,7 @@ h5{
     /*position:fixed;*/
     /*top:0;*/
     /*width:10%;*/
-    z-index:100;
+    z-index:1000;
     /*padding-top: 5%;*/
     margin-left: 1%;
     width: 11%;
