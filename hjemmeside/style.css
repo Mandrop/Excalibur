@@ -73,6 +73,7 @@ html, body {
     top: 17px;
     font-family: medieval;
     font-size: 2.5em;
+    z-index: 4000;
 }
 #header-logo{
     width: 25%;
@@ -165,6 +166,15 @@ html, body {
 }
 
 
+#admin{
+    display: block;
+    height: 25%;
+    width: 13.5%;
+/*     background: grey; */
+    position: absolute;
+    top: 0px;
+    left: 66%;
+}
 
 
 .fixedElement {
@@ -446,7 +456,7 @@ height: 100%;
     margin-top: -100px;
     }
 #scrollDiv {
-    height:5000px;
+    /*height:5000px;*/
 }
 
 #sprite{
@@ -492,7 +502,7 @@ height: 100%;
 .stald-waypoint{
     margin-top: -50px;
     height: 1px;
-    background-color: red;
+    
 }
 
 .walk {
@@ -574,7 +584,7 @@ height: 100%;
     width: 200px;
     /* position: relative; */
     z-index: 999;
-    margin-top: 10000px;
+    
 }
 
 #arrangementer{
@@ -1062,7 +1072,9 @@ footer .card-body h6{
   .galleri-responsive{
     display: flex;
   }
-  
+  .wood-frame-content{
+padding:0px 1px;
+  }
   }
   /* GALLERI SIDE END */
 
@@ -1143,3 +1155,23 @@ footer .card-body h6{
 }
   
   /* KONTAKT SIDE END */
+
+
+
+
+.info{
+    z-index: 4000;
+}
+
+
+
+
+
+.slut{
+    
+    background-color: red;
+    
+    width: 50px;
+    bottom: 13%;
+    width: 100%;
+}
