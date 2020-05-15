@@ -334,6 +334,19 @@ height: 100%;
     
 }
 
+@media screen and (min-width: 320px) and (max-width: 499px) {
+    .modal-contentst {
+        background-image: url(images/bannerscroll5.png) !important;
+        margin-top: 50%;
+    }
+    .Excaliburheader {
+        font-size: 15px;
+        margin-top: -40px;
+
+    }
+    
+}
+
 /* ------Excalibur------- */
 .sværdsten {
     width: 8%;
