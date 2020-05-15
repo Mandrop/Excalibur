@@ -1009,7 +1009,7 @@ include('templates/kontakt.php');
 
 <!-- Modal -->
 <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         
@@ -1075,8 +1075,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 <h6>Spørgsmål</h6>
 <p>Hvis du har spørgsmål er du altid velkommen til at e-maile eller ringe til os. Du kan finde vores kontaktinformation under Kontakt.</p>
   <hr>
-  <h5 class="text-center">Sidste Nyt</h5>
-  <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+  <p><a href="admin/" class="tooltip-test" title="Tooltip">Admin panel</a></p>
   
 </div>
       <div class="modal-footer">

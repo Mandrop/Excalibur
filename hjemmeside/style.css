@@ -1175,3 +1175,9 @@ padding:0px 1px;
     bottom: 13%;
     width: 100%;
 }
+
+#infoModal{
+    z-index: 5000;
+}
+
+
