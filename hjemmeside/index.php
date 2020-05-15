@@ -221,7 +221,7 @@
 
 
 
-<!--- SværdSten ----->
+<!--- SværdSten --->
 
   <div class="sværdsten" data-toggle="modal" data-target="#sværdstenModal"> 
   </div>
@@ -265,6 +265,11 @@
       <div class="absolute hus" id="hus6" data-toggle="modal" data-target="#kontakt-modal">
 <!--         <img class="hus-image" src="Images/background/borg/house6.png" alt=""> -->
       </div>
+
+      </img><img id="sprite" src="Images/1,2.png" alt="walk01" class="walk"/>
+      <div class="slut absolute"></div>
+      <img class="absolute sprite-slut" src="Images/H1.png" alt="walk01"/>
+      
    
 
     </div>  
@@ -1080,7 +1085,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 </div>
       
     <!-- INFO BOKS SLUT -->
-    </img><img id="sprite" src="Images/1,2.png" alt="walk01" class="walk"/>
+    
     <div id="scrollDiv"></div>
     </div>
 
@@ -1306,6 +1311,21 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
     
 
     <script>
+
+      var $slut = $('.slut');
+
+      var $walk = $('.walk')
+
+      $slut.waypoint(function (direction) {
+        if (direction == 'down') {
+          console.log('Slut aktiveret');
+          $walk.css({'position': 'absolute', 'top': '87%'})
+        }else {
+          console.log('slut deaktiveret');
+        }
+      }, { offset: '50%'});
+
+      
       
 
 
