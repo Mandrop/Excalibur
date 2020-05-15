@@ -268,7 +268,7 @@
 
       </img><img id="sprite" src="Images/1,2.png" alt="walk01" class="walk"/>
       <div class="slut absolute"></div>
-      <img class="absolute sprite-slut" src="Images/H1.png" alt="walk01"/>
+
       
    
 
@@ -1322,8 +1322,11 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
         if (direction == 'down') {
           console.log('Slut aktiveret');
           $walk.css({'position': 'absolute', 'top': '87%'})
+          imageArr = ["Images/Hovedperson 1.png"];
         }else {
           console.log('slut deaktiveret');
+          $walk.css({'position': 'fixed', 'top': '50%'})
+          imageArr = ["Images/H1.png","Images/H3.png","Images/H1.png","Images/H3.png"];
         }
       }, { offset: '50%'});
 
