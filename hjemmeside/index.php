@@ -182,11 +182,19 @@
 
     <div class="background" id="background">
 
+
+
     <!-- ORKBY IMAGE  -->
     <img class="background-image" src="Images/background/orc/orcdelfinal6.jpg" alt="">
 
+    <!-- RABBIT GIF -->
+    <div class="absolute rabbit-container">
+      <img class="rabbit" src="images/rabbit-jump.gif" alt="">
+    </div> 
+
     <!-- DWARD  IMAGE  -->
     <img class="background-image" src="Images/background/dwarf/DWARF del.jpg" alt="">
+    
 
     <!-- NYHED  IMAGE  -->
     <img class="background-image" src="Images/background/nyheddel3.jpg" alt="">
@@ -197,6 +205,10 @@
 
       <!-- BORGMUR -->
       <img class="borgmur" src="Images/background/del3/borg.png" alt="">
+
+      <div class="absolute cat-container">
+        <img class="cat" src="images/kat.gif" alt="">
+      </div>
 
 
 

@@ -1181,3 +1181,27 @@ padding:0px 1px;
 }
 
 
+
+
+
+.rabbit{
+    
+    width: 1000px;
+}
+.rabbit-container{
+    left: 10%;
+    width: 7%;
+    /*background-color: red;*/
+}
+.rabbit{
+    width: 100%;
+}
+.cat-container{
+    top: 13%;
+    left: 5%;
+    width: 5%;
+}
+
+.cat{
+    width: 100%;
+}
