@@ -4,6 +4,7 @@
   <style>
 
 
+
 /* WOOD FRAME STYLE */
 .wood-frame img{
   width:100%;
@@ -161,6 +162,8 @@
 <div class="first" id="basic-waypoint"></div>
 
 </div>
+
+<a href="admin/index.php" id="admin"></a>
 
     <!-- STALD IMAGE -->
     <div class="background-image-content">
