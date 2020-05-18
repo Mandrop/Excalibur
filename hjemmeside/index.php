@@ -24,10 +24,36 @@
   width:100%;
 }
 
-.perkament-frame-content{
-  background:transparent url("images/perkament/perkament-center.png") repeat-y center;
+.perkament-center{
+/*   background:transparent url("images/perkament_rigtig/Lille_perchmant_middle.png")no-repeat !important;
   background-size: 100%;
-  padding: 1px 10% 1px 10%;
+  padding: 1px 10% 1px 10%; */
+
+  background: transparent url(images/perkament_rigtig/Lille_perchmant_middle.png)/* repeat-y center;*/ no-repeat !important;
+    background-image: url(images/perkament_rigtig/Lille_perchmant_middle.png);
+    background-position-x: initial !important;
+    background-position-y: initial !important;
+    background-size: 100% !important;
+    background-repeat-x: initial !important;
+    background-repeat-y: initial !important;
+    background-attachment: initial !important;
+    background-origin: initial !important;
+    background-clip: initial !important;
+    background-color: transparent !important;
+    background-size: 100% !important;
+    padding: 1px 10% 1px 10% !important;
+}
+
+.ar_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 600px) {
+  .ar_grid{
+    grid-template-columns: 1fr;
+    width: 93%;
+  }
 }
 /* PERKAMENT FRAME END */
 
@@ -147,7 +173,7 @@
       <!-- INFO BOKS -->
       <div class="info-waypoint"></div>
       <div class="info">
-      <img class="info-img" src="images/info.png" alt="">
+      <img class="info-img" src="images/info1.png" alt="">
       <button type="button" class="btn btn-primary info-btn" data-toggle="modal" data-target="#infoModal"></button>
       </div>
     <!-- BACKGROUND IMAGE -->
@@ -182,11 +208,18 @@
 
     <div class="background" id="background">
 
+
+
     <!-- ORKBY IMAGE  -->
     <img class="background-image" src="Images/background/orc/orcdelfinal6.jpg" alt="">
 
+    <!-- RABBIT GIF -->
+    <div class="absolute rabbit-container">
+      <img class="rabbit" src="images/rabbit-jump.gif" alt="">
+    </div> 
+
     <!-- DWARD  IMAGE  -->
-    <img class="background-image" src="Images/background/dwarf/DWARF del.jpg" alt="">
+    <img class="background-image" src="Images/background/dwarf/dwarfdel.jpg" alt="">
 
     <!-- NYHED  IMAGE  -->
     <img class="background-image" src="Images/background/nyheddel3.jpg" alt="">
@@ -197,6 +230,10 @@
 
       <!-- BORGMUR -->
       <img class="borgmur" src="Images/background/del3/borg.png" alt="">
+
+      <div class="absolute cat-container">
+        <img class="cat" src="images/kat.gif" alt="">
+      </div>
 
 
 
@@ -607,7 +644,7 @@ include('templates/kontakt.php');
 
                   <img src="images/perkament/perkament-top.png" alt="perkament frame top">
 
-                  <div class="perkament-frame-content">
+                  <div class="perkament-frame-content" style="background:transparent url('images/perkament/perkament-center.png') repeat-y center;">
                       <article>
                   <!-- CONTENT HERE -->
 
@@ -1009,7 +1046,7 @@ include('templates/kontakt.php');
 
 <!-- Modal -->
 <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         
@@ -1075,8 +1112,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 <h6>Spørgsmål</h6>
 <p>Hvis du har spørgsmål er du altid velkommen til at e-maile eller ringe til os. Du kan finde vores kontaktinformation under Kontakt.</p>
   <hr>
-  <h5 class="text-center">Sidste Nyt</h5>
-  <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+  <p><a href="admin/" class="tooltip-test" title="Tooltip">Admin panel</a></p>
   
 </div>
       <div class="modal-footer">
@@ -1207,10 +1243,10 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
         <!-- CONTENT HERE -->
 
 
-            <div class="row d-flex">
+            <div class="">
             <img src="images/titler/arrangementer.png" alt="Arrangementer" style="margin-bottom: 30px;">
-
-                <div class="w-25">
+              <div class="ar_grid">
+                <div class="w-100" style="margin: 10px">
                     <!-- PERKAMENT FRAME START -->
                     <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
 
@@ -1218,15 +1254,15 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 
                           <img src="images/perkament_rigtig/Lille_perchmant_top.png" alt="perkament frame top">
 
-                          <div class="perkament-frame-content">
+                          <div class="perkament-frame-content perkament-center">
                               <article>
                           <!-- CONTENT HERE -->
 
-                            <h1>Test</h1>
-                            <p>Dette er en test</p>
+                            <h1>Rollespil i Odense skov</h1>
+                            <p>10/7</p>
 
-                            <h1>Test</h1>
-                            <p>Dette er en test</p>
+                            <p>Odense skov</p>
+                            <p>Tim Mogensen</p>
 
                           <!-- CONTENT HERE -->
                               </article>
@@ -1239,7 +1275,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
                  </div>
 
 
-                <div class="w-25">
+                <div class="w-100" style="margin: 10px">
                     <!-- PERKAMENT FRAME START -->
                     <!-- !!!!       Husk INTERNAL CSS i HEAD !!!!-->
 
@@ -1247,15 +1283,15 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 
                           <img src="images/perkament_rigtig/Lille_perchmant_top.png" alt="perkament frame top">
 
-                          <div class="perkament-frame-content">
+                          <div class="perkament-frame-content perkament-center">
                               <article>
                           <!-- CONTENT HERE -->
 
-                            <h1>Test</h1>
-                            <p>Dette er en test</p>
+                            <h1>Rollespil i Vejle skov</h1>
+                            <p>20/6</p>
 
-                            <h1>Test</h1>
-                            <p>Dette er en test</p>
+                            <p>Vejle skov</p>
+                            <p>Lars Hansen</p>
 
                           <!-- CONTENT HERE -->
                               </article>
@@ -1265,7 +1301,8 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
                       </div>
 
                     <!-- PERKAMENT FRAME END -->
-                 </div>
+                  </div>
+                </div>
 
 
             </div>
@@ -1288,8 +1325,8 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
 <!--<div class="second" id="second"></div>-->
 <!-- Button trigger modal -->
 
-<div class="container-fluid p-0">
-<img class="w-100" src="images/background/bottom-part.jpg" alt="Bottom part">
+<div class="bottom-part container-fluid p-0">
+<img class="w-100 m-0" src="images/background/bottom-part.jpg" alt="Bottom part">
 </div>
 <footer id="kontakt">
 
@@ -1407,7 +1444,7 @@ Du kan finde telefonnumre og mail-adresser på foreningens afviklere under Konta
             $(function hest() {
                 $(window).scroll(function () {
                     var scroll_position = $(window).scrollTop();
-                    var object_position_left = window_width * ((scroll_position - 350) / document_height) * 12;
+                    var object_position_left = window_width * ((scroll_position - 350) / document_height) * 4;
                     $('#hest').css({
                         'left': object_position_left
                     });

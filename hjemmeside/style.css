@@ -321,19 +321,31 @@ height: 100%;
     
 }
 
-@media screen and (max-width: 500px) {
+
+@media screen and (min-width: 321px) and (max-width: 500px) {
     .modal-contentst {
         background-image: url(images/bannerscroll4.png) !important;
         margin-top: 50%;
     }
     .Excaliburheader {
-        font-size: 20px;
-        margin-top: -20px;
+        font-size: 15px;
+        margin-top: -40px;
 
     }
     
 }
+@media screen and (max-width: 320px) {
+    .modal-contentst {
+        background-image: url(images/bannerscroll5.png) !important;
+        margin-top: 50%;
+    }
+    .Excaliburheader {
+        font-size: 15px;
+        margin-top: -40px;
 
+    }
+    
+}
 /* ------Excalibur------- */
 .sværdsten {
     width: 8%;
@@ -1051,8 +1063,9 @@ footer .card-body h6{
     background-color: transparent;
     border:none;
   }
-  
-  }
+
+
+
   
   
   @media (max-width: 979px) {
@@ -1074,6 +1087,18 @@ footer .card-body h6{
   }
   .wood-frame-content{
 padding:0px 1px;
+  }
+  .tilmeld-frame-content{
+      padding: 1px 0;
+  }
+  .bliv-medlem form{
+      width: 90% !important;
+  }
+  .table td, .table th{
+      padding: 0 !important;
+  }
+  .table{
+    width: 80% !important;
   }
   }
   /* GALLERI SIDE END */
@@ -1173,5 +1198,38 @@ padding:0px 1px;
     
     width: 50px;
     bottom: 13%;
+    width: 100%;
+}
+
+#infoModal{
+    z-index: 5000;
+}
+
+.bottom-part{
+    line-height: 0;
+}
+
+
+
+
+.rabbit{
+    
+    width: 1000px;
+}
+.rabbit-container{
+    left: 10%;
+    width: 7%;
+    /*background-color: red;*/
+}
+.rabbit{
+    width: 100%;
+}
+.cat-container{
+    top: 13%;
+    left: 5%;
+    width: 5%;
+}
+
+.cat{
     width: 100%;
 }

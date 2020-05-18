@@ -51,7 +51,7 @@ include("navbar.php")
       <input type="text" id="brugernavn" name="Brugernavn"><br>
       <label for="kodeord">Kodeord</label><br>
       <input type="password" id="kodeord" name="kodeord"><br><br>
-      <input type="submit" value="Log in">
+      <a class="btn btn-primary" href="ar_list.php">log in</a>
     </form> 
   </div>
 </div>
