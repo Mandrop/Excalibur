@@ -1233,3 +1233,8 @@ padding:0px 1px;
 .cat{
     width: 100%;
 }
+
+
+.modal-dialog{
+    max-width: 90%;
+}
